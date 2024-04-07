@@ -4,7 +4,7 @@
 	&:active, &:focus, &:visited {
 		color: initial;
 	}
-	.mat-card {
+	.mat-mdc-card {
 		&:hover {
 			box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 4px 18px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
 		}
@@ -14,15 +14,15 @@
 			max-height: 100%;
 		}
 
-		.mat-card-header {
+		.mat-mdc-card-header {
 			height: 50px;
 			margin: 0 16px 0 0;
-			.mat-card-title {
+			.mat-mdc-card-title {
 				font-size: 18px;
 			}
 		}
 
-		.mat-card-content {
+		.mat-mdc-card-content {
 			display: flex;
 			height: 100px;	
 		}

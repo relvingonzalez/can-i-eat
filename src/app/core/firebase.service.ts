@@ -65,7 +65,7 @@ export class FirebaseService {
 
 	SearchRestaurants(searchQuery: string) {
 
-    const q = query(this.restaurantCollection, where("name", "array-contains", searchQuery.toLowerCase));
+    const q = query(this.restaurantCollection, where("keywords", "array-contains", searchQuery.toLowerCase()));
     this.restaurants = collectionData(q, { idField: 'id' })
     .pipe(
       tap(restaurants => this.extractRestaurantsData(restaurants))

@@ -18,27 +18,30 @@ object, video {
 	max-width: 100%;
 }
 
-.mat-tab-body.mat-tab-body-active {
+/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version. */
+.mat-mdc-tab-body.mat-tab-body-active {
 	overflow: hidden !important;
 }
 
+/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version. */
 .mat-tab-body-content {
     height: 100%;
     overflow: hidden !important;
 }
 
 // mat card global overwrites
-.mat-card {
+.mat-mdc-card {
 	background-color: $blue-light;
 	//header
-	.mat-card-header .mat-card-header-text {
+	/* TODO(mdc-migration): The following rule targets internal classes of card that may no longer apply for the MDC version. */
+	.mat-mdc-card-header .mat-card-header-text {
 	    margin: 0 16px 0 0;
 	}
 
 }
 
 @media only screen and (min-width: 380px) {
-	.restaurant-component[_ngcontent-c8] .mat-card[_ngcontent-c8] .mat-card-header[_ngcontent-c8] .mat-card-title[_ngcontent-c8] {
+	.restaurant-component[_ngcontent-c8] .mat-mdc-card[_ngcontent-c8] .mat-mdc-card-header[_ngcontent-c8] .mat-mdc-card-title[_ngcontent-c8] {
 	    font-size: 20px;
 	}
 }

@@ -1,5 +1,5 @@
 <a class="restaurant-component" [routerLink]="['/restaurant/detail/', restaurant.id]">
-	<mat-card [matBadge]="restaurant.safetyRating + ' %'" matBadgeSize="medium">
+	<mat-card appearance="outlined" [matBadge]="restaurant.safetyRating + ' %'" matBadgeSize="medium">
 		<mat-card-header>
 			<mat-card-title>{{restaurant.name}}</mat-card-title>
 		</mat-card-header>
