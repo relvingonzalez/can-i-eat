@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import 'variables';
+
+@media (min-width: 1025px) {
+	html, body {
+		padding: 20px;
+	}
+}
+
+body {
+	background-color: $white;
+	color: $blue-dark;
+}
+
+img, embed,
+object, video {
+	max-width: 100%;
+}
+
+.mat-tab-body.mat-tab-body-active {
+	overflow: hidden !important;
+}
+
+.mat-tab-body-content {
+    height: 100%;
+    overflow: hidden !important;
+}
+
+// mat card global overwrites
+.mat-card {
+	background-color: $blue-light;
+	//header
+	.mat-card-header .mat-card-header-text {
+	    margin: 0 16px 0 0;
+	}
+
+}
+
+@media only screen and (min-width: 380px) {
+	.restaurant-component[_ngcontent-c8] .mat-card[_ngcontent-c8] .mat-card-header[_ngcontent-c8] .mat-card-title[_ngcontent-c8] {
+	    font-size: 20px;
+	}
+}

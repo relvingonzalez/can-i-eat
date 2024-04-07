@@ -1,0 +1,16 @@
+<div id="search-component">
+  <h4>Allergen Search</h4>
+
+ <mat-form-field>
+ 	<input matInput placeholder="Search" #searchBox id="search-box" (input)="search(searchBox.value)" />
+ </mat-form-field>
+
+
+  <ul class="search-result">
+    <li *ngFor="let allergen of allergens$ | async" >
+      <a [routerLink]="['/detail/', allergen.id]">
+        {{allergen.name}}
+      </a>
+    </li>
+  </ul>
+</div>

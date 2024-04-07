@@ -1,0 +1,10 @@
+<div *ngIf="allergen">
+	<h2>{{allergen.name | uppercase}} Details</h2>
+	<div>
+	  <label>name:
+	    <input [(ngModel)]="allergen.name" placeholder="name">
+	  </label>
+	</div>
+</div>
+<button (click)="goBack()">go back</button>
+<button >save</button>

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "allergysaferestaurantsapp": {
+      "hosting": {
+        "the-food-allergy-app": [
+          "allergysaferestaurantsapp"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "allergysaferestaurantsapp"
+  }
+}

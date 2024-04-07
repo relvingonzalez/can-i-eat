@@ -1,0 +1,91 @@
+@import '../../variables.scss';
+$red: #FF0012;
+$green: #42e360;
+
+.mat-progress-spinner {
+	margin: 20px auto;
+}
+
+.header {
+	margin: 20px 0;
+
+	h2, .favorite {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	img {
+		display: inline-block;
+		width: 150px;
+	}
+
+	.not-favorited {
+		color: lightgray;
+	}
+
+	.favorite {
+		margin-left: 20px;
+	}
+
+	* {
+		vertical-align: middle;
+	}
+	
+}
+
+.menu-filters {
+	margin-top: 40px; 
+}
+
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+
+	.menu-category {
+		margin-top: 60px;
+		width: 100%;
+	}
+
+	.mat-expansion-panel-header-title {
+		font-weight: $bold-font;
+	}
+
+	.mat-expansion-panel-header-description {
+		justify-content: flex-end;
+
+		.problem-ingredients {
+			color: $red;
+			margin-left: 10px;
+
+			&.safe {
+				color: $green;
+			}
+		}
+	}
+
+	.mat-expansion-panel {
+	   .mat-expansion-panel-header {
+	     height: auto!important; 
+	     padding-top: 20px;
+	     padding-bottom: 20px;
+	   }
+	 }
+}
+
+@media only screen and (min-width: 900px) {
+	.menu {
+		.menu-category {
+			width: 50%;
+			.menu-category-inner {
+				padding: 10px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1500px) {
+	.menu .menu-category {
+	  width: 33.33%;
+	}
+}

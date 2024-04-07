@@ -1,0 +1,36 @@
+<mat-spinner *ngIf="!restaurant"></mat-spinner>
+<div *ngIf="restaurant">
+	<div class="header">
+		<img [src]="restaurant.logo" alt="Restaurant Logo">
+		<button mat-icon-button color="warn" [ngClass]="{'not-favorited': !restaurant.favorite}" (click)="toggleFavorite()">
+		    <mat-icon aria-label="Favorite">favorite</mat-icon>
+		</button>
+	</div>
+	<button mat-stroked-button routerLink="/"> go back</button>
+	<div class="menu-filters">
+		<mat-slide-toggle aria-label="Show Safe Menu" [color]="'primary'" [(ngModel)]="showSafe" (change)="toggleSafeMenu()">
+        	Safe Menu
+      	</mat-slide-toggle>
+	</div>
+	<div class="menu">
+		<div class="menu-category" *ngFor="let menuCategory of menuByCategory | keyvalue">
+			<div class="menu-category-inner">
+				<h2>{{menuCategory.key}}</h2>
+				<mat-accordion>
+				  <mat-expansion-panel *ngFor="let menuItem of menuCategory.value">
+				    <mat-expansion-panel-header collapsedHeight="*" expandedHeight="*">
+				      <mat-panel-title>
+				        {{menuItem.name}}
+				      </mat-panel-title>
+				      <mat-panel-description>
+				        <span class="problem-ingredients" [ngClass]="{'safe': !menuItem.problemIngredients}"> {{menuItem.problemIngredients || 'safe'}} </span>
+				      </mat-panel-description>
+				    </mat-expansion-panel-header>
+				    <p>{{menuItem.ingredients}}</p>
+				  </mat-expansion-panel>
+				</mat-accordion>
+			</div>
+		</div>
+	</div>
+<button mat-stroked-button routerLink="/"> go back</button>
+

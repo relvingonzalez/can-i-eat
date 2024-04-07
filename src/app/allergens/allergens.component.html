@@ -1,0 +1,16 @@
+<h2>My Allergens</h2>
+
+<mat-form-field class="allergen-list">
+  <mat-chip-grid #chipList>
+    <mat-chip *ngFor="let allergen of allergens"
+             [removable]="true" (removed)="delete(allergen)">
+      {{allergen.name}}
+      <mat-icon matChipRemove >cancel</mat-icon>
+    </mat-chip>
+    <input placeholder="New Allergen..."
+           [matChipInputFor]="chipList"
+           [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+           [matChipInputAddOnBlur]="addOnBlur"
+           (matChipInputTokenEnd)="add($event)">
+  </mat-chip-grid>
+</mat-form-field>

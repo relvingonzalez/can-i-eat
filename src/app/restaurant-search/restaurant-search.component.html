@@ -1,0 +1,23 @@
+<div id="search-component">
+	<mat-form-field>
+		<input matInput placeholder="Restaurant Search" #searchBox id="search-box" (input)="searchKeyword(searchBox.value)" />
+	</mat-form-field>
+	<div class="action-links">
+		<p class="link" (click)="searchBox.value = '';all()">Show all</p>
+		<p class="link" (click)="searchBox.value = '';nearbyAndSafe()">Near me</p>
+	</div>
+	<ng-template #loading>
+		<mat-spinner></mat-spinner>
+	</ng-template>
+	<ng-template #noResults>
+		<p class="no-results">No Restaurants found!</p>
+	</ng-template>
+	
+	<div class="search-results-container">
+		<div *ngIf="restaurants$ | async as restaurants; else loading" class="search-term-results">
+			<ng-container *ngIf="restaurants.length; else noResults">
+				<app-restaurant [restaurant]="restaurant" *ngFor="let restaurant of restaurants" class="app-restaurant"></app-restaurant>	
+			</ng-container>
+		</div>
+	</div>
+</div>

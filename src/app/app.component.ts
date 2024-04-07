@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Firestore } from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +10,7 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+  firestore: Firestore = inject(Firestore);
+
   title = 'the-food-allergy-app';
 }

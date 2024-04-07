@@ -1,0 +1,49 @@
+
+#search-component {
+	margin: 20px 0;
+	.mat-spinner {
+		margin: 50px auto;
+	}
+
+	.no-results {
+		margin-left: 15px;
+	}
+
+	.mat-form-field {
+		margin-left: 15px;
+		vertical-align: middle;
+	}
+
+	.action-links {
+		vertical-align: middle;
+		display: inline-block;
+		.link {
+			margin: 0 0 0 15px;
+			text-decoration: underline;
+			cursor: pointer;
+			display: inline-block;
+		}
+	}
+
+
+	.search-results-container, .search-term-results {
+		display: flex;
+		flex-wrap: wrap;
+		padding-bottom: 20px;
+		padding-top: 20px;
+
+		.app-restaurant {
+			margin: 15px;
+		}
+
+		&[hidden] {
+			display: none;
+		}
+	}
+}
+
+@media only screen and (min-width: 480px) {
+	.action-links {
+		display: inline-block;
+	}
+}
