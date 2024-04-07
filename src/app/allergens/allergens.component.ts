@@ -8,13 +8,14 @@ import { MatChipInputEvent, MatChipsModule } from '@angular/material/chips';
 import {  MatFormField } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { NgForOf } from '@angular/common';
+import {MatIconModule} from '@angular/material/icon';
 
 @Component({
   standalone: true,
   selector: 'app-allergens',
   templateUrl: './allergens.component.html',
   styleUrls: ['./allergens.component.scss'],
-  imports: [MatChipsModule, MatInputModule, MatFormField, NgForOf]
+  imports: [MatChipsModule, MatInputModule, MatFormField, NgForOf, MatIconModule]
 })
 export class AllergensComponent implements OnInit {
   private ngUnsubscribe = new Subject();

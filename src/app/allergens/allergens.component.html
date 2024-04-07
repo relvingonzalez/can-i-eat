@@ -5,7 +5,9 @@
     <mat-chip-option *ngFor="let allergen of allergens"
              [removable]="true" (removed)="delete(allergen)">
       {{allergen.name}}
-      <mat-icon matChipRemove >cancel</mat-icon>
+      <button matChipRemove [attr.aria-label]="'remove ' + allergen.name">
+        <mat-icon>cancel</mat-icon>
+      </button>
     </mat-chip-option>
     <input placeholder="New Allergen..."
            [matChipInputFor]="chipList"
