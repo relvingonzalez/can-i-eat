@@ -2,7 +2,7 @@ import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { CommonModule, Location, NgClass, NgFor } from '@angular/common';
+import { CommonModule, Location } from '@angular/common';
 
 import { Allergen } from '../shared/models/allergen.model';
 import { Restaurant } from '../shared/models/restaurant.model';
@@ -14,6 +14,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { FormsModule } from '@angular/forms';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @Component({
@@ -21,7 +22,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
   selector: 'app-restaurant-detail',
   templateUrl: './restaurant-detail.component.html',
   styleUrls: ['./restaurant-detail.component.scss'],
-  imports: [MatProgressSpinnerModule, MatIconModule, MatSlideToggleModule, MatExpansionModule, CommonModule, FormsModule]
+  imports: [MatButtonModule, MatProgressSpinnerModule, MatIconModule, MatSlideToggleModule, MatExpansionModule, CommonModule, FormsModule]
 })
 export class RestaurantDetailComponent implements OnInit {
   @Input() restaurant: Restaurant;

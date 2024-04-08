@@ -6,7 +6,7 @@
 		    <mat-icon aria-label="Favorite">favorite</mat-icon>
 		</button>
 	</div>
-	<button mat-stroked-button routerLink="/"> go back</button>
+	<button mat-stroked-button (click)="goBack()"> go back</button>
 	<div class="menu-filters">
 		<mat-slide-toggle aria-label="Show Safe Menu" [color]="'primary'" [(ngModel)]="showSafe" (change)="toggleSafeMenu()">
         	Safe Menu
