@@ -37,8 +37,6 @@ export class RestaurantSearchComponent implements OnInit {
   }
 
   ngOnInit(): void {
-		this.all();
-
     this.restaurants$ = this.restaurants.pipe(
       // wait 300ms after each keystroke before considering the term
       debounceTime(300),
@@ -56,8 +54,10 @@ export class RestaurantSearchComponent implements OnInit {
         }
       })
     );
+  }
 
-    //this.restaurants.next({request: 'get', payload: ''});
+  ngAfterViewInit(): void {
+    this.all();
   }
 
   ngOnChanges(changes: SimpleChanges): void{

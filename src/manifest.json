@@ -1,6 +1,6 @@
 {
-	"name": "Allergy Safe Restaurants",
-	"short_name": "Allergy Safe",
+	"name": "Can I eat",
+	"short_name": "CanIEat",
 	"icons": [{
 		"src": "/assets/Icon-512.png",
 		"sizes": "512x512",

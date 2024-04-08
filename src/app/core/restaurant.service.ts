@@ -125,7 +125,6 @@ export class RestaurantService {
     return this.firebaseService.GetRestaurant(id)
       .pipe(
         mergeMap((restaurant) => {
-          console.log('got ', restaurant)
           return this.findInFavorites(restaurant)
             .pipe(
               map((favorite)=> {

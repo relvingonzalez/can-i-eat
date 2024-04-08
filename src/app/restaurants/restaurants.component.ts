@@ -32,7 +32,6 @@ export class RestaurantsComponent implements OnInit {
 		this.getFavoriteRestaurants()
 			.pipe(takeUntil(this.ngUnsubscribe))
 			.subscribe(favoriteRestaurants => {
-        console.log('favvv' + favoriteRestaurants)
 				this.loading = false;
 				this.favoriteRestaurants = favoriteRestaurants;
 			})
@@ -45,7 +44,6 @@ export class RestaurantsComponent implements OnInit {
 				return this.restaurantService.getFavoriteRestaurants()
 			}),
 			mergeMap(favoriteRestaurants => {
-        console.log('func!' + favoriteRestaurants[0].toString())
         return this.restaurantService.matchAndReturnRestaurants(favoriteRestaurants, this.allergens)
       })
 		)
