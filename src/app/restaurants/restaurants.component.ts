@@ -22,7 +22,7 @@ import { RestaurantSearchComponent } from '../restaurant-search/restaurant-searc
 export class RestaurantsComponent implements OnInit {
 	private ngUnsubscribe = new Subject();
 	allergens: Allergen[];
-	favoriteRestaurants: Restaurant[] = [];
+	favoriteRestaurants: Restaurant[];
 	loading = false;
 
   constructor(private restaurantService: RestaurantService, private allergenService: AllergenService) { }
