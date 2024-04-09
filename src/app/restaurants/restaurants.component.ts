@@ -22,21 +22,18 @@ import { RestaurantSearchComponent } from '../restaurant-search/restaurant-searc
 export class RestaurantsComponent implements OnInit {
 	private ngUnsubscribe = new Subject();
 	allergens: Allergen[];
-	favoriteRestaurants: Restaurant[];
 	loading = false;
+  favoriteRestaurants$: Observable<Restaurant[]>;
 
   constructor(private restaurantService: RestaurantService, private allergenService: AllergenService) { }
 
 	ngOnInit() {
-		this.getFavoriteRestaurants()
+    this.favoriteRestaurants$ = this.getFavoriteRestaurants()
 			.pipe(takeUntil(this.ngUnsubscribe))
-			.subscribe(favoriteRestaurants => {
-				this.favoriteRestaurants = favoriteRestaurants;
-			})
 	}
 
 	private getFavoriteRestaurants(): Observable<Restaurant[]> {
-    this.loading = true;
+    //this.loading = true;
 		return this.allergenService.data$.pipe(
 			mergeMap(allergens => {
 				this.allergens = allergens;
@@ -44,9 +41,6 @@ export class RestaurantsComponent implements OnInit {
 			}),
 			mergeMap(favoriteRestaurants => {
         return this.restaurantService.matchAndReturnRestaurants(favoriteRestaurants, this.allergens)
-      }),
-      tap(() => {
-        this.loading = false;
       })
 		)
 	}
