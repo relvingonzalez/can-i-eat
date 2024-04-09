@@ -8,7 +8,7 @@
 
   <ul class="search-result">
     <li *ngFor="let allergen of allergens$ | async" >
-      <a [routerLink]="['/detail/', allergen.id]">
+      <a [routerLink]="['/detail/']">
         {{allergen.name}}
       </a>
     </li>

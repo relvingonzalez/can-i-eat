@@ -1,7 +1,8 @@
-
-<h3 *ngIf="favoriteRestaurants.length">My Favorites</h3>
-<mat-spinner *ngIf="loading"></mat-spinner>
-<div class="favorites">
-	<app-restaurant [restaurant]="restaurant" *ngFor="let restaurant of favoriteRestaurants" class="app-restaurant"></app-restaurant>
+<div class="tab-body">
+  <h2 *ngIf="favoriteRestaurants.length">My Favorites</h2>
+  <mat-spinner *ngIf="loading"></mat-spinner>
+  <div class="favorites">
+    <app-restaurant [restaurant]="restaurant" *ngFor="let restaurant of favoriteRestaurants" class="app-restaurant"></app-restaurant>
+  </div>
+  <app-restaurant-search [allergens]="allergens"></app-restaurant-search>
 </div>
-<app-restaurant-search [allergens]="allergens"></app-restaurant-search>

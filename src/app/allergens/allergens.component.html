@@ -1,18 +1,20 @@
-<h2>My Allergens</h2>
+<div class="tab-body">
+  <h2>My Allergens</h2>
 
-<mat-form-field class="allergen-list">
-  <mat-chip-grid #chipList>
-    <mat-chip-option *ngFor="let allergen of allergens"
-             [removable]="true" (removed)="delete(allergen)">
-      {{allergen.name}}
-      <button matChipRemove [attr.aria-label]="'remove ' + allergen.name">
-        <mat-icon>cancel</mat-icon>
-      </button>
-    </mat-chip-option>
-    <input placeholder="New Allergen..."
-           [matChipInputFor]="chipList"
-           [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
-           [matChipInputAddOnBlur]="addOnBlur"
-           (matChipInputTokenEnd)="add($event)">
-  </mat-chip-grid>
-</mat-form-field>
+  <mat-form-field class="allergen-list">
+    <mat-chip-grid #chipList>
+      <mat-chip-option *ngFor="let allergen of allergens"
+               [removable]="true" (removed)="delete(allergen)" selected selectable="false">
+        {{allergen.name}}
+        <button matChipRemove [attr.aria-label]="'remove ' + allergen.name">
+          <mat-icon>cancel</mat-icon>
+        </button>
+      </mat-chip-option>
+      <input placeholder="New Allergen..."
+             [matChipInputFor]="chipList"
+             [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+             [matChipInputAddOnBlur]="addOnBlur"
+             (matChipInputTokenEnd)="add($event)">
+    </mat-chip-grid>
+  </mat-form-field>
+</div>

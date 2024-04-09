@@ -46,6 +46,10 @@ object, video {
 
 }
 
+.tab-body {
+  padding: 16px;
+}
+
 @media only screen and (min-width: 380px) {
 	.restaurant-component[_ngcontent-c8] .mat-mdc-card[_ngcontent-c8] .mat-mdc-card-header[_ngcontent-c8] .mat-mdc-card-title[_ngcontent-c8] {
 	    font-size: 20px;
