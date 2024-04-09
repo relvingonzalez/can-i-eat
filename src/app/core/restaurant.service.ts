@@ -96,7 +96,7 @@ export class RestaurantService {
   }
   getSafetyRating(menu: MenuItem[]): number {
     const safeMenuItems = menu.filter(menuItem => !menuItem.problemIngredients);
-    const safetyRating: number = Math.ceil((safeMenuItems.length/menu.length) * 100);
+    const safetyRating: number = Math.ceil((safeMenuItems.length/menu.length) * 100) || 0;
     return safetyRating;
   }
 
