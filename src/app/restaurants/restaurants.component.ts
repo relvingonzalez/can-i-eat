@@ -1,5 +1,5 @@
 import { Subject, Observable } from 'rxjs';
-import { takeUntil, mergeMap } from 'rxjs/operators';
+import { takeUntil, mergeMap, tap } from 'rxjs/operators';
 import { Component, OnInit } from '@angular/core';
 
 import { Allergen } from '../shared/models/allergen.model';
@@ -32,7 +32,6 @@ export class RestaurantsComponent implements OnInit {
 		this.getFavoriteRestaurants()
 			.pipe(takeUntil(this.ngUnsubscribe))
 			.subscribe(favoriteRestaurants => {
-				this.loading = false;
 				this.favoriteRestaurants = favoriteRestaurants;
 			})
 	}
@@ -45,6 +44,9 @@ export class RestaurantsComponent implements OnInit {
 			}),
 			mergeMap(favoriteRestaurants => {
         return this.restaurantService.matchAndReturnRestaurants(favoriteRestaurants, this.allergens)
+      }),
+      tap(() => {
+        this.loading = false;
       })
 		)
 	}
