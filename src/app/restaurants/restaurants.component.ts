@@ -28,7 +28,6 @@ export class RestaurantsComponent implements OnInit {
   constructor(private restaurantService: RestaurantService, private allergenService: AllergenService) { }
 
 	ngOnInit() {
-		this.loading = true;
 		this.getFavoriteRestaurants()
 			.pipe(takeUntil(this.ngUnsubscribe))
 			.subscribe(favoriteRestaurants => {
@@ -37,6 +36,7 @@ export class RestaurantsComponent implements OnInit {
 	}
 
 	private getFavoriteRestaurants(): Observable<Restaurant[]> {
+    this.loading = true;
 		return this.allergenService.data$.pipe(
 			mergeMap(allergens => {
 				this.allergens = allergens;
