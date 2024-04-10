@@ -1,4 +1,6 @@
-# TheFoodAllergyApp
+# Can I eat?
+
+This is an MVP personal project for people with food allergies to see a restaurant's safe menu for them to eat. It is developed with Angular, Angular Material, SCSS, standalone components, Firebase, and more.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
 
