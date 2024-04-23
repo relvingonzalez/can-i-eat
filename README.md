@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # How to use it?
 
-- First, you should run the codebase usin ng serve, or visit the live example at: https://can-i-eat.vercel.app/dashboard.
+- First, you should run the codebase using ng serve, or visit the live example at: https://can-i-eat.vercel.app/dashboard.
 - Then,you should click on the "My Allergens" and add your food allergies, one at a time. For example, you can add dairy, milk, egg, soy, or anything. Press enter or "," after each one.
 - After you've added your allergens, head back to the "Restaurants" tab by clicking on the upper Restaurants link.
 - From here, you can see each restaurant's rating based on how safe it would be for you to eat there.
