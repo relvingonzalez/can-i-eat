@@ -27,7 +27,7 @@ Everything runs on free tiers with no server to maintain.
 
 | Data | Where it comes from | Where it lives |
 | --- | --- | --- |
-| Chain menus (Chick-fil-A, In-N-Out, Sweetgreen) | Scraped from each chain's official allergen/nutrition page by `scripts/scrape` | `src/assets/data/chains.json` |
+| Chain menus (Chick-fil-A, First Watch, Freddy's, In-N-Out, Papa John's, Pollo Tropical, Sweetgreen) | Scraped from each chain's official allergen/nutrition page by `scripts/scrape` | `src/assets/data/chains.json` |
 | Hand-entered menus (Olive Garden, Pizza Hut, Subway…) | Exported once from the old Firestore `restaurants` collection | `src/assets/data/restaurants.json` |
 | Community menus | The in-app *Suggest a restaurant* form | Firestore `submissions` collection |
 | Nearby places | [OpenStreetMap](https://www.openstreetmap.org) via the Overpass API | Fetched live in the browser |
@@ -65,7 +65,7 @@ If you edit the old `restaurants` collection in the console, run `npm run data:e
 
 ## Development
 
-Requires Node 20.
+Requires Node 24 (also what Vercel builds with).
 
 ```bash
 npm install

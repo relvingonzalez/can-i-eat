@@ -3085,6 +3085,2687 @@
       "lastVerified": "2026-10-22"
     },
     {
+      "id": "chain-first-watch",
+      "name": "First Watch",
+      "website": "https://www.firstwatch.com",
+      "cuisine": "Breakfast & brunch",
+      "keywords": [
+        "first watch",
+        "breakfast",
+        "brunch",
+        "lunch",
+        "pancakes",
+        "eggs",
+        "cafe"
+      ],
+      "sourceUrl": "https://firstwatch.com/nutrition-and-allergens",
+      "logo": "https://firstwatch.com/wp-content/themes/firstwatch/assets/images/apple-touch-icon-precomposed.png",
+      "covers": [
+        "milk",
+        "egg",
+        "fish",
+        "shellfish",
+        "treenuts",
+        "peanut",
+        "wheat",
+        "gluten",
+        "soy",
+        "sesame",
+        "mustard",
+        "celery"
+      ],
+      "notes": [
+        " Note we try to exercise caution and follow certain allergen procedures to prevent cross contact, but our ingredients containing milk, egg, fish, peanut, sesame, tree nut, shellfish, soy, wheat, and other allergens are made in the same kitchen and there is still a risk of cross-contact with shared surfaces and equipment."
+      ],
+      "menu": [
+        {
+          "category": "Seasonal Items",
+          "name": "The Godfather Breakfast Bowl",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "mustard"
+          ],
+          "id": "seasonal-items-the-godfather-breakfast-bowl"
+        },
+        {
+          "category": "Seasonal Items",
+          "name": "Maple Bacon Croissant Sandwich",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "seasonal-items-maple-bacon-croissant-sandwich"
+        },
+        {
+          "category": "Seasonal Items",
+          "name": "Pumpkin Pancake Breakfast",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "seasonal-items-pumpkin-pancake-breakfast"
+        },
+        {
+          "category": "Seasonal Items",
+          "name": "Blazing Dragon",
+          "contains": [],
+          "id": "seasonal-items-blazing-dragon"
+        },
+        {
+          "category": "Seasonal Items",
+          "name": "Pumpkin Spice Donuts",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "seasonal-items-pumpkin-spice-donuts"
+        },
+        {
+          "category": "Seasonal Items",
+          "name": "Million Dollar Bacon",
+          "contains": [],
+          "id": "seasonal-items-million-dollar-bacon"
+        },
+        {
+          "category": "The Classics",
+          "name": "The Traditional Breakfast",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "the-classics-the-traditional-breakfast"
+        },
+        {
+          "category": "The Classics",
+          "name": "Tri-Fecta",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "the-classics-tri-fecta"
+        },
+        {
+          "category": "The Classics",
+          "name": "Biscuits & Turkey Sausage Gravy with Eggs",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "celery",
+            "gluten"
+          ],
+          "id": "the-classics-biscuits-turkey-sausage-gravy-with-eggs"
+        },
+        {
+          "category": "The Hits",
+          "name": "Chickichanga ®",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "celery",
+            "gluten"
+          ],
+          "id": "the-hits-chickichanga"
+        },
+        {
+          "category": "The Hits",
+          "name": "Elevated Egg Sandwich",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten",
+            "mustard"
+          ],
+          "id": "the-hits-elevated-egg-sandwich"
+        },
+        {
+          "category": "The Hits",
+          "name": "Farm Stand Breakfast Tacos",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "celery",
+            "gluten"
+          ],
+          "id": "the-hits-farm-stand-breakfast-tacos"
+        },
+        {
+          "category": "The Hits",
+          "name": "Barbacoa Breakfast Tacos",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "the-hits-barbacoa-breakfast-tacos"
+        },
+        {
+          "category": "The Sweet Side",
+          "name": "Multigrain Pancake",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "the-sweet-side-multigrain-pancake"
+        },
+        {
+          "category": "The Sweet Side",
+          "name": "Lemon Ricotta Pancakes",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "the-sweet-side-lemon-ricotta-pancakes"
+        },
+        {
+          "category": "The Sweet Side",
+          "name": "Belgian Waffle",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "the-sweet-side-belgian-waffle"
+        },
+        {
+          "category": "The Sweet Side",
+          "name": "French Toast",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "the-sweet-side-french-toast"
+        },
+        {
+          "category": "The Sweet Side",
+          "name": "Floridian French Toast",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten"
+          ],
+          "id": "the-sweet-side-floridian-french-toast"
+        },
+        {
+          "category": "The Sweet Side",
+          "name": "Strawberry Tres Leches French Toast",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "the-sweet-side-strawberry-tres-leches-french-toast"
+        },
+        {
+          "category": "The Healthier Side",
+          "name": "Avocado Toast",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "the-healthier-side-avocado-toast"
+        },
+        {
+          "category": "The Healthier Side",
+          "name": "Healthy Turkey",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "the-healthier-side-healthy-turkey"
+        },
+        {
+          "category": "The Healthier Side",
+          "name": "A.M. Superfoods Bowl",
+          "contains": [
+            "treenuts",
+            "wheat",
+            "gluten"
+          ],
+          "id": "the-healthier-side-am-superfoods-bowl"
+        },
+        {
+          "category": "The Healthier Side",
+          "name": "Sunrise Granola Bowl",
+          "contains": [
+            "egg",
+            "milk",
+            "treenuts",
+            "wheat",
+            "gluten"
+          ],
+          "id": "the-healthier-side-sunrise-granola-bowl"
+        },
+        {
+          "category": "The Healthier Side",
+          "name": "Steel-Cut Oatmeal",
+          "contains": [
+            "egg",
+            "milk",
+            "treenuts",
+            "wheat",
+            "gluten"
+          ],
+          "id": "the-healthier-side-steel-cut-oatmeal"
+        },
+        {
+          "category": "The Healthier Side",
+          "name": "Tri-Athlete ®",
+          "contains": [
+            "egg",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "the-healthier-side-tri-athlete"
+        },
+        {
+          "category": "The Healthier Side",
+          "name": "Power Wrap",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "the-healthier-side-power-wrap"
+        },
+        {
+          "category": "Hashes",
+          "name": "Farmhouse Hash",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "hashes-farmhouse-hash"
+        },
+        {
+          "category": "Hashes",
+          "name": "Market Hash",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "hashes-market-hash"
+        },
+        {
+          "category": "Bowls",
+          "name": "Power Breakfast Bowl",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "celery",
+            "mustard"
+          ],
+          "id": "bowls-power-breakfast-bowl"
+        },
+        {
+          "category": "Bowls",
+          "name": "Pesto Chicken Power Bowl",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "celery",
+            "mustard"
+          ],
+          "id": "bowls-pesto-chicken-power-bowl"
+        },
+        {
+          "category": "Bowls",
+          "name": "Barbacoa Chilaquiles Breakfast Bowl",
+          "contains": [
+            "egg",
+            "milk",
+            "soy"
+          ],
+          "id": "bowls-barbacoa-chilaquiles-breakfast-bowl"
+        },
+        {
+          "category": "Omelets",
+          "name": "Bacado ® Omelet",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten",
+            "mustard"
+          ],
+          "id": "omelets-bacado-omelet"
+        },
+        {
+          "category": "Omelets",
+          "name": "Chile Chorizo Omelet",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten",
+            "mustard"
+          ],
+          "id": "omelets-chile-chorizo-omelet"
+        },
+        {
+          "category": "Omelets",
+          "name": "The Works Omelet",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "celery",
+            "gluten",
+            "mustard"
+          ],
+          "id": "omelets-the-works-omelet"
+        },
+        {
+          "category": "Frittatas",
+          "name": "Frittata Rustica",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten",
+            "mustard"
+          ],
+          "id": "frittatas-frittata-rustica"
+        },
+        {
+          "category": "Frittatas",
+          "name": "Smoked Salmon and Roasted Vegetable Frittata",
+          "contains": [
+            "egg",
+            "fish",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten",
+            "mustard"
+          ],
+          "id": "frittatas-smoked-salmon-and-roasted-vegetable-frittata"
+        },
+        {
+          "category": "Benedicts",
+          "name": "Classic Benedict",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "celery",
+            "gluten",
+            "mustard"
+          ],
+          "id": "benedicts-classic-benedict"
+        },
+        {
+          "category": "Benedicts",
+          "name": "BLT Benedict",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten",
+            "mustard"
+          ],
+          "id": "benedicts-blt-benedict"
+        },
+        {
+          "category": "Benedicts",
+          "name": "Smoked Salmon Benedict",
+          "contains": [
+            "egg",
+            "fish",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten",
+            "mustard"
+          ],
+          "id": "benedicts-smoked-salmon-benedict"
+        },
+        {
+          "category": "Share",
+          "name": "Million Dollar Bacon",
+          "contains": [],
+          "id": "share-million-dollar-bacon"
+        },
+        {
+          "category": "Share",
+          "name": "Holey Donuts",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "share-holey-donuts"
+        },
+        {
+          "category": "Sandwiches",
+          "name": "Monterey Club",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "mustard"
+          ],
+          "id": "sandwiches-monterey-club"
+        },
+        {
+          "category": "Sandwiches",
+          "name": "BLTE",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten",
+            "mustard"
+          ],
+          "id": "sandwiches-blte"
+        },
+        {
+          "category": "Sandwiches",
+          "name": "Baja Turkey Burger",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten",
+            "mustard"
+          ],
+          "id": "sandwiches-baja-turkey-burger"
+        },
+        {
+          "category": "Sandwiches",
+          "name": "Roast Beef & Havarti",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten",
+            "mustard"
+          ],
+          "id": "sandwiches-roast-beef-havarti"
+        },
+        {
+          "category": "Sandwiches",
+          "name": "Ham and Gruyere Melt",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "celery",
+            "gluten",
+            "mustard"
+          ],
+          "id": "sandwiches-ham-and-gruyere-melt"
+        },
+        {
+          "category": "Sandwiches",
+          "name": "Veggie Burger",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten",
+            "mustard"
+          ],
+          "id": "sandwiches-veggie-burger"
+        },
+        {
+          "category": "Sandwiches",
+          "name": "Market Veggie",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten",
+            "mustard"
+          ],
+          "id": "sandwiches-market-veggie"
+        },
+        {
+          "category": "Salads",
+          "name": "Sweet Honey Pecan Salad",
+          "contains": [
+            "milk",
+            "soy",
+            "treenuts",
+            "wheat",
+            "gluten",
+            "mustard"
+          ],
+          "id": "salads-sweet-honey-pecan-salad"
+        },
+        {
+          "category": "Salads",
+          "name": "Kale & Berry Salad",
+          "contains": [
+            "milk",
+            "soy",
+            "treenuts",
+            "wheat",
+            "gluten"
+          ],
+          "id": "salads-kale-berry-salad"
+        },
+        {
+          "category": "Salads",
+          "name": "Cobb Salad",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten",
+            "mustard"
+          ],
+          "id": "salads-cobb-salad"
+        },
+        {
+          "category": "Salads",
+          "name": "Chicken Avocado Chop Salad",
+          "contains": [
+            "milk",
+            "soy",
+            "wheat",
+            "gluten",
+            "mustard"
+          ],
+          "id": "salads-chicken-avocado-chop-salad"
+        },
+        {
+          "category": "Soups",
+          "name": "Chicken and Wild Rice Soup - Bowl",
+          "contains": [
+            "milk",
+            "celery"
+          ],
+          "id": "soups-chicken-and-wild-rice-soup-bowl"
+        },
+        {
+          "category": "Soups",
+          "name": "Chicken and Wild Rice Soup - Cup",
+          "contains": [
+            "milk",
+            "celery"
+          ],
+          "id": "soups-chicken-and-wild-rice-soup-cup"
+        },
+        {
+          "category": "Soups",
+          "name": "Clam Chowder - Bowl",
+          "contains": [
+            "milk",
+            "wheat",
+            "celery",
+            "gluten"
+          ],
+          "id": "soups-clam-chowder-bowl"
+        },
+        {
+          "category": "Soups",
+          "name": "Clam Chowder - Cup",
+          "contains": [
+            "milk",
+            "wheat",
+            "celery",
+            "gluten"
+          ],
+          "id": "soups-clam-chowder-cup"
+        },
+        {
+          "category": "Soups",
+          "name": "Broccoli Cheddar - Bowl",
+          "contains": [
+            "milk",
+            "soy",
+            "wheat",
+            "gluten",
+            "mustard"
+          ],
+          "id": "soups-broccoli-cheddar-bowl"
+        },
+        {
+          "category": "Soups",
+          "name": "Broccoli Cheddar - Cup",
+          "contains": [
+            "milk",
+            "soy",
+            "wheat",
+            "gluten",
+            "mustard"
+          ],
+          "id": "soups-broccoli-cheddar-cup"
+        },
+        {
+          "category": "Soups",
+          "name": "Market Vegetable Soup - Bowl",
+          "contains": [
+            "soy",
+            "celery",
+            "mustard"
+          ],
+          "id": "soups-market-vegetable-soup-bowl"
+        },
+        {
+          "category": "Soups",
+          "name": "Market Vegetable Soup - Cup",
+          "contains": [
+            "soy",
+            "celery",
+            "mustard"
+          ],
+          "id": "soups-market-vegetable-soup-cup"
+        },
+        {
+          "category": "Soups",
+          "name": "Italian Wedding Soup - Bowl",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "celery",
+            "gluten"
+          ],
+          "id": "soups-italian-wedding-soup-bowl"
+        },
+        {
+          "category": "Soups",
+          "name": "Italian Wedding Soup - Cup",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "celery",
+            "gluten"
+          ],
+          "id": "soups-italian-wedding-soup-cup"
+        },
+        {
+          "category": "Two For You",
+          "name": "Monterey Club Sandwich (Half)",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "mustard"
+          ],
+          "id": "two-for-you-monterey-club-sandwich-half"
+        },
+        {
+          "category": "Two For You",
+          "name": "Market Veggie Sandwich (Half)",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten",
+            "mustard"
+          ],
+          "id": "two-for-you-market-veggie-sandwich-half"
+        },
+        {
+          "category": "Two For You",
+          "name": "Roast Beef & Havarti Sandwich (Half)",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten",
+            "mustard"
+          ],
+          "id": "two-for-you-roast-beef-havarti-sandwich-half"
+        },
+        {
+          "category": "Two For You",
+          "name": "Ham & Gruyere Melt (Half)",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "celery",
+            "gluten",
+            "mustard"
+          ],
+          "id": "two-for-you-ham-gruyere-melt-half"
+        },
+        {
+          "category": "Two For You",
+          "name": "Kale & Berry Salad (Half Salad with Dressing)",
+          "contains": [
+            "milk",
+            "treenuts",
+            "mustard"
+          ],
+          "id": "two-for-you-kale-berry-salad-half-salad-with-dressing"
+        },
+        {
+          "category": "Two For You",
+          "name": "Cobb Salad (Half Salad with Dressing)",
+          "contains": [
+            "egg",
+            "milk",
+            "mustard"
+          ],
+          "id": "two-for-you-cobb-salad-half-salad-with-dressing"
+        },
+        {
+          "category": "Two For You",
+          "name": "Sweet Honey Pecan Salad (Half Salad with Dressing)",
+          "contains": [
+            "milk",
+            "treenuts",
+            "mustard"
+          ],
+          "id": "two-for-you-sweet-honey-pecan-salad-half-salad-with-dressing"
+        },
+        {
+          "category": "Two For You",
+          "name": "Chicken Avocado Chop Salad (Half Salad with Dressing)",
+          "contains": [
+            "milk",
+            "mustard"
+          ],
+          "id": "two-for-you-chicken-avocado-chop-salad-half-salad-with-dressing"
+        },
+        {
+          "category": "Kid’s Menu",
+          "name": "Bacon & Egg",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "kids-menu-bacon-egg"
+        },
+        {
+          "category": "Kid’s Menu",
+          "name": "Chocolate Chip Pancake",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "kids-menu-chocolate-chip-pancake"
+        },
+        {
+          "category": "Kid’s Menu",
+          "name": "Half Waffle",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "kids-menu-half-waffle"
+        },
+        {
+          "category": "Kid’s Menu",
+          "name": "French Toast",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "kids-menu-french-toast"
+        },
+        {
+          "category": "Kid’s Menu",
+          "name": "Grilled Cheese",
+          "contains": [
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "kids-menu-grilled-cheese"
+        },
+        {
+          "category": "Kid’s Menu",
+          "name": "Steel-Cut Oatmeal",
+          "contains": [
+            "wheat",
+            "gluten"
+          ],
+          "id": "kids-menu-steel-cut-oatmeal"
+        },
+        {
+          "category": "Kid’s Menu",
+          "name": "Granola Bowl",
+          "contains": [
+            "milk",
+            "treenuts",
+            "wheat",
+            "gluten"
+          ],
+          "id": "kids-menu-granola-bowl"
+        },
+        {
+          "category": "Juice & Sips",
+          "name": "Morning Meditation",
+          "contains": [],
+          "id": "juice-sips-morning-meditation"
+        },
+        {
+          "category": "Juice & Sips",
+          "name": "Kale Tonic",
+          "contains": [],
+          "id": "juice-sips-kale-tonic"
+        },
+        {
+          "category": "Juice & Sips",
+          "name": "Purple Haze",
+          "contains": [],
+          "id": "juice-sips-purple-haze"
+        },
+        {
+          "category": "Iced Coffee",
+          "name": "Iced Coffee",
+          "contains": [
+            "milk"
+          ],
+          "id": "iced-coffee-iced-coffee"
+        },
+        {
+          "category": "Iced Coffee",
+          "name": "Mint Mocha Iced Coffee",
+          "contains": [
+            "milk",
+            "soy"
+          ],
+          "id": "iced-coffee-mint-mocha-iced-coffee"
+        },
+        {
+          "category": "Iced Coffee",
+          "name": "Honey Caramel Crunch Iced Coffee",
+          "contains": [
+            "milk",
+            "soy",
+            "treenuts"
+          ],
+          "id": "iced-coffee-honey-caramel-crunch-iced-coffee"
+        },
+        {
+          "category": "Sparklers",
+          "name": "Blood Orange Citrus Sparkler",
+          "contains": [],
+          "id": "sparklers-blood-orange-citrus-sparkler"
+        },
+        {
+          "category": "Sparklers",
+          "name": "Passion Fruit Mint Sparkler",
+          "contains": [],
+          "id": "sparklers-passion-fruit-mint-sparkler"
+        },
+        {
+          "category": "Sparklers",
+          "name": "Berry Lime Sparkler",
+          "contains": [],
+          "id": "sparklers-berry-lime-sparkler"
+        },
+        {
+          "category": "Boozy",
+          "name": "Mimosa",
+          "contains": [],
+          "id": "boozy-mimosa"
+        },
+        {
+          "category": "Boozy",
+          "name": "Spiked Lavender Lemonade",
+          "contains": [],
+          "id": "boozy-spiked-lavender-lemonade"
+        },
+        {
+          "category": "Boozy",
+          "name": "Pomegranate Sunrise",
+          "contains": [],
+          "id": "boozy-pomegranate-sunrise"
+        },
+        {
+          "category": "Boozy",
+          "name": "Cinnamon Toast Cereal Milk",
+          "contains": [],
+          "id": "boozy-cinnamon-toast-cereal-milk"
+        },
+        {
+          "category": "Boozy",
+          "name": "Pitcher of Blackberry Bramble Sangria",
+          "contains": [],
+          "id": "boozy-pitcher-of-blackberry-bramble-sangria"
+        },
+        {
+          "category": "Boozy",
+          "name": "Million Dollar Bloody Mary",
+          "contains": [
+            "fish",
+            "celery"
+          ],
+          "id": "boozy-million-dollar-bloody-mary"
+        },
+        {
+          "category": "Boozy",
+          "name": "Classic Mimosa",
+          "contains": [],
+          "id": "boozy-classic-mimosa"
+        },
+        {
+          "category": "Boozy",
+          "name": "Pomegranate Mimosa",
+          "contains": [],
+          "id": "boozy-pomegranate-mimosa"
+        },
+        {
+          "category": "Boozy",
+          "name": "Lavender Lemon Mimosa",
+          "contains": [],
+          "id": "boozy-lavender-lemon-mimosa"
+        },
+        {
+          "category": "Boozy",
+          "name": "Cold Brew Tini",
+          "contains": [
+            "milk",
+            "soy"
+          ],
+          "id": "boozy-cold-brew-tini"
+        },
+        {
+          "category": "Sides",
+          "name": "Million Dollar Bacon",
+          "contains": [],
+          "id": "sides-million-dollar-bacon"
+        },
+        {
+          "category": "Sides",
+          "name": "Million Dollar Potatoes",
+          "contains": [
+            "milk"
+          ],
+          "id": "sides-million-dollar-potatoes"
+        },
+        {
+          "category": "Sides",
+          "name": "Bob's Red Mill Buttered Grits",
+          "contains": [
+            "milk",
+            "soy"
+          ],
+          "id": "sides-bobs-red-mill-buttered-grits"
+        },
+        {
+          "category": "Sides",
+          "name": "Bob's Red Mill Cheesy Grits",
+          "contains": [
+            "milk"
+          ],
+          "id": "sides-bobs-red-mill-cheesy-grits"
+        },
+        {
+          "category": "Sides",
+          "name": "Cup of Fresh, Seasonal Fruit",
+          "contains": [],
+          "id": "sides-cup-of-fresh-seasonal-fruit"
+        },
+        {
+          "category": "Sides",
+          "name": "Fresh, Seasoned Potatoes",
+          "contains": [],
+          "id": "sides-fresh-seasoned-potatoes"
+        },
+        {
+          "category": "Sides",
+          "name": "Hardwood Smoked Bacon",
+          "contains": [],
+          "id": "sides-hardwood-smoked-bacon"
+        },
+        {
+          "category": "Sides",
+          "name": "Pork Sausage Links",
+          "contains": [],
+          "id": "sides-pork-sausage-links"
+        },
+        {
+          "category": "Sides",
+          "name": "Turkey Sausage Links",
+          "contains": [
+            "soy",
+            "mustard"
+          ],
+          "id": "sides-turkey-sausage-links"
+        },
+        {
+          "category": "Sides",
+          "name": "Chicken Apple Sausage Patties",
+          "contains": [],
+          "id": "sides-chicken-apple-sausage-patties"
+        },
+        {
+          "category": "Sides",
+          "name": "Smoked Ham",
+          "contains": [
+            "celery"
+          ],
+          "id": "sides-smoked-ham"
+        },
+        {
+          "category": "Sides",
+          "name": "Biscuits & Turkey Sausage Gravy",
+          "contains": [
+            "milk",
+            "soy",
+            "wheat",
+            "celery",
+            "gluten"
+          ],
+          "id": "sides-biscuits-turkey-sausage-gravy"
+        },
+        {
+          "category": "Sides",
+          "name": "One Cage-Free Egg",
+          "contains": [
+            "egg",
+            "milk",
+            "soy"
+          ],
+          "id": "sides-one-cage-free-egg"
+        },
+        {
+          "category": "Sides",
+          "name": "Two Cage-Free Eggs",
+          "contains": [
+            "egg",
+            "milk",
+            "soy"
+          ],
+          "id": "sides-two-cage-free-eggs"
+        },
+        {
+          "category": "Sides",
+          "name": "Whole Grain Artisan Toast with All-Natural House Preserves & Whipped Butter",
+          "contains": [
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "sides-whole-grain-artisan-toast-with-all-natural-house-preserves-whipped-butter"
+        },
+        {
+          "category": "Sides",
+          "name": "English Muffin",
+          "contains": [
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "sides-english-muffin"
+        },
+        {
+          "category": "Sides",
+          "name": "Gluten-Free Toast with All-Natural House Preserves",
+          "contains": [],
+          "id": "sides-gluten-free-toast-with-all-natural-house-preserves"
+        },
+        {
+          "category": "Sides",
+          "name": "Freshly Baked Blueberry Muffin",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten"
+          ],
+          "id": "sides-freshly-baked-blueberry-muffin"
+        },
+        {
+          "category": "Sides",
+          "name": "Lemon-Dressed Organic Mixed Greens",
+          "contains": [
+            "mustard"
+          ],
+          "id": "sides-lemon-dressed-organic-mixed-greens"
+        },
+        {
+          "category": "Sides",
+          "name": "Bowl of Tomato Basil Soup",
+          "contains": [
+            "milk",
+            "soy",
+            "wheat",
+            "celery",
+            "gluten"
+          ],
+          "id": "sides-bowl-of-tomato-basil-soup"
+        },
+        {
+          "category": "Sides",
+          "name": "Cup of Tomato Basil Soup",
+          "contains": [
+            "milk",
+            "soy",
+            "wheat",
+            "celery",
+            "gluten"
+          ],
+          "id": "sides-cup-of-tomato-basil-soup"
+        },
+        {
+          "category": "Sides",
+          "name": "Biscuit with Butter, Honey and Preserves",
+          "contains": [
+            "milk",
+            "soy",
+            "wheat",
+            "gluten"
+          ],
+          "id": "sides-biscuit-with-butter-honey-and-preserves"
+        },
+        {
+          "category": "Sides",
+          "name": "Sliced Avocado",
+          "contains": [],
+          "id": "sides-sliced-avocado"
+        },
+        {
+          "category": "Sides",
+          "name": "Grab N Go GF Marshmallow Treat",
+          "contains": [
+            "milk"
+          ],
+          "id": "sides-grab-n-go-gf-marshmallow-treat"
+        },
+        {
+          "category": "Sides",
+          "name": "Grab N Go GF Brownie",
+          "contains": [
+            "egg",
+            "milk",
+            "soy"
+          ],
+          "id": "sides-grab-n-go-gf-brownie"
+        },
+        {
+          "category": "Sides",
+          "name": "Grab N Go Salted Caramel Cookie",
+          "contains": [
+            "egg",
+            "milk",
+            "soy",
+            "treenuts",
+            "wheat",
+            "gluten"
+          ],
+          "id": "sides-grab-n-go-salted-caramel-cookie"
+        },
+        {
+          "category": "More Drinks",
+          "name": "Project Sunrise Coffee",
+          "contains": [],
+          "id": "more-drinks-project-sunrise-coffee"
+        },
+        {
+          "category": "More Drinks",
+          "name": "Decaf Coffee",
+          "contains": [],
+          "id": "more-drinks-decaf-coffee"
+        },
+        {
+          "category": "More Drinks",
+          "name": "Herbal Teas",
+          "contains": [],
+          "id": "more-drinks-herbal-teas"
+        },
+        {
+          "category": "More Drinks",
+          "name": "Fresh-Brewed Iced Tea (Unsweetened)",
+          "contains": [],
+          "id": "more-drinks-fresh-brewed-iced-tea-unsweetened"
+        },
+        {
+          "category": "More Drinks",
+          "name": "Fresh-Brewed Iced Tea (Sweetened)",
+          "contains": [],
+          "id": "more-drinks-fresh-brewed-iced-tea-sweetened"
+        },
+        {
+          "category": "More Drinks",
+          "name": "Fresh-Brewed Iced Tea (Blackberry)",
+          "contains": [],
+          "id": "more-drinks-fresh-brewed-iced-tea-blackberry"
+        },
+        {
+          "category": "More Drinks",
+          "name": "Hot Chocolate",
+          "contains": [
+            "milk",
+            "soy"
+          ],
+          "id": "more-drinks-hot-chocolate"
+        },
+        {
+          "category": "More Drinks",
+          "name": "Reduced-Fat Milk (Small)",
+          "contains": [
+            "milk"
+          ],
+          "id": "more-drinks-reduced-fat-milk-small"
+        },
+        {
+          "category": "More Drinks",
+          "name": "Reduced-fat Milk (Large)",
+          "contains": [
+            "milk"
+          ],
+          "id": "more-drinks-reduced-fat-milk-large"
+        },
+        {
+          "category": "More Drinks",
+          "name": "Oat Milk (Small)",
+          "contains": [],
+          "id": "more-drinks-oat-milk-small"
+        },
+        {
+          "category": "More Drinks",
+          "name": "Oat Milk (Large)",
+          "contains": [],
+          "id": "more-drinks-oat-milk-large"
+        },
+        {
+          "category": "More Drinks",
+          "name": "Chocolate Milk (Small)",
+          "contains": [
+            "milk"
+          ],
+          "id": "more-drinks-chocolate-milk-small"
+        },
+        {
+          "category": "More Drinks",
+          "name": "Chocolate Milk (Large)",
+          "contains": [
+            "milk"
+          ],
+          "id": "more-drinks-chocolate-milk-large"
+        },
+        {
+          "category": "More Drinks",
+          "name": "100% Cold Squeezed Orange Juice (Small)",
+          "contains": [],
+          "id": "more-drinks-100-cold-squeezed-orange-juice-small"
+        },
+        {
+          "category": "More Drinks",
+          "name": "100% Cold Squeezed Orange Juice (Large)",
+          "contains": [],
+          "id": "more-drinks-100-cold-squeezed-orange-juice-large"
+        },
+        {
+          "category": "More Drinks",
+          "name": "Grapefruit Juice (Small)",
+          "contains": [],
+          "id": "more-drinks-grapefruit-juice-small"
+        },
+        {
+          "category": "More Drinks",
+          "name": "Grapefruit Juice (Large)",
+          "contains": [],
+          "id": "more-drinks-grapefruit-juice-large"
+        },
+        {
+          "category": "More Drinks",
+          "name": "Apple Juice (Small)",
+          "contains": [],
+          "id": "more-drinks-apple-juice-small"
+        },
+        {
+          "category": "More Drinks",
+          "name": "Apple Juice (Large)",
+          "contains": [],
+          "id": "more-drinks-apple-juice-large"
+        },
+        {
+          "category": "More Drinks",
+          "name": "Cranberry Juice (Small)",
+          "contains": [],
+          "id": "more-drinks-cranberry-juice-small"
+        },
+        {
+          "category": "More Drinks",
+          "name": "Cranberry Juice (Large)",
+          "contains": [],
+          "id": "more-drinks-cranberry-juice-large"
+        },
+        {
+          "category": "More Drinks",
+          "name": "Coke",
+          "contains": [],
+          "id": "more-drinks-coke"
+        },
+        {
+          "category": "More Drinks",
+          "name": "Diet Coke",
+          "contains": [],
+          "id": "more-drinks-diet-coke"
+        },
+        {
+          "category": "More Drinks",
+          "name": "Coke Zero",
+          "contains": [],
+          "id": "more-drinks-coke-zero"
+        },
+        {
+          "category": "More Drinks",
+          "name": "Sprite",
+          "contains": [],
+          "id": "more-drinks-sprite"
+        },
+        {
+          "category": "More Drinks",
+          "name": "Minute Maid Lemonade",
+          "contains": [],
+          "id": "more-drinks-minute-maid-lemonade"
+        },
+        {
+          "category": "More Drinks",
+          "name": "San Pellegrino (Sparkling)",
+          "contains": [],
+          "id": "more-drinks-san-pellegrino-sparkling"
+        }
+      ],
+      "source": "official",
+      "lastVerified": "2026-10-22"
+    },
+    {
+      "id": "chain-freddys",
+      "name": "Freddy's Frozen Custard & Steakburgers",
+      "website": "https://www.freddys.com",
+      "cuisine": "Burgers & frozen custard",
+      "keywords": [
+        "freddy's",
+        "freddys",
+        "burger",
+        "steakburger",
+        "frozen custard",
+        "ice cream",
+        "hot dogs",
+        "fast food"
+      ],
+      "sourceUrl": "https://www.freddys.com/nutrition-and-allergens",
+      "logo": "https://www.freddys.com/themes/custom/freddys/favicon/apple-icon-57x57.png",
+      "covers": [
+        "peanut",
+        "treenuts",
+        "egg",
+        "milk",
+        "wheat",
+        "gluten",
+        "soy",
+        "fish",
+        "shellfish",
+        "sesame"
+      ],
+      "notes": [],
+      "menu": [
+        {
+          "category": "Chicken & Hot Dogs",
+          "name": "Grilled Chicken Club",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "soy",
+            "sesame"
+          ],
+          "id": "chicken-hot-dogs-grilled-chicken-club"
+        },
+        {
+          "category": "Chicken & Hot Dogs",
+          "name": "Grilled Chicken Club w/o Bun",
+          "contains": [
+            "egg",
+            "milk"
+          ],
+          "id": "chicken-hot-dogs-grilled-chicken-club-wo-bun"
+        },
+        {
+          "category": "Chicken & Hot Dogs",
+          "name": "Crispy Chicken Club",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "soy",
+            "sesame"
+          ],
+          "id": "chicken-hot-dogs-crispy-chicken-club"
+        },
+        {
+          "category": "Chicken & Hot Dogs",
+          "name": "Crispy Chicken Club w/o Bun",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "soy"
+          ],
+          "id": "chicken-hot-dogs-crispy-chicken-club-wo-bun"
+        },
+        {
+          "category": "Chicken & Hot Dogs",
+          "name": "Hot Dog",
+          "contains": [
+            "wheat",
+            "gluten",
+            "soy",
+            "sesame"
+          ],
+          "id": "chicken-hot-dogs-hot-dog"
+        },
+        {
+          "category": "Chicken & Hot Dogs",
+          "name": "Hot Dog w/o Bun",
+          "contains": [],
+          "id": "chicken-hot-dogs-hot-dog-wo-bun"
+        },
+        {
+          "category": "Chicken & Hot Dogs",
+          "name": "Chicken Tenders",
+          "contains": [
+            "wheat",
+            "gluten"
+          ],
+          "id": "chicken-hot-dogs-chicken-tenders"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "Banana",
+          "contains": [],
+          "id": "frozen-custard-toppings-banana"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "Banana Syrup",
+          "contains": [],
+          "id": "frozen-custard-toppings-banana-syrup"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "(USA) Brownies",
+          "contains": [
+            "egg",
+            "wheat",
+            "gluten"
+          ],
+          "id": "frozen-custard-toppings-usa-brownies"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "(Canada) Brownies",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "soy"
+          ],
+          "id": "frozen-custard-toppings-canada-brownies"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "Butterfinger®️",
+          "contains": [
+            "peanut",
+            "milk",
+            "soy"
+          ],
+          "id": "frozen-custard-toppings-butterfinger"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "Caramel Sauce",
+          "contains": [
+            "milk"
+          ],
+          "id": "frozen-custard-toppings-caramel-sauce"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "Cone, Cake",
+          "contains": [
+            "wheat",
+            "gluten"
+          ],
+          "id": "frozen-custard-toppings-cone-cake"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "Cheesecake",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "soy"
+          ],
+          "id": "frozen-custard-toppings-cheesecake"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "Cherry Topping",
+          "contains": [],
+          "id": "frozen-custard-toppings-cherry-topping"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "Chocolate Chips",
+          "contains": [
+            "milk",
+            "soy"
+          ],
+          "id": "frozen-custard-toppings-chocolate-chips"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "Chocolate Syrup",
+          "contains": [],
+          "id": "frozen-custard-toppings-chocolate-syrup"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "Cinnamon Streusel",
+          "contains": [
+            "wheat",
+            "gluten"
+          ],
+          "id": "frozen-custard-toppings-cinnamon-streusel"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "Cold Brew Coffee",
+          "contains": [],
+          "id": "frozen-custard-toppings-cold-brew-coffee"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "Cookie Dough",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "soy"
+          ],
+          "id": "frozen-custard-toppings-cookie-dough"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "(USA) Gummy Worms",
+          "contains": [],
+          "id": "frozen-custard-toppings-usa-gummy-worms"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "(Canada) Gummy Worms",
+          "contains": [
+            "soy"
+          ],
+          "id": "frozen-custard-toppings-canada-gummy-worms"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "Heath®️ Toffee",
+          "contains": [
+            "treenuts",
+            "milk",
+            "soy"
+          ],
+          "id": "frozen-custard-toppings-heath-toffee"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "Hot Fudge",
+          "contains": [
+            "milk",
+            "soy"
+          ],
+          "id": "frozen-custard-toppings-hot-fudge"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "Malt Syrup",
+          "contains": [
+            "wheat",
+            "gluten"
+          ],
+          "id": "frozen-custard-toppings-malt-syrup"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "Marshmallow",
+          "contains": [
+            "egg"
+          ],
+          "id": "frozen-custard-toppings-marshmallow"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "M&M®️ Candies",
+          "contains": [
+            "milk",
+            "soy"
+          ],
+          "id": "frozen-custard-toppings-mm-candies"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "OREO®️",
+          "contains": [
+            "wheat",
+            "gluten",
+            "soy"
+          ],
+          "id": "frozen-custard-toppings-oreo"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "Pecans",
+          "contains": [
+            "treenuts"
+          ],
+          "id": "frozen-custard-toppings-pecans"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "Reese's®️ Peanut Butter Cup",
+          "contains": [
+            "peanut",
+            "milk",
+            "soy"
+          ],
+          "id": "frozen-custard-toppings-reeses-peanut-butter-cup"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "Reese's Peanut Butter Sauce",
+          "contains": [
+            "peanut"
+          ],
+          "id": "frozen-custard-toppings-reeses-peanut-butter-sauce"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "Sprinkles",
+          "contains": [
+            "soy"
+          ],
+          "id": "frozen-custard-toppings-sprinkles"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "Strawberry",
+          "contains": [],
+          "id": "frozen-custard-toppings-strawberry"
+        },
+        {
+          "category": "Frozen Custard Toppings",
+          "name": "Whipped Cream",
+          "contains": [
+            "milk"
+          ],
+          "id": "frozen-custard-toppings-whipped-cream"
+        },
+        {
+          "category": "Sides",
+          "name": "Applesauce",
+          "contains": [],
+          "id": "sides-applesauce"
+        },
+        {
+          "category": "Sides",
+          "name": "Freddy's Kettle Cooked Potato Chips",
+          "contains": [
+            "soy"
+          ],
+          "id": "sides-freddys-kettle-cooked-potato-chips"
+        },
+        {
+          "category": "Sides",
+          "name": "Cheese Curds",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "soy"
+          ],
+          "id": "sides-cheese-curds"
+        },
+        {
+          "category": "Sides",
+          "name": "Cheese Fries",
+          "contains": [
+            "milk"
+          ],
+          "id": "sides-cheese-fries"
+        },
+        {
+          "category": "Sides",
+          "name": "Chili Bowl",
+          "contains": [
+            "milk",
+            "soy"
+          ],
+          "id": "sides-chili-bowl"
+        },
+        {
+          "category": "Sides",
+          "name": "Chili Cheese Fries",
+          "contains": [
+            "milk",
+            "soy"
+          ],
+          "id": "sides-chili-cheese-fries"
+        },
+        {
+          "category": "Sides",
+          "name": "Freddy's Fries",
+          "contains": [],
+          "id": "sides-freddys-fries"
+        },
+        {
+          "category": "Sides",
+          "name": "Freddy's Tots",
+          "contains": [],
+          "id": "sides-freddys-tots"
+        },
+        {
+          "category": "Sides",
+          "name": "Onion Rings",
+          "contains": [
+            "milk",
+            "wheat",
+            "gluten"
+          ],
+          "id": "sides-onion-rings"
+        },
+        {
+          "category": "Steakburgers",
+          "name": "Steakburger w/ Cheese",
+          "contains": [
+            "milk",
+            "wheat",
+            "gluten",
+            "soy",
+            "sesame"
+          ],
+          "id": "steakburgers-steakburger-w-cheese"
+        },
+        {
+          "category": "Steakburgers",
+          "name": "Steakburger w/o Cheese",
+          "contains": [
+            "wheat",
+            "gluten",
+            "soy",
+            "sesame"
+          ],
+          "id": "steakburgers-steakburger-wo-cheese"
+        },
+        {
+          "category": "Steakburgers",
+          "name": "Steakburger w/o Bun",
+          "contains": [],
+          "id": "steakburgers-steakburger-wo-bun"
+        },
+        {
+          "category": "Steakburgers",
+          "name": "Bacon & Cheese Steakburger",
+          "contains": [
+            "milk",
+            "wheat",
+            "gluten",
+            "soy",
+            "sesame"
+          ],
+          "id": "steakburgers-bacon-cheese-steakburger"
+        },
+        {
+          "category": "Steakburgers",
+          "name": "Jalapeño Pepperjack",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "soy",
+            "sesame"
+          ],
+          "id": "steakburgers-jalapeno-pepperjack"
+        },
+        {
+          "category": "Steakburgers",
+          "name": "California Style Steakburger",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "soy",
+            "sesame"
+          ],
+          "id": "steakburgers-california-style-steakburger"
+        },
+        {
+          "category": "Steakburgers",
+          "name": "Patty Melt",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "soy",
+            "sesame"
+          ],
+          "id": "steakburgers-patty-melt"
+        },
+        {
+          "category": "Steakburgers",
+          "name": "Prime Rib Steakburger",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "soy",
+            "sesame"
+          ],
+          "id": "steakburgers-prime-rib-steakburger"
+        },
+        {
+          "category": "Steakburgers",
+          "name": "Grilled Cheese Steakburger",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "soy",
+            "sesame"
+          ],
+          "id": "steakburgers-grilled-cheese-steakburger"
+        },
+        {
+          "category": "Steakburgers",
+          "name": "Veggie Burger w/ Cheese",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "soy",
+            "sesame"
+          ],
+          "id": "steakburgers-veggie-burger-w-cheese"
+        },
+        {
+          "category": "Steakburgers",
+          "name": "Veggie Burger w/o Cheese",
+          "contains": [
+            "egg",
+            "wheat",
+            "gluten",
+            "soy",
+            "sesame"
+          ],
+          "id": "steakburgers-veggie-burger-wo-cheese"
+        },
+        {
+          "category": "Steakburgers",
+          "name": "Veggie Burger w/o Bun",
+          "contains": [
+            "egg",
+            "wheat",
+            "gluten",
+            "soy"
+          ],
+          "id": "steakburgers-veggie-burger-wo-bun"
+        },
+        {
+          "category": "Bowls",
+          "name": "Crispy Chicken Bowl (Excludes Dressing)",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "soy"
+          ],
+          "id": "bowls-crispy-chicken-bowl-excludes-dressing"
+        },
+        {
+          "category": "Bowls",
+          "name": "Grilled Chicken Bowl (Excludes Dressing)",
+          "contains": [
+            "milk"
+          ],
+          "id": "bowls-grilled-chicken-bowl-excludes-dressing"
+        },
+        {
+          "category": "Bowls",
+          "name": "Steakburger Bowl (Excludes Dressing)",
+          "contains": [
+            "milk"
+          ],
+          "id": "bowls-steakburger-bowl-excludes-dressing"
+        },
+        {
+          "category": "Bowls",
+          "name": "Veggie Burger Bowl (Excludes Dressing)",
+          "contains": [
+            "milk",
+            "wheat",
+            "gluten",
+            "soy"
+          ],
+          "id": "bowls-veggie-burger-bowl-excludes-dressing"
+        },
+        {
+          "category": "Drinks",
+          "name": "Pepsi®️",
+          "contains": [],
+          "id": "drinks-pepsi"
+        },
+        {
+          "category": "Drinks",
+          "name": "Diet Pepsi®️",
+          "contains": [],
+          "id": "drinks-diet-pepsi"
+        },
+        {
+          "category": "Drinks",
+          "name": "Dr. Pepper®️",
+          "contains": [],
+          "id": "drinks-dr-pepper"
+        },
+        {
+          "category": "Drinks",
+          "name": "Diet Dr. Pepper®️",
+          "contains": [],
+          "id": "drinks-diet-dr-pepper"
+        },
+        {
+          "category": "Drinks",
+          "name": "MUG®️ Root Beer",
+          "contains": [],
+          "id": "drinks-mug-root-beer"
+        },
+        {
+          "category": "Drinks",
+          "name": "Mountain Dew®️",
+          "contains": [],
+          "id": "drinks-mountain-dew"
+        },
+        {
+          "category": "Drinks",
+          "name": "Diet Mountain Dew®️",
+          "contains": [],
+          "id": "drinks-diet-mountain-dew"
+        },
+        {
+          "category": "Drinks",
+          "name": "Mountain Dew CODE RED®️",
+          "contains": [],
+          "id": "drinks-mountain-dew-code-red"
+        },
+        {
+          "category": "Drinks",
+          "name": "Tropicana®️ Lemonade",
+          "contains": [],
+          "id": "drinks-tropicana-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Tropicana®️ Pink Lemonade",
+          "contains": [],
+          "id": "drinks-tropicana-pink-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Mist Twist®️",
+          "contains": [],
+          "id": "drinks-mist-twist"
+        },
+        {
+          "category": "Drinks",
+          "name": "Tropicana®️ Fruit Punch",
+          "contains": [],
+          "id": "drinks-tropicana-fruit-punch"
+        },
+        {
+          "category": "Drinks",
+          "name": "Tropicana®️ Light Lemondae",
+          "contains": [],
+          "id": "drinks-tropicana-light-lemondae"
+        },
+        {
+          "category": "Drinks",
+          "name": "Tropicana®️ Orange Twister",
+          "contains": [],
+          "id": "drinks-tropicana-orange-twister"
+        },
+        {
+          "category": "Drinks",
+          "name": "Pepsi®️ Wild Cherry",
+          "contains": [],
+          "id": "drinks-pepsi-wild-cherry"
+        },
+        {
+          "category": "Drinks",
+          "name": "Splenda®️ Sugar Free Sweet Tea",
+          "contains": [],
+          "id": "drinks-splenda-sugar-free-sweet-tea"
+        },
+        {
+          "category": "Drinks",
+          "name": "Luzianne®️ Iced Tea",
+          "contains": [],
+          "id": "drinks-luzianne-iced-tea"
+        },
+        {
+          "category": "Drinks",
+          "name": "Luzianne®️ Iced Tea Unsweet",
+          "contains": [],
+          "id": "drinks-luzianne-iced-tea-unsweet"
+        },
+        {
+          "category": "Drinks",
+          "name": "Lipton Brisk®️ Raspberry",
+          "contains": [],
+          "id": "drinks-lipton-brisk-raspberry"
+        },
+        {
+          "category": "Drinks",
+          "name": "Lipton Brisk®️ Peach",
+          "contains": [],
+          "id": "drinks-lipton-brisk-peach"
+        },
+        {
+          "category": "Drinks",
+          "name": "Sobe®️ Lifewater Yumberry Pomegranate",
+          "contains": [],
+          "id": "drinks-sobe-lifewater-yumberry-pomegranate"
+        },
+        {
+          "category": "Drinks",
+          "name": "Freddy's Bevies - Custard Cream Soda (All Flavors)",
+          "contains": [
+            "egg",
+            "milk"
+          ],
+          "id": "drinks-freddys-bevies-custard-cream-soda-all-flavors"
+        },
+        {
+          "category": "Drinks",
+          "name": "Freddy's Bevies - Flavored Lemonades (All Flavors)",
+          "contains": [],
+          "id": "drinks-freddys-bevies-flavored-lemonades-all-flavors"
+        },
+        {
+          "category": "Drinks",
+          "name": "Freddy's Bevies - Flavored Teas (All Flavors)",
+          "contains": [],
+          "id": "drinks-freddys-bevies-flavored-teas-all-flavors"
+        },
+        {
+          "category": "Frozen Custard",
+          "name": "Cake Cone (Vanilla / Chocolate)",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten"
+          ],
+          "id": "frozen-custard-cake-cone-vanilla-chocolate"
+        },
+        {
+          "category": "Frozen Custard",
+          "name": "Chocolate Brownie Delight (Sundae / Shake / Concrete)",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "soy"
+          ],
+          "id": "frozen-custard-chocolate-brownie-delight-sundae-shake-concrete"
+        },
+        {
+          "category": "Frozen Custard",
+          "name": "Chocolate Chip Custard Cookie",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "soy"
+          ],
+          "id": "frozen-custard-chocolate-chip-custard-cookie"
+        },
+        {
+          "category": "Frozen Custard",
+          "name": "Cold Brew Caramel Crunch (Sundae / Concrete)",
+          "contains": [
+            "treenuts",
+            "egg",
+            "milk",
+            "soy"
+          ],
+          "id": "frozen-custard-cold-brew-caramel-crunch-sundae-concrete"
+        },
+        {
+          "category": "Frozen Custard",
+          "name": "Dirt 'n Worms (Sundae / Concrete)",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "soy"
+          ],
+          "id": "frozen-custard-dirt-n-worms-sundae-concrete"
+        },
+        {
+          "category": "Frozen Custard",
+          "name": "Frozen Custard (Vanilla / Chocolate)",
+          "contains": [
+            "egg",
+            "milk"
+          ],
+          "id": "frozen-custard-frozen-custard-vanilla-chocolate"
+        },
+        {
+          "category": "Frozen Custard",
+          "name": "Malt (Vanilla / Chocolate)",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten"
+          ],
+          "id": "frozen-custard-malt-vanilla-chocolate"
+        },
+        {
+          "category": "Frozen Custard",
+          "name": "OREO® Double Trouble (Shake / Sundae / Concrete)",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "soy"
+          ],
+          "id": "frozen-custard-oreo-double-trouble-shake-sundae-concrete"
+        },
+        {
+          "category": "Frozen Custard",
+          "name": "OREO® Custard Cookie (Chocolate / Vanilla)",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "soy"
+          ],
+          "id": "frozen-custard-oreo-custard-cookie-chocolate-vanilla"
+        },
+        {
+          "category": "Frozen Custard",
+          "name": "Peanut Butter Bananza (Sundae / Shake / Concrete)",
+          "contains": [
+            "peanut",
+            "egg",
+            "milk",
+            "soy"
+          ],
+          "id": "frozen-custard-peanut-butter-bananza-sundae-shake-concrete"
+        },
+        {
+          "category": "Frozen Custard",
+          "name": "Reese's Royale (Sundae / Shake / Concrete)",
+          "contains": [
+            "peanut",
+            "egg",
+            "milk",
+            "soy"
+          ],
+          "id": "frozen-custard-reeses-royale-sundae-shake-concrete"
+        },
+        {
+          "category": "Frozen Custard",
+          "name": "Shake (Vanilla / Chocolate)",
+          "contains": [
+            "egg",
+            "milk"
+          ],
+          "id": "frozen-custard-shake-vanilla-chocolate"
+        },
+        {
+          "category": "Frozen Custard",
+          "name": "Signature Turtle (Sundae / Shake / Concrete)",
+          "contains": [
+            "treenuts",
+            "egg",
+            "milk",
+            "soy"
+          ],
+          "id": "frozen-custard-signature-turtle-sundae-shake-concrete"
+        },
+        {
+          "category": "Frozen Custard",
+          "name": "Strawberry Dreamcake (Shake / Sundae / Concete)",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "soy"
+          ],
+          "id": "frozen-custard-strawberry-dreamcake-shake-sundae-concete"
+        },
+        {
+          "category": "Frozen Custard",
+          "name": "Waffle Cone (Vanilla / Chocolate)",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "soy"
+          ],
+          "id": "frozen-custard-waffle-cone-vanilla-chocolate"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Bacon",
+          "contains": [],
+          "id": "condiments-sandwich-add-ons-bacon"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Bread - Rye",
+          "contains": [
+            "wheat",
+            "gluten",
+            "soy"
+          ],
+          "id": "condiments-sandwich-add-ons-bread-rye"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Bread - Texas Toast",
+          "contains": [
+            "wheat",
+            "gluten",
+            "soy"
+          ],
+          "id": "condiments-sandwich-add-ons-bread-texas-toast"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Bun - Hamburger",
+          "contains": [
+            "wheat",
+            "gluten",
+            "soy",
+            "sesame"
+          ],
+          "id": "condiments-sandwich-add-ons-bun-hamburger"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Bun - Hot Dog",
+          "contains": [
+            "wheat",
+            "gluten",
+            "sesame"
+          ],
+          "id": "condiments-sandwich-add-ons-bun-hot-dog"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Cheese Sauce",
+          "contains": [
+            "milk"
+          ],
+          "id": "condiments-sandwich-add-ons-cheese-sauce"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Cheese - Shredded - Monterey Jack & Cheddar",
+          "contains": [
+            "milk"
+          ],
+          "id": "condiments-sandwich-add-ons-cheese-shredded-monterey-jack-cheddar"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Cheese - Swiss",
+          "contains": [
+            "milk",
+            "soy"
+          ],
+          "id": "condiments-sandwich-add-ons-cheese-swiss"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Cheese - American",
+          "contains": [
+            "milk",
+            "soy"
+          ],
+          "id": "condiments-sandwich-add-ons-cheese-american"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Freddy's Buttermilk Ranch Dressing",
+          "contains": [
+            "egg",
+            "milk"
+          ],
+          "id": "condiments-sandwich-add-ons-freddys-buttermilk-ranch-dressing"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Freddy's Fry Sauce",
+          "contains": [
+            "egg",
+            "soy"
+          ],
+          "id": "condiments-sandwich-add-ons-freddys-fry-sauce"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Freddy's Fry Seasoning",
+          "contains": [],
+          "id": "condiments-sandwich-add-ons-freddys-fry-seasoning"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Freddy's Hickory BBQ Sauce",
+          "contains": [],
+          "id": "condiments-sandwich-add-ons-freddys-hickory-bbq-sauce"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Freddy's Honey Mustard Dressing",
+          "contains": [
+            "soy"
+          ],
+          "id": "condiments-sandwich-add-ons-freddys-honey-mustard-dressing"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Freddy's Jalapeño Fry Sauce",
+          "contains": [
+            "egg",
+            "soy"
+          ],
+          "id": "condiments-sandwich-add-ons-freddys-jalapeno-fry-sauce"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Freddy's Famous Steakburge & Fry Seasoning",
+          "contains": [],
+          "id": "condiments-sandwich-add-ons-freddys-famous-steakburge-fry-seasoning"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Garlic Aioli",
+          "contains": [
+            "egg"
+          ],
+          "id": "condiments-sandwich-add-ons-garlic-aioli"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Marinara",
+          "contains": [],
+          "id": "condiments-sandwich-add-ons-marinara"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Mayonnaise",
+          "contains": [
+            "egg"
+          ],
+          "id": "condiments-sandwich-add-ons-mayonnaise"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Mushrooms, Portobello",
+          "contains": [],
+          "id": "condiments-sandwich-add-ons-mushrooms-portobello"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Onions, Grilled",
+          "contains": [
+            "soy"
+          ],
+          "id": "condiments-sandwich-add-ons-onions-grilled"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Pickle Slices",
+          "contains": [],
+          "id": "condiments-sandwich-add-ons-pickle-slices"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Relish",
+          "contains": [],
+          "id": "condiments-sandwich-add-ons-relish"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Thousand Island Dressing",
+          "contains": [
+            "egg"
+          ],
+          "id": "condiments-sandwich-add-ons-thousand-island-dressing"
+        },
+        {
+          "category": "Condiments & Sandwich Add-Ons",
+          "name": "Tomato Spread",
+          "contains": [
+            "egg"
+          ],
+          "id": "condiments-sandwich-add-ons-tomato-spread"
+        },
+        {
+          "category": "Kids' Meals",
+          "name": "Hot Dog",
+          "contains": [
+            "wheat",
+            "gluten",
+            "soy",
+            "sesame"
+          ],
+          "id": "kids-meals-hot-dog"
+        },
+        {
+          "category": "Kids' Meals",
+          "name": "Chicken Tenders",
+          "contains": [
+            "wheat",
+            "gluten"
+          ],
+          "id": "kids-meals-chicken-tenders"
+        },
+        {
+          "category": "Kids' Meals",
+          "name": "Cheeseburger",
+          "contains": [
+            "milk",
+            "wheat",
+            "gluten",
+            "soy",
+            "sesame"
+          ],
+          "id": "kids-meals-cheeseburger"
+        },
+        {
+          "category": "Kids' Meals",
+          "name": "Steakburger (No Cheese)",
+          "contains": [
+            "wheat",
+            "gluten",
+            "soy",
+            "sesame"
+          ],
+          "id": "kids-meals-steakburger-no-cheese"
+        },
+        {
+          "category": "Limited Time Offerings",
+          "name": "Steakburger Taco",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "soy"
+          ],
+          "id": "limited-time-offerings-steakburger-taco"
+        },
+        {
+          "category": "Limited Time Offerings",
+          "name": "Smoky Bacon Cheddar Stack",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "gluten",
+            "soy"
+          ],
+          "id": "limited-time-offerings-smoky-bacon-cheddar-stack"
+        },
+        {
+          "category": "Limited Time Offerings",
+          "name": "Smoky Bacon Steakburger Taco",
+          "contains": [
+            "egg",
+            "milk"
+          ],
+          "id": "limited-time-offerings-smoky-bacon-steakburger-taco"
+        },
+        {
+          "category": "Limited Time Offerings",
+          "name": "Maple Pecan Concrete",
+          "contains": [
+            "treenuts",
+            "egg",
+            "milk"
+          ],
+          "id": "limited-time-offerings-maple-pecan-concrete"
+        },
+        {
+          "category": "Limited Time Offerings",
+          "name": "Bacon Loaded Tots",
+          "contains": [
+            "milk"
+          ],
+          "id": "limited-time-offerings-bacon-loaded-tots"
+        }
+      ],
+      "source": "official",
+      "lastVerified": "2026-10-22"
+    },
+    {
       "id": "chain-in-n-out",
       "name": "In-N-Out Burger",
       "website": "https://www.in-n-out.com",
@@ -3363,6 +6044,2757 @@
           "ingredients": "Decaf Coffee",
           "contains": [],
           "id": "drinks-extras-decaf-coffee"
+        }
+      ],
+      "source": "official",
+      "lastVerified": "2026-10-22"
+    },
+    {
+      "id": "chain-papa-johns",
+      "name": "Papa John's",
+      "website": "https://www.papajohns.com",
+      "cuisine": "Pizza",
+      "keywords": [
+        "papa johns",
+        "papa john's",
+        "pizza",
+        "wings",
+        "delivery"
+      ],
+      "sourceUrl": "https://papajohns.com/allergens/papa-johns-allergen-guide.html",
+      "logo": "https://papajohns.com/assets/favicons/apple-touch-icon.png",
+      "covers": [
+        "peanut",
+        "treenuts",
+        "egg",
+        "milk",
+        "wheat",
+        "soy",
+        "fish",
+        "shellfish",
+        "sesame"
+      ],
+      "notes": [
+        "* May be produced/stored in a facility that utilizes that allergen.",
+        "*** May contain/produced on the same production lines."
+      ],
+      "menu": [
+        {
+          "category": "Crust Options",
+          "name": "Original Crust",
+          "contains": [
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "crust-options-original-crust"
+        },
+        {
+          "category": "Crust Options",
+          "name": "Thin Crust",
+          "contains": [
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [],
+          "id": "crust-options-thin-crust"
+        },
+        {
+          "category": "Crust Options",
+          "name": "Gluten-Free Crust",
+          "contains": [
+            "egg",
+            "milk",
+            "soy"
+          ],
+          "mayContain": [],
+          "id": "crust-options-gluten-free-crust"
+        },
+        {
+          "category": "Crust Options",
+          "name": "Crispy Parm Crust",
+          "contains": [
+            "milk",
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [],
+          "id": "crust-options-crispy-parm-crust"
+        },
+        {
+          "category": "Crust Options",
+          "name": "Cheesy Calzone Epic Stuffed Crust",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "crust-options-cheesy-calzone-epic-stuffed-crust"
+        },
+        {
+          "category": "Crust Options",
+          "name": "Cheddar Crust Pizza",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "crust-options-cheddar-crust-pizza"
+        },
+        {
+          "category": "Crust Options",
+          "name": "Garlic Epic Stuffed Crust",
+          "contains": [
+            "milk",
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [],
+          "id": "crust-options-garlic-epic-stuffed-crust"
+        },
+        {
+          "category": "Crust Options",
+          "name": "Pan Crust",
+          "contains": [
+            "wheat"
+          ],
+          "mayContain": [
+            "milk",
+            "soy",
+            "sesame"
+          ],
+          "id": "crust-options-pan-crust"
+        },
+        {
+          "category": "Crust Options",
+          "name": "Spicy Garlic Epic Stuffed Crust",
+          "contains": [
+            "milk",
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [],
+          "id": "crust-options-spicy-garlic-epic-stuffed-crust"
+        },
+        {
+          "category": "Cheeses",
+          "name": "Pizza Cheese",
+          "contains": [
+            "milk"
+          ],
+          "mayContain": [],
+          "id": "cheeses-pizza-cheese"
+        },
+        {
+          "category": "Cheeses",
+          "name": "Parmesan/Romano Cheese",
+          "contains": [
+            "milk"
+          ],
+          "mayContain": [],
+          "id": "cheeses-parmesanromano-cheese"
+        },
+        {
+          "category": "Cheeses",
+          "name": "Asiago/Fontina/Provolone Cheese",
+          "contains": [
+            "milk"
+          ],
+          "mayContain": [],
+          "id": "cheeses-asiagofontinaprovolone-cheese"
+        },
+        {
+          "category": "Pizza Toppings",
+          "name": "Pepperoni",
+          "contains": [],
+          "mayContain": [],
+          "id": "pizza-toppings-pepperoni"
+        },
+        {
+          "category": "Pizza Toppings",
+          "name": "Crispy Cupping Pepperoni",
+          "contains": [],
+          "mayContain": [],
+          "id": "pizza-toppings-crispy-cupping-pepperoni"
+        },
+        {
+          "category": "Pizza Toppings",
+          "name": "Deli Pepperoni",
+          "contains": [],
+          "mayContain": [],
+          "id": "pizza-toppings-deli-pepperoni"
+        },
+        {
+          "category": "Pizza Toppings",
+          "name": "Italian Sausage",
+          "contains": [],
+          "mayContain": [],
+          "id": "pizza-toppings-italian-sausage"
+        },
+        {
+          "category": "Pizza Toppings",
+          "name": "Sausage",
+          "contains": [],
+          "mayContain": [],
+          "id": "pizza-toppings-sausage"
+        },
+        {
+          "category": "Pizza Toppings",
+          "name": "Beef",
+          "contains": [],
+          "mayContain": [],
+          "id": "pizza-toppings-beef"
+        },
+        {
+          "category": "Pizza Toppings",
+          "name": "Canadian Bacon",
+          "contains": [],
+          "mayContain": [],
+          "id": "pizza-toppings-canadian-bacon"
+        },
+        {
+          "category": "Pizza Toppings",
+          "name": "Bacon",
+          "contains": [],
+          "mayContain": [],
+          "id": "pizza-toppings-bacon"
+        },
+        {
+          "category": "Pizza Toppings",
+          "name": "Grilled Chicken",
+          "contains": [],
+          "mayContain": [],
+          "id": "pizza-toppings-grilled-chicken"
+        },
+        {
+          "category": "Pizza Toppings",
+          "name": "Meatball",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "pizza-toppings-meatball"
+        },
+        {
+          "category": "Pizza Toppings",
+          "name": "Salami",
+          "contains": [],
+          "mayContain": [],
+          "id": "pizza-toppings-salami"
+        },
+        {
+          "category": "Pizza Toppings",
+          "name": "Seasoned Cheddar Cheese(Cheddar Crust application)",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "pizza-toppings-seasoned-cheddar-cheesecheddar-crust-application"
+        },
+        {
+          "category": "Pizza Toppings",
+          "name": "Philly Steak",
+          "contains": [],
+          "mayContain": [],
+          "id": "pizza-toppings-philly-steak"
+        },
+        {
+          "category": "Pizza Toppings",
+          "name": "Fresh Mushrooms",
+          "contains": [],
+          "mayContain": [
+            "peanut",
+            "treenuts",
+            "egg",
+            "milk",
+            "wheat",
+            "soy",
+            "fish",
+            "shellfish",
+            "sesame"
+          ],
+          "id": "pizza-toppings-fresh-mushrooms"
+        },
+        {
+          "category": "Pizza Toppings",
+          "name": "Pineapple",
+          "contains": [],
+          "mayContain": [],
+          "id": "pizza-toppings-pineapple"
+        },
+        {
+          "category": "Pizza Toppings",
+          "name": "Onions",
+          "contains": [],
+          "mayContain": [
+            "peanut",
+            "treenuts",
+            "egg",
+            "milk",
+            "wheat",
+            "soy",
+            "fish",
+            "shellfish",
+            "sesame"
+          ],
+          "id": "pizza-toppings-onions"
+        },
+        {
+          "category": "Pizza Toppings",
+          "name": "Green Peppers",
+          "contains": [],
+          "mayContain": [
+            "peanut",
+            "treenuts",
+            "egg",
+            "milk",
+            "wheat",
+            "soy",
+            "fish",
+            "shellfish",
+            "sesame"
+          ],
+          "id": "pizza-toppings-green-peppers"
+        },
+        {
+          "category": "Pizza Toppings",
+          "name": "Black Olives",
+          "contains": [],
+          "mayContain": [],
+          "id": "pizza-toppings-black-olives"
+        },
+        {
+          "category": "Pizza Toppings",
+          "name": "Green Olives",
+          "contains": [],
+          "mayContain": [],
+          "id": "pizza-toppings-green-olives"
+        },
+        {
+          "category": "Pizza Toppings",
+          "name": "Sliced Jalapenos",
+          "contains": [],
+          "mayContain": [],
+          "id": "pizza-toppings-sliced-jalapenos"
+        },
+        {
+          "category": "Pizza Toppings",
+          "name": "Banana Peppers",
+          "contains": [],
+          "mayContain": [],
+          "id": "pizza-toppings-banana-peppers"
+        },
+        {
+          "category": "Pizza Toppings",
+          "name": "Anchovies",
+          "contains": [
+            "fish"
+          ],
+          "mayContain": [],
+          "id": "pizza-toppings-anchovies"
+        },
+        {
+          "category": "Pizza Toppings",
+          "name": "Tomatoes",
+          "contains": [],
+          "mayContain": [
+            "peanut",
+            "treenuts",
+            "egg",
+            "milk",
+            "wheat",
+            "soy",
+            "fish",
+            "shellfish",
+            "sesame"
+          ],
+          "id": "pizza-toppings-tomatoes"
+        },
+        {
+          "category": "Pizza Toppings",
+          "name": "Fresh Spinach",
+          "contains": [],
+          "mayContain": [
+            "peanut",
+            "treenuts",
+            "egg",
+            "milk",
+            "wheat",
+            "soy",
+            "fish",
+            "shellfish",
+            "sesame"
+          ],
+          "id": "pizza-toppings-fresh-spinach"
+        },
+        {
+          "category": "Sauces",
+          "name": "Creamy Tomate Sauce",
+          "contains": [
+            "milk"
+          ],
+          "mayContain": [],
+          "id": "sauces-creamy-tomate-sauce"
+        },
+        {
+          "category": "Specialty Pizza",
+          "name": "Pepperoni Pizza",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "specialty-pizza-pepperoni-pizza"
+        },
+        {
+          "category": "Specialty Pizza",
+          "name": "Sausage Pizza",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "specialty-pizza-sausage-pizza"
+        },
+        {
+          "category": "Specialty Pizza",
+          "name": "Cheese Pizza",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "specialty-pizza-cheese-pizza"
+        },
+        {
+          "category": "Specialty Pizza",
+          "name": "The Works Pizza",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [
+            "peanut",
+            "treenuts",
+            "egg",
+            "soy",
+            "fish",
+            "shellfish",
+            "sesame"
+          ],
+          "id": "specialty-pizza-the-works-pizza"
+        },
+        {
+          "category": "Specialty Pizza",
+          "name": "The Meats Pizza",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "specialty-pizza-the-meats-pizza"
+        },
+        {
+          "category": "Specialty Pizza",
+          "name": "Zesty Italian Trio Pizza",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "specialty-pizza-zesty-italian-trio-pizza"
+        },
+        {
+          "category": "Specialty Pizza",
+          "name": "Meatball Pepperoni Pizza",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "specialty-pizza-meatball-pepperoni-pizza"
+        },
+        {
+          "category": "Specialty Pizza",
+          "name": "Super Hawaiian Pizza",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "specialty-pizza-super-hawaiian-pizza"
+        },
+        {
+          "category": "Specialty Pizza",
+          "name": "Crispy Cuppy 'Roni Pizza",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "specialty-pizza-crispy-cuppy-roni-pizza"
+        },
+        {
+          "category": "Specialty Pizza",
+          "name": "Cheesy Burger Pizza",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "specialty-pizza-cheesy-burger-pizza"
+        },
+        {
+          "category": "Specialty Pizza",
+          "name": "BBQ Chicken Bacon Pizza",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [
+            "peanut",
+            "treenuts",
+            "egg",
+            "soy",
+            "fish",
+            "shellfish",
+            "sesame"
+          ],
+          "id": "specialty-pizza-bbq-chicken-bacon-pizza"
+        },
+        {
+          "category": "Specialty Pizza",
+          "name": "Fiery Buffalo Chicken Pizza",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [
+            "peanut",
+            "treenuts",
+            "egg",
+            "soy",
+            "fish",
+            "shellfish",
+            "sesame"
+          ],
+          "id": "specialty-pizza-fiery-buffalo-chicken-pizza"
+        },
+        {
+          "category": "Specialty Pizza",
+          "name": "Philly Cheesesteak Pizza",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [
+            "peanut",
+            "treenuts",
+            "soy",
+            "fish",
+            "shellfish",
+            "sesame"
+          ],
+          "id": "specialty-pizza-philly-cheesesteak-pizza"
+        },
+        {
+          "category": "Specialty Pizza",
+          "name": "Pepperoni, Sausage, & Six Cheese Pizza",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "specialty-pizza-pepperoni-sausage-six-cheese-pizza"
+        },
+        {
+          "category": "Specialty Pizza",
+          "name": "Extra Cheesy Alfredo Pizza",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "specialty-pizza-extra-cheesy-alfredo-pizza"
+        },
+        {
+          "category": "Specialty Pizza",
+          "name": "Fresh Spinach & Tomato Alfredo Pizza",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [
+            "peanut",
+            "treenuts",
+            "egg",
+            "soy",
+            "fish",
+            "shellfish",
+            "sesame"
+          ],
+          "id": "specialty-pizza-fresh-spinach-tomato-alfredo-pizza"
+        },
+        {
+          "category": "Specialty Pizza",
+          "name": "Garden Fresh Pizza",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [
+            "peanut",
+            "treenuts",
+            "egg",
+            "soy",
+            "fish",
+            "shellfish",
+            "sesame"
+          ],
+          "id": "specialty-pizza-garden-fresh-pizza"
+        },
+        {
+          "category": "Specialty Pizza",
+          "name": "Tuscan Six Cheese Pizza",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [
+            "soy"
+          ],
+          "id": "specialty-pizza-tuscan-six-cheese-pizza"
+        },
+        {
+          "category": "Papa Bowls",
+          "name": "Italian Meats Trio Papa Bowl",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [
+            "peanut",
+            "treenuts",
+            "egg",
+            "soy",
+            "fish",
+            "shellfish"
+          ],
+          "id": "papa-bowls-italian-meats-trio-papa-bowl"
+        },
+        {
+          "category": "Papa Bowls",
+          "name": "Garden Veggie Papa Bowl",
+          "contains": [
+            "milk",
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [
+            "peanut",
+            "treenuts",
+            "egg",
+            "fish",
+            "shellfish",
+            "sesame"
+          ],
+          "id": "papa-bowls-garden-veggie-papa-bowl"
+        },
+        {
+          "category": "Papa Bowls",
+          "name": "Chicken Alfredo Papa Bowl",
+          "contains": [
+            "milk",
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [
+            "peanut",
+            "treenuts",
+            "egg",
+            "fish",
+            "shellfish",
+            "sesame"
+          ],
+          "id": "papa-bowls-chicken-alfredo-papa-bowl"
+        },
+        {
+          "category": "Papadias",
+          "name": "Crispy Cuppy 'Roni Papadia",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "papadias-crispy-cuppy-roni-papadia"
+        },
+        {
+          "category": "Papadias",
+          "name": "Cheesy Burger Papadia",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "papadias-cheesy-burger-papadia"
+        },
+        {
+          "category": "Papadias",
+          "name": "Doritos® Cool Ranch® Papadias",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [
+            "peanut",
+            "treenuts",
+            "egg",
+            "soy",
+            "fish",
+            "shellfish",
+            "sesame"
+          ],
+          "id": "papadias-doritos-cool-ranch-papadias"
+        },
+        {
+          "category": "Papadias",
+          "name": "Doritos Cool Ranch Steak Papadia",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [
+            "peanut",
+            "treenuts",
+            "egg",
+            "soy",
+            "fish",
+            "shellfish",
+            "sesame"
+          ],
+          "id": "papadias-doritos-cool-ranch-steak-papadia"
+        },
+        {
+          "category": "Papadias",
+          "name": "Doritos Cool Ranch Beef Papadia",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [
+            "peanut",
+            "treenuts",
+            "egg",
+            "soy",
+            "fish",
+            "shellfish",
+            "sesame"
+          ],
+          "id": "papadias-doritos-cool-ranch-beef-papadia"
+        },
+        {
+          "category": "Papadias",
+          "name": "Parmesan Crusted Philly Cheesesteak Papadia",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [
+            "peanut",
+            "treenuts",
+            "egg",
+            "soy",
+            "fish",
+            "shellfish",
+            "sesame"
+          ],
+          "id": "papadias-parmesan-crusted-philly-cheesesteak-papadia"
+        },
+        {
+          "category": "Papadias",
+          "name": "Parmesan Crusted BBQ Chicken and Bacon Papadia",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [
+            "peanut",
+            "treenuts",
+            "egg",
+            "soy",
+            "fish",
+            "shellfish",
+            "sesame"
+          ],
+          "id": "papadias-parmesan-crusted-bbq-chicken-and-bacon-papadia"
+        },
+        {
+          "category": "Papadias",
+          "name": "Parmesan Crusted Grilled Buffalo Chicken Papadia",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [
+            "peanut",
+            "treenuts",
+            "soy",
+            "fish",
+            "shellfish",
+            "sesame"
+          ],
+          "id": "papadias-parmesan-crusted-grilled-buffalo-chicken-papadia"
+        },
+        {
+          "category": "Papadias",
+          "name": "Parmesan Crusted Meatball Pepperoni Papadia",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "papadias-parmesan-crusted-meatball-pepperoni-papadia"
+        },
+        {
+          "category": "Papadias",
+          "name": "Parmesan Crusted Italian Papadia",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "papadias-parmesan-crusted-italian-papadia"
+        },
+        {
+          "category": "Papadias",
+          "name": "Philly Cheesesteak Papadia",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [
+            "peanut",
+            "treenuts",
+            "egg",
+            "soy",
+            "fish",
+            "shellfish",
+            "sesame"
+          ],
+          "id": "papadias-philly-cheesesteak-papadia"
+        },
+        {
+          "category": "Papadias",
+          "name": "BBQ Chicken and Bacon Papadia",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [
+            "peanut",
+            "treenuts",
+            "egg",
+            "soy",
+            "fish",
+            "shellfish",
+            "sesame"
+          ],
+          "id": "papadias-bbq-chicken-and-bacon-papadia"
+        },
+        {
+          "category": "Papadias",
+          "name": "Grilled Buffalo Chicken Papadia",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [
+            "peanut",
+            "treenuts",
+            "soy",
+            "fish",
+            "shellfish",
+            "sesame"
+          ],
+          "id": "papadias-grilled-buffalo-chicken-papadia"
+        },
+        {
+          "category": "Papadias",
+          "name": "Meatball Pepperoni Papadia",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "papadias-meatball-pepperoni-papadia"
+        },
+        {
+          "category": "Papadias",
+          "name": "Italian Papadia",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "papadias-italian-papadia"
+        },
+        {
+          "category": "Papa Bites",
+          "name": "Oreo Cookie Papa Bites",
+          "contains": [
+            "milk",
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [],
+          "id": "papa-bites-oreo-cookie-papa-bites"
+        },
+        {
+          "category": "Papa Bites",
+          "name": "TWIX® Papa Bites",
+          "contains": [
+            "milk",
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [
+            "peanut",
+            "treenuts",
+            "egg"
+          ],
+          "id": "papa-bites-twix-papa-bites"
+        },
+        {
+          "category": "Papa Bites",
+          "name": "Cuppy 'Roni Papa Bites",
+          "contains": [
+            "milk",
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [],
+          "id": "papa-bites-cuppy-roni-papa-bites"
+        },
+        {
+          "category": "Papa Bites",
+          "name": "Bacon Cheesy Burger Papa Bites",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "papa-bites-bacon-cheesy-burger-papa-bites"
+        },
+        {
+          "category": "Papa Bites",
+          "name": "Calzone Papa Bites",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "papa-bites-calzone-papa-bites"
+        },
+        {
+          "category": "Papa Bites",
+          "name": "Chicken Parmesan Papa Bites",
+          "contains": [
+            "milk",
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [],
+          "id": "papa-bites-chicken-parmesan-papa-bites"
+        },
+        {
+          "category": "Papa Bites",
+          "name": "Jalapeno Papa Bites",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "papa-bites-jalapeno-papa-bites"
+        },
+        {
+          "category": "Wings",
+          "name": "Unsauced Roasted Wings",
+          "contains": [],
+          "mayContain": [],
+          "id": "wings-unsauced-roasted-wings"
+        },
+        {
+          "category": "Wings",
+          "name": "Garlic Parmesan Wings",
+          "contains": [
+            "milk",
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [],
+          "id": "wings-garlic-parmesan-wings"
+        },
+        {
+          "category": "Wings",
+          "name": "Hot Lemon Pepper Wings",
+          "contains": [],
+          "mayContain": [
+            "treenuts"
+          ],
+          "id": "wings-hot-lemon-pepper-wings"
+        },
+        {
+          "category": "Wings",
+          "name": "Buffalo Wings",
+          "contains": [],
+          "mayContain": [
+            "treenuts"
+          ],
+          "id": "wings-buffalo-wings"
+        },
+        {
+          "category": "Wings",
+          "name": "BBQ Wings",
+          "contains": [],
+          "mayContain": [
+            "treenuts"
+          ],
+          "id": "wings-bbq-wings"
+        },
+        {
+          "category": "Wings",
+          "name": "Honey Chipotle Wings",
+          "contains": [],
+          "mayContain": [
+            "treenuts"
+          ],
+          "id": "wings-honey-chipotle-wings"
+        },
+        {
+          "category": "Wings",
+          "name": "Unsauced Boneless Wings",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "wings-unsauced-boneless-wings"
+        },
+        {
+          "category": "Wings",
+          "name": "Garlic Parmesan Boneless Wings",
+          "contains": [
+            "milk",
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [],
+          "id": "wings-garlic-parmesan-boneless-wings"
+        },
+        {
+          "category": "Wings",
+          "name": "Hot Lemon Pepper Boneless Wings",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [
+            "treenuts"
+          ],
+          "id": "wings-hot-lemon-pepper-boneless-wings"
+        },
+        {
+          "category": "Wings",
+          "name": "Buffalo Boneless Wings",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [
+            "treenuts"
+          ],
+          "id": "wings-buffalo-boneless-wings"
+        },
+        {
+          "category": "Wings",
+          "name": "BBQ Boneless Wings",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [
+            "treenuts"
+          ],
+          "id": "wings-bbq-boneless-wings"
+        },
+        {
+          "category": "Wings",
+          "name": "Honey Chipotle Boneless Wings",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [
+            "treenuts"
+          ],
+          "id": "wings-honey-chipotle-boneless-wings"
+        },
+        {
+          "category": "Sides",
+          "name": "Chicken Parmesan Papa Bites",
+          "contains": [
+            "milk",
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [],
+          "id": "sides-chicken-parmesan-papa-bites"
+        },
+        {
+          "category": "Sides",
+          "name": "Jalapeno Papa Bites",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "sides-jalapeno-papa-bites"
+        },
+        {
+          "category": "Sides",
+          "name": "Garlic Knots",
+          "contains": [
+            "milk",
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [],
+          "id": "sides-garlic-knots"
+        },
+        {
+          "category": "Sides",
+          "name": "Original Breadsticks",
+          "contains": [
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "sides-original-breadsticks"
+        },
+        {
+          "category": "Sides",
+          "name": "Garlic Parmesan Breadsticks",
+          "contains": [
+            "milk",
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [],
+          "id": "sides-garlic-parmesan-breadsticks"
+        },
+        {
+          "category": "Sides",
+          "name": "Cheesesticks",
+          "contains": [
+            "milk",
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [],
+          "id": "sides-cheesesticks"
+        },
+        {
+          "category": "Sides",
+          "name": "Bacon Cheesesticks",
+          "contains": [
+            "milk",
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [],
+          "id": "sides-bacon-cheesesticks"
+        },
+        {
+          "category": "Sides",
+          "name": "Tuscan 6-Cheese Cheesesticks",
+          "contains": [
+            "milk",
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [],
+          "id": "sides-tuscan-6-cheese-cheesesticks"
+        },
+        {
+          "category": "Desserts",
+          "name": "Oreo Cookie Papa Bites",
+          "contains": [
+            "milk",
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [],
+          "id": "desserts-oreo-cookie-papa-bites"
+        },
+        {
+          "category": "Desserts",
+          "name": "Cinnamon Pull Aparts",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [],
+          "id": "desserts-cinnamon-pull-aparts"
+        },
+        {
+          "category": "Desserts",
+          "name": "Chocolate Chip Cookie",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [
+            "peanut",
+            "treenuts"
+          ],
+          "id": "desserts-chocolate-chip-cookie"
+        },
+        {
+          "category": "Desserts",
+          "name": "Double Chocolate Chip Brownie",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [
+            "peanut",
+            "treenuts"
+          ],
+          "id": "desserts-double-chocolate-chip-brownie"
+        },
+        {
+          "category": "Desserts",
+          "name": "Salted Caramel Blondie",
+          "contains": [
+            "egg",
+            "milk",
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [],
+          "id": "desserts-salted-caramel-blondie"
+        },
+        {
+          "category": "Extras",
+          "name": "Doritos Cool Ranch Sauce",
+          "contains": [
+            "milk"
+          ],
+          "mayContain": [],
+          "id": "extras-doritos-cool-ranch-sauce"
+        },
+        {
+          "category": "Extras",
+          "name": "Cheesy Burger Sauce",
+          "contains": [
+            "egg"
+          ],
+          "mayContain": [],
+          "id": "extras-cheesy-burger-sauce"
+        },
+        {
+          "category": "Extras",
+          "name": "Creamy Garlic Parm Dip Cup",
+          "contains": [
+            "egg",
+            "milk"
+          ],
+          "mayContain": [],
+          "id": "extras-creamy-garlic-parm-dip-cup"
+        },
+        {
+          "category": "Extras",
+          "name": "Garlic Hot Honey Parm Dip Cup",
+          "contains": [],
+          "mayContain": [],
+          "id": "extras-garlic-hot-honey-parm-dip-cup"
+        },
+        {
+          "category": "Extras",
+          "name": "Roasted Garlic Parm Dip Cup",
+          "contains": [
+            "egg",
+            "milk"
+          ],
+          "mayContain": [],
+          "id": "extras-roasted-garlic-parm-dip-cup"
+        },
+        {
+          "category": "Extras",
+          "name": "Special Zesty Sauce",
+          "contains": [
+            "egg"
+          ],
+          "mayContain": [
+            "treenuts"
+          ],
+          "id": "extras-special-zesty-sauce"
+        },
+        {
+          "category": "Extras",
+          "name": "Special Garlic Sauce",
+          "contains": [
+            "soy"
+          ],
+          "mayContain": [],
+          "id": "extras-special-garlic-sauce"
+        },
+        {
+          "category": "Extras",
+          "name": "Spicy Garlic Sauce",
+          "contains": [
+            "soy"
+          ],
+          "mayContain": [],
+          "id": "extras-spicy-garlic-sauce"
+        },
+        {
+          "category": "Extras",
+          "name": "Original Pizza Sauce",
+          "contains": [],
+          "mayContain": [],
+          "id": "extras-original-pizza-sauce"
+        },
+        {
+          "category": "Extras",
+          "name": "Ranch Sauce",
+          "contains": [
+            "egg",
+            "milk"
+          ],
+          "mayContain": [
+            "treenuts"
+          ],
+          "id": "extras-ranch-sauce"
+        },
+        {
+          "category": "Extras",
+          "name": "Blue Cheese Sauce",
+          "contains": [
+            "egg",
+            "milk"
+          ],
+          "mayContain": [
+            "treenuts"
+          ],
+          "id": "extras-blue-cheese-sauce"
+        },
+        {
+          "category": "Extras",
+          "name": "Honey Mustard Sauce",
+          "contains": [
+            "egg"
+          ],
+          "mayContain": [
+            "treenuts"
+          ],
+          "id": "extras-honey-mustard-sauce"
+        },
+        {
+          "category": "Extras",
+          "name": "Buffalo Spicy Sauce",
+          "contains": [],
+          "mayContain": [
+            "treenuts"
+          ],
+          "id": "extras-buffalo-spicy-sauce"
+        },
+        {
+          "category": "Extras",
+          "name": "Barbeque Sauce",
+          "contains": [],
+          "mayContain": [
+            "treenuts"
+          ],
+          "id": "extras-barbeque-sauce"
+        },
+        {
+          "category": "Extras",
+          "name": "Cheese Sauce",
+          "contains": [
+            "milk"
+          ],
+          "mayContain": [],
+          "id": "extras-cheese-sauce"
+        },
+        {
+          "category": "Extras",
+          "name": "Cream Cheese Icing",
+          "contains": [
+            "milk"
+          ],
+          "mayContain": [],
+          "id": "extras-cream-cheese-icing"
+        },
+        {
+          "category": "Extras",
+          "name": "Caramel Sauce",
+          "contains": [
+            "milk"
+          ],
+          "mayContain": [],
+          "id": "extras-caramel-sauce"
+        },
+        {
+          "category": "Extras",
+          "name": "Garlic Parmesan Sauce",
+          "contains": [
+            "milk",
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [],
+          "id": "extras-garlic-parmesan-sauce"
+        },
+        {
+          "category": "Extras",
+          "name": "Garlic Parmesan - sides sauce; not pizza base",
+          "contains": [
+            "milk",
+            "wheat",
+            "soy"
+          ],
+          "mayContain": [],
+          "id": "extras-garlic-parmesan-sides-sauce-not-pizza-base"
+        },
+        {
+          "category": "Extras",
+          "name": "Hot Lemon Pepper - sides sauce; not pizza base",
+          "contains": [],
+          "mayContain": [
+            "treenuts"
+          ],
+          "id": "extras-hot-lemon-pepper-sides-sauce-not-pizza-base"
+        },
+        {
+          "category": "Extras",
+          "name": "Honey Chipotle - sides sauce; not pizza base",
+          "contains": [],
+          "mayContain": [
+            "treenuts"
+          ],
+          "id": "extras-honey-chipotle-sides-sauce-not-pizza-base"
+        },
+        {
+          "category": "Extras",
+          "name": "Special Seasoning",
+          "contains": [
+            "wheat"
+          ],
+          "mayContain": [],
+          "id": "extras-special-seasoning"
+        },
+        {
+          "category": "Extras",
+          "name": "Crushed Red Pepper",
+          "contains": [],
+          "mayContain": [],
+          "id": "extras-crushed-red-pepper"
+        },
+        {
+          "category": "Extras",
+          "name": "Parmesan Cheese",
+          "contains": [
+            "milk"
+          ],
+          "mayContain": [],
+          "id": "extras-parmesan-cheese"
+        },
+        {
+          "category": "Extras",
+          "name": "Pepperoncinis",
+          "contains": [],
+          "mayContain": [],
+          "id": "extras-pepperoncinis"
+        },
+        {
+          "category": "Extras",
+          "name": "Jalapeno Peppers",
+          "contains": [],
+          "mayContain": [],
+          "id": "extras-jalapeno-peppers"
+        },
+        {
+          "category": "Extras",
+          "name": "Banana Peppers",
+          "contains": [],
+          "mayContain": [],
+          "id": "extras-banana-peppers"
+        },
+        {
+          "category": "Extras",
+          "name": "Anchovies",
+          "contains": [
+            "fish"
+          ],
+          "mayContain": [],
+          "id": "extras-anchovies"
+        }
+      ],
+      "source": "official",
+      "lastVerified": "2026-10-22"
+    },
+    {
+      "id": "chain-pollo-tropical",
+      "name": "Pollo Tropical",
+      "website": "https://www.pollotropical.com",
+      "cuisine": "Caribbean chicken",
+      "keywords": [
+        "pollo tropical",
+        "chicken",
+        "caribbean",
+        "latin",
+        "rice",
+        "bowls",
+        "tropichop"
+      ],
+      "sourceUrl": "https://www.pollotropical.com/nutrition",
+      "covers": [
+        "milk",
+        "egg",
+        "wheat",
+        "peanut",
+        "soy",
+        "fish",
+        "shellfish",
+        "treenuts",
+        "gluten",
+        "sesame"
+      ],
+      "notes": [],
+      "menu": [
+        {
+          "category": "Ala Carte Meat / Platters",
+          "name": "Chicken (¼ white)",
+          "contains": [],
+          "id": "ala-carte-meat-platters-chicken-14-white"
+        },
+        {
+          "category": "Ala Carte Meat / Platters",
+          "name": "Chicken (¼ dark)",
+          "contains": [],
+          "id": "ala-carte-meat-platters-chicken-14-dark"
+        },
+        {
+          "category": "Ala Carte Meat / Platters",
+          "name": "Chicken (¼ white) without Skin",
+          "contains": [],
+          "id": "ala-carte-meat-platters-chicken-14-white-without-skin"
+        },
+        {
+          "category": "Ala Carte Meat / Platters",
+          "name": "Chicken (¼ dark) without Skin",
+          "contains": [],
+          "id": "ala-carte-meat-platters-chicken-14-dark-without-skin"
+        },
+        {
+          "category": "Ala Carte Meat / Platters",
+          "name": "Chicken (½)",
+          "contains": [],
+          "id": "ala-carte-meat-platters-chicken-12"
+        },
+        {
+          "category": "Ala Carte Meat / Platters",
+          "name": "Grilled Chicken Breast (2)",
+          "contains": [],
+          "id": "ala-carte-meat-platters-grilled-chicken-breast-2"
+        },
+        {
+          "category": "Ala Carte Meat / Platters",
+          "name": "Crispy Chicken Breast",
+          "contains": [
+            "milk",
+            "wheat",
+            "gluten"
+          ],
+          "id": "ala-carte-meat-platters-crispy-chicken-breast"
+        },
+        {
+          "category": "Ala Carte Meat / Platters",
+          "name": "Mojo Roast Pork with Sauteed Onions",
+          "contains": [],
+          "id": "ala-carte-meat-platters-mojo-roast-pork-with-sauteed-onions"
+        },
+        {
+          "category": "Ala Carte Meat / Platters",
+          "name": "Churrasco Steak with Chimichurri",
+          "contains": [
+            "soy"
+          ],
+          "id": "ala-carte-meat-platters-churrasco-steak-with-chimichurri"
+        },
+        {
+          "category": "Ala Carte Meat / Platters",
+          "name": "Chicken (¼ white) and Mojo Roast Pork w/ Sauteed Onions",
+          "contains": [
+            "soy"
+          ],
+          "id": "ala-carte-meat-platters-chicken-14-white-and-mojo-roast-pork-w-sauteed-onions"
+        },
+        {
+          "category": "Ala Carte Meat / Platters",
+          "name": "Chicken (¼ dark) and Mojo Roast Pork w/ Sauteed Onions",
+          "contains": [
+            "soy"
+          ],
+          "id": "ala-carte-meat-platters-chicken-14-dark-and-mojo-roast-pork-w-sauteed-onions"
+        },
+        {
+          "category": "Ala Carte Meat / Platters",
+          "name": "Tropical Trio w/ white rice, black beans, plantains",
+          "contains": [
+            "soy"
+          ],
+          "id": "ala-carte-meat-platters-tropical-trio-w-white-rice-black-beans-plantains"
+        },
+        {
+          "category": "Soups, Salads, Sandwiches & Wraps",
+          "name": "Caesar Salad - add protein choice",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat",
+            "soy",
+            "fish",
+            "gluten"
+          ],
+          "id": "soups-salads-sandwiches-wraps-caesar-salad-add-protein-choice"
+        },
+        {
+          "category": "Soups, Salads, Sandwiches & Wraps",
+          "name": "Caesar Salad w/o Dressing - add protein choice",
+          "contains": [
+            "milk",
+            "wheat",
+            "gluten"
+          ],
+          "id": "soups-salads-sandwiches-wraps-caesar-salad-wo-dressing-add-protein-choice"
+        },
+        {
+          "category": "Soups, Salads, Sandwiches & Wraps",
+          "name": "Grilled Chicken for Caesar Salad",
+          "contains": [],
+          "id": "soups-salads-sandwiches-wraps-grilled-chicken-for-caesar-salad"
+        },
+        {
+          "category": "Soups, Salads, Sandwiches & Wraps",
+          "name": "Avocado Crispy Chicken Salad",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat",
+            "gluten"
+          ],
+          "id": "soups-salads-sandwiches-wraps-avocado-crispy-chicken-salad"
+        },
+        {
+          "category": "Soups, Salads, Sandwiches & Wraps",
+          "name": "Avocado Grilled Chicken Salad",
+          "contains": [
+            "milk",
+            "egg"
+          ],
+          "id": "soups-salads-sandwiches-wraps-avocado-grilled-chicken-salad"
+        },
+        {
+          "category": "Soups, Salads, Sandwiches & Wraps",
+          "name": "Caribbean Chicken Soup (Cup)",
+          "contains": [],
+          "id": "soups-salads-sandwiches-wraps-caribbean-chicken-soup-cup"
+        },
+        {
+          "category": "Soups, Salads, Sandwiches & Wraps",
+          "name": "Caribbean Chicken Soup (Bowl)",
+          "contains": [],
+          "id": "soups-salads-sandwiches-wraps-caribbean-chicken-soup-bowl"
+        },
+        {
+          "category": "Soups, Salads, Sandwiches & Wraps",
+          "name": "Grilled Chicken Sandwich with Chipotle Mayo",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat",
+            "gluten"
+          ],
+          "id": "soups-salads-sandwiches-wraps-grilled-chicken-sandwich-with-chipotle-mayo"
+        },
+        {
+          "category": "Soups, Salads, Sandwiches & Wraps",
+          "name": "Crispy Chicken Sandwich with Chipotle Mayo",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat",
+            "gluten"
+          ],
+          "id": "soups-salads-sandwiches-wraps-crispy-chicken-sandwich-with-chipotle-mayo"
+        },
+        {
+          "category": "Soups, Salads, Sandwiches & Wraps",
+          "name": "Grilled Chicken Sandwich with Cilantro Garlic",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat",
+            "gluten"
+          ],
+          "id": "soups-salads-sandwiches-wraps-grilled-chicken-sandwich-with-cilantro-garlic"
+        },
+        {
+          "category": "Soups, Salads, Sandwiches & Wraps",
+          "name": "Crispy Chicken Sandwich with Cilantro Garlic",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat",
+            "gluten"
+          ],
+          "id": "soups-salads-sandwiches-wraps-crispy-chicken-sandwich-with-cilantro-garlic"
+        },
+        {
+          "category": "Soups, Salads, Sandwiches & Wraps",
+          "name": "Guava BBQ Pork Sandwich",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat",
+            "gluten"
+          ],
+          "id": "soups-salads-sandwiches-wraps-guava-bbq-pork-sandwich"
+        },
+        {
+          "category": "Soups, Salads, Sandwiches & Wraps",
+          "name": "Grilled Chicken Caesar Wrap",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat",
+            "soy",
+            "fish",
+            "gluten"
+          ],
+          "id": "soups-salads-sandwiches-wraps-grilled-chicken-caesar-wrap"
+        },
+        {
+          "category": "Soups, Salads, Sandwiches & Wraps",
+          "name": "Crispy Chicken Caesar Wrap",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat",
+            "soy",
+            "fish",
+            "gluten"
+          ],
+          "id": "soups-salads-sandwiches-wraps-crispy-chicken-caesar-wrap"
+        },
+        {
+          "category": "Soups, Salads, Sandwiches & Wraps",
+          "name": "Grilled Chicken Quesadilla Wrap",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat",
+            "gluten"
+          ],
+          "id": "soups-salads-sandwiches-wraps-grilled-chicken-quesadilla-wrap"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Rice & Veggies",
+          "name": "White Rice (Regular)",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-rice-veggies-white-rice-regular"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Rice & Veggies",
+          "name": "White Rice (Large)",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-rice-veggies-white-rice-large"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Rice & Veggies",
+          "name": "Yellow Rice with Veg (Regular)",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-rice-veggies-yellow-rice-with-veg-regular"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Rice & Veggies",
+          "name": "Yellow Rice with Veg (Large)",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-rice-veggies-yellow-rice-with-veg-large"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Rice & Veggies",
+          "name": "Brown Rice (Regular)",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-rice-veggies-brown-rice-regular"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Rice & Veggies",
+          "name": "Brown Rice (Large)",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-rice-veggies-brown-rice-large"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Rice & Veggies",
+          "name": "Romaine Lettuce (Regular)",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-rice-veggies-romaine-lettuce-regular"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Rice & Veggies",
+          "name": "Romaine Lettuce (Large)",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-rice-veggies-romaine-lettuce-large"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Rice & Veggies",
+          "name": "Romaine Lettuce / White Rice (Regular)",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-rice-veggies-romaine-lettuce-white-rice-regular"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Rice & Veggies",
+          "name": "Romaine Lettuce / White Rice (Large)",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-rice-veggies-romaine-lettuce-white-rice-large"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Rice & Veggies",
+          "name": "Romaine / Yellow Rice w/ Veg (Regular)",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-rice-veggies-romaine-yellow-rice-w-veg-regular"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Rice & Veggies",
+          "name": "Romaine / Yellow Rice w/ Veg (Large)",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-rice-veggies-romaine-yellow-rice-w-veg-large"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Rice & Veggies",
+          "name": "Romaine Lettuce / Brown Rice (Regular)",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-rice-veggies-romaine-lettuce-brown-rice-regular"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Rice & Veggies",
+          "name": "Romaine Lettuce / Brown Rice (Large)",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-rice-veggies-romaine-lettuce-brown-rice-large"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Rice & Veggies",
+          "name": "Mac & Cheese (Regular)",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat",
+            "gluten"
+          ],
+          "id": "build-your-tropichop-bowl-tropichop-rice-veggies-mac-cheese-regular"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Rice & Veggies",
+          "name": "Mac & Cheese (Large)",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat",
+            "gluten"
+          ],
+          "id": "build-your-tropichop-bowl-tropichop-rice-veggies-mac-cheese-large"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Rice & Veggies",
+          "name": "Black Beans (Regular)",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-rice-veggies-black-beans-regular"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Rice & Veggies",
+          "name": "Black Beans (Large)",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-rice-veggies-black-beans-large"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Meats",
+          "name": "Boneless Chicken Breast (Regular)",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-meats-boneless-chicken-breast-regular"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Meats",
+          "name": "Boneless Chicken Breast (Large)",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-meats-boneless-chicken-breast-large"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Meats",
+          "name": "Mojo Roast Pork (Regular)",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-meats-mojo-roast-pork-regular"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Meats",
+          "name": "Mojo Roast Pork (Large)",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-meats-mojo-roast-pork-large"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Meats",
+          "name": "Boneless Chicken Breast and Mojo Roast Pork (Regular)",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-meats-boneless-chicken-breast-and-mojo-roast-pork-regular"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Meats",
+          "name": "Boneless Chicken Breast and Mojo Roast Pork (Large)",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-meats-boneless-chicken-breast-and-mojo-roast-pork-large"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Meats",
+          "name": "Churrasco Steak (Regular)",
+          "contains": [
+            "soy"
+          ],
+          "id": "build-your-tropichop-bowl-tropichop-meats-churrasco-steak-regular"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Meats",
+          "name": "Churrasco Steak (Large)",
+          "contains": [
+            "soy"
+          ],
+          "id": "build-your-tropichop-bowl-tropichop-meats-churrasco-steak-large"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Toppings",
+          "name": "Avocado",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-toppings-avocado"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Toppings",
+          "name": "Diced Tomatoes",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-toppings-diced-tomatoes"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Toppings",
+          "name": "Kernel Corn",
+          "contains": [
+            "milk"
+          ],
+          "id": "build-your-tropichop-bowl-tropichop-toppings-kernel-corn"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Toppings",
+          "name": "Sauteed Onions",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-toppings-sauteed-onions"
+        },
+        {
+          "category": "Build Your Tropichop® Bowl - Tropichop Toppings",
+          "name": "Sauteed Pepper Topping",
+          "contains": [],
+          "id": "build-your-tropichop-bowl-tropichop-toppings-sauteed-pepper-topping"
+        },
+        {
+          "category": "Kids Meals",
+          "name": "Chicken (drumstick & thigh)",
+          "contains": [],
+          "id": "kids-meals-chicken-drumstick-thigh"
+        },
+        {
+          "category": "Kids Meals",
+          "name": "Grilled Chicken Strips",
+          "contains": [],
+          "id": "kids-meals-grilled-chicken-strips"
+        },
+        {
+          "category": "Kids Bowls",
+          "name": "Chicken Breast, Black beans, White rice",
+          "contains": [],
+          "id": "kids-bowls-chicken-breast-black-beans-white-rice"
+        },
+        {
+          "category": "Kids Bowls",
+          "name": "Chicken Breast, Mac & Cheese",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat",
+            "gluten"
+          ],
+          "id": "kids-bowls-chicken-breast-mac-cheese"
+        },
+        {
+          "category": "Family Meals",
+          "name": "Chicken and Rolls (add choice of family sides)",
+          "contains": [
+            "wheat",
+            "soy",
+            "gluten"
+          ],
+          "id": "family-meals-chicken-and-rolls-add-choice-of-family-sides"
+        },
+        {
+          "category": "Family Meals",
+          "name": "Family Duo Whole Chicken",
+          "contains": [
+            "wheat",
+            "soy",
+            "gluten"
+          ],
+          "id": "family-meals-family-duo-whole-chicken"
+        },
+        {
+          "category": "Family Meat Add Ons",
+          "name": "Chicken (½) - Family Add On",
+          "contains": [],
+          "id": "family-meat-add-ons-chicken-12-family-add-on"
+        },
+        {
+          "category": "Family Meat Add Ons",
+          "name": "Grilled Chicken Breast (2) - Family Add On",
+          "contains": [],
+          "id": "family-meat-add-ons-grilled-chicken-breast-2-family-add-on"
+        },
+        {
+          "category": "Family Meat Add Ons",
+          "name": "Mojo Roast Pork w/ sauteed onions - Family Add On",
+          "contains": [],
+          "id": "family-meat-add-ons-mojo-roast-pork-w-sauteed-onions-family-add-on"
+        },
+        {
+          "category": "Protein Cups",
+          "name": "Boneless Chicken Breast (Small)",
+          "contains": [],
+          "id": "protein-cups-boneless-chicken-breast-small"
+        },
+        {
+          "category": "Protein Cups",
+          "name": "Boneless Chicken Breast (Large)",
+          "contains": [],
+          "id": "protein-cups-boneless-chicken-breast-large"
+        },
+        {
+          "category": "Sides",
+          "name": "White Rice (Individual)",
+          "contains": [],
+          "id": "sides-white-rice-individual"
+        },
+        {
+          "category": "Sides",
+          "name": "White Rice (Platter)",
+          "contains": [],
+          "id": "sides-white-rice-platter"
+        },
+        {
+          "category": "Sides",
+          "name": "White Rice (Family)",
+          "contains": [],
+          "id": "sides-white-rice-family"
+        },
+        {
+          "category": "Sides",
+          "name": "Yellow Rice with Vegetables (Individual)",
+          "contains": [],
+          "id": "sides-yellow-rice-with-vegetables-individual"
+        },
+        {
+          "category": "Sides",
+          "name": "Yellow Rice with Vegetables (Platter)",
+          "contains": [],
+          "id": "sides-yellow-rice-with-vegetables-platter"
+        },
+        {
+          "category": "Sides",
+          "name": "Yellow Rice with Vegetables (Family)",
+          "contains": [],
+          "id": "sides-yellow-rice-with-vegetables-family"
+        },
+        {
+          "category": "Sides",
+          "name": "Brown Rice (Individual)",
+          "contains": [],
+          "id": "sides-brown-rice-individual"
+        },
+        {
+          "category": "Sides",
+          "name": "Brown Rice (Platter)",
+          "contains": [],
+          "id": "sides-brown-rice-platter"
+        },
+        {
+          "category": "Sides",
+          "name": "Brown Rice (Family)",
+          "contains": [],
+          "id": "sides-brown-rice-family"
+        },
+        {
+          "category": "Sides",
+          "name": "Black Beans (Individual)",
+          "contains": [],
+          "id": "sides-black-beans-individual"
+        },
+        {
+          "category": "Sides",
+          "name": "Black Beans (Platter)",
+          "contains": [],
+          "id": "sides-black-beans-platter"
+        },
+        {
+          "category": "Sides",
+          "name": "Black Beans (Family)",
+          "contains": [],
+          "id": "sides-black-beans-family"
+        },
+        {
+          "category": "Sides",
+          "name": "Kernel Corn (Individual)",
+          "contains": [
+            "milk"
+          ],
+          "id": "sides-kernel-corn-individual"
+        },
+        {
+          "category": "Sides",
+          "name": "Kernel Corn (Family)",
+          "contains": [
+            "milk"
+          ],
+          "id": "sides-kernel-corn-family"
+        },
+        {
+          "category": "Sides",
+          "name": "Balsamic Tomatoes (Individual)",
+          "contains": [],
+          "id": "sides-balsamic-tomatoes-individual"
+        },
+        {
+          "category": "Sides",
+          "name": "Balsamic Tomatoes (Family)",
+          "contains": [],
+          "id": "sides-balsamic-tomatoes-family"
+        },
+        {
+          "category": "Sides",
+          "name": "Caesar Salad (Individual)",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat",
+            "soy",
+            "fish",
+            "gluten"
+          ],
+          "id": "sides-caesar-salad-individual"
+        },
+        {
+          "category": "Sides",
+          "name": "Caesar Salad (Family)",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat",
+            "soy",
+            "fish",
+            "gluten"
+          ],
+          "id": "sides-caesar-salad-family"
+        },
+        {
+          "category": "Sides",
+          "name": "French Fries (Individual)",
+          "contains": [],
+          "id": "sides-french-fries-individual"
+        },
+        {
+          "category": "Sides",
+          "name": "French Fries (Family)",
+          "contains": [],
+          "id": "sides-french-fries-family"
+        },
+        {
+          "category": "Sides",
+          "name": "Mac & Cheese (Individual)",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat",
+            "gluten"
+          ],
+          "id": "sides-mac-cheese-individual"
+        },
+        {
+          "category": "Sides",
+          "name": "Mac & Cheese (Family)",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat",
+            "gluten"
+          ],
+          "id": "sides-mac-cheese-family"
+        },
+        {
+          "category": "Salsa / Condiments",
+          "name": "Salsa",
+          "contains": [],
+          "id": "salsa-condiments-salsa"
+        },
+        {
+          "category": "Salsa / Condiments",
+          "name": "BBQ Sauce",
+          "contains": [],
+          "id": "salsa-condiments-bbq-sauce"
+        },
+        {
+          "category": "Salsa / Condiments",
+          "name": "Guava BBQ Sauce",
+          "contains": [],
+          "id": "salsa-condiments-guava-bbq-sauce"
+        },
+        {
+          "category": "Salsa / Condiments",
+          "name": "Chipotle Mayo",
+          "contains": [
+            "milk",
+            "egg"
+          ],
+          "id": "salsa-condiments-chipotle-mayo"
+        },
+        {
+          "category": "Salsa / Condiments",
+          "name": "Curry Mustard",
+          "contains": [
+            "egg"
+          ],
+          "id": "salsa-condiments-curry-mustard"
+        },
+        {
+          "category": "Salsa / Condiments",
+          "name": "Caesar Dressing",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat",
+            "soy",
+            "fish",
+            "gluten"
+          ],
+          "id": "salsa-condiments-caesar-dressing"
+        },
+        {
+          "category": "Salsa / Condiments",
+          "name": "Cilantro Garlic Sauce",
+          "contains": [
+            "egg"
+          ],
+          "id": "salsa-condiments-cilantro-garlic-sauce"
+        },
+        {
+          "category": "Salsa / Condiments",
+          "name": "Spicy Poyo-Poyo",
+          "contains": [],
+          "id": "salsa-condiments-spicy-poyo-poyo"
+        },
+        {
+          "category": "Salsa / Condiments",
+          "name": "Ketchup",
+          "contains": [],
+          "id": "salsa-condiments-ketchup"
+        },
+        {
+          "category": "Salsa / Condiments",
+          "name": "Pineapple Rum Sauce",
+          "contains": [
+            "wheat",
+            "soy",
+            "gluten"
+          ],
+          "id": "salsa-condiments-pineapple-rum-sauce"
+        },
+        {
+          "category": "Salsa / Condiments",
+          "name": "Jalapeno Slices",
+          "contains": [],
+          "id": "salsa-condiments-jalapeno-slices"
+        },
+        {
+          "category": "Salsa / Condiments",
+          "name": "Dinner Roll",
+          "contains": [
+            "wheat",
+            "soy",
+            "gluten"
+          ],
+          "id": "salsa-condiments-dinner-roll"
+        },
+        {
+          "category": "Tropical Favorites",
+          "name": "Sweet Plantains (Individual)",
+          "contains": [],
+          "id": "tropical-favorites-sweet-plantains-individual"
+        },
+        {
+          "category": "Tropical Favorites",
+          "name": "Sweet Plantains (Family)",
+          "contains": [],
+          "id": "tropical-favorites-sweet-plantains-family"
+        },
+        {
+          "category": "Tropical Favorites",
+          "name": "Fried Yuca (Regular)",
+          "contains": [],
+          "id": "tropical-favorites-fried-yuca-regular"
+        },
+        {
+          "category": "Tropical Favorites",
+          "name": "Fried Yuca (Large)",
+          "contains": [],
+          "id": "tropical-favorites-fried-yuca-large"
+        },
+        {
+          "category": "Tropical Favorites",
+          "name": "Cheesy Yuca Bites (Individual)",
+          "contains": [
+            "milk"
+          ],
+          "id": "tropical-favorites-cheesy-yuca-bites-individual"
+        },
+        {
+          "category": "Tropical Favorites",
+          "name": "Cheesy Plantain Bites (Individual)",
+          "contains": [
+            "milk"
+          ],
+          "id": "tropical-favorites-cheesy-plantain-bites-individual"
+        },
+        {
+          "category": "Desserts",
+          "name": "Flan",
+          "contains": [
+            "milk",
+            "egg"
+          ],
+          "id": "desserts-flan"
+        },
+        {
+          "category": "Desserts",
+          "name": "Chocolate Chip Cookie",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat",
+            "soy",
+            "gluten"
+          ],
+          "id": "desserts-chocolate-chip-cookie"
+        },
+        {
+          "category": "Desserts",
+          "name": "Cuatro Leches",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat",
+            "gluten"
+          ],
+          "id": "desserts-cuatro-leches"
+        },
+        {
+          "category": "Drinks - Kids",
+          "name": "Apple Juice (box)",
+          "contains": [],
+          "id": "drinks-kids-apple-juice-box"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Tea, Unsweet (Regular)",
+          "contains": [],
+          "id": "drinks-no-ice-tea-unsweet-regular"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Tea, Unsweet (Large)",
+          "contains": [],
+          "id": "drinks-no-ice-tea-unsweet-large"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Tea, Sweet (Regular)",
+          "contains": [],
+          "id": "drinks-no-ice-tea-sweet-regular"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Tea, Sweet (Large)",
+          "contains": [],
+          "id": "drinks-no-ice-tea-sweet-large"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Mango Tea (Regular)",
+          "contains": [],
+          "id": "drinks-no-ice-mango-tea-regular"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Mango Tea (Large)",
+          "contains": [],
+          "id": "drinks-no-ice-mango-tea-large"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Mango Sweet Tea (Regular)",
+          "contains": [],
+          "id": "drinks-no-ice-mango-sweet-tea-regular"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Mango Sweet Tea (Large)",
+          "contains": [],
+          "id": "drinks-no-ice-mango-sweet-tea-large"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Coca-Cola (Regular)",
+          "contains": [],
+          "id": "drinks-no-ice-coca-cola-regular"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Coca-Cola (Large)",
+          "contains": [],
+          "id": "drinks-no-ice-coca-cola-large"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Diet Coke (Regular)",
+          "contains": [],
+          "id": "drinks-no-ice-diet-coke-regular"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Diet Coke (Large)",
+          "contains": [],
+          "id": "drinks-no-ice-diet-coke-large"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Coke Zero (Regular)",
+          "contains": [],
+          "id": "drinks-no-ice-coke-zero-regular"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Coke Zero (Large)",
+          "contains": [],
+          "id": "drinks-no-ice-coke-zero-large"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Sprite (Regular)",
+          "contains": [],
+          "id": "drinks-no-ice-sprite-regular"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Sprite (Large)",
+          "contains": [],
+          "id": "drinks-no-ice-sprite-large"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Fanta Orange (Regular)",
+          "contains": [],
+          "id": "drinks-no-ice-fanta-orange-regular"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Fanta Orange (Large)",
+          "contains": [],
+          "id": "drinks-no-ice-fanta-orange-large"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Dr Pepper (Regular)",
+          "contains": [],
+          "id": "drinks-no-ice-dr-pepper-regular"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Dr Pepper (Large)",
+          "contains": [],
+          "id": "drinks-no-ice-dr-pepper-large"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Hi-C Fruit Punch (Regular)",
+          "contains": [],
+          "id": "drinks-no-ice-hi-c-fruit-punch-regular"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Hi-C Fruit Punch (Large)",
+          "contains": [],
+          "id": "drinks-no-ice-hi-c-fruit-punch-large"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Hi-C Orange Lavaburst (Regular)",
+          "contains": [],
+          "id": "drinks-no-ice-hi-c-orange-lavaburst-regular"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Hi-C Orange Lavaburst (Large)",
+          "contains": [],
+          "id": "drinks-no-ice-hi-c-orange-lavaburst-large"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Fuze Raspberry Tea (Regular)",
+          "contains": [],
+          "id": "drinks-no-ice-fuze-raspberry-tea-regular"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Fuze Raspberry Tea (Large)",
+          "contains": [],
+          "id": "drinks-no-ice-fuze-raspberry-tea-large"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Powerade Mountain Blast (Regular)",
+          "contains": [],
+          "id": "drinks-no-ice-powerade-mountain-blast-regular"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Powerade Mountain Blast (Large)",
+          "contains": [],
+          "id": "drinks-no-ice-powerade-mountain-blast-large"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Vitaminwater XXX (Regular)",
+          "contains": [],
+          "id": "drinks-no-ice-vitaminwater-xxx-regular"
+        },
+        {
+          "category": "Drinks (no ice)",
+          "name": "Vitaminwater XXX (Large)",
+          "contains": [],
+          "id": "drinks-no-ice-vitaminwater-xxx-large"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Tea, Unsweet - ice (Regular)",
+          "contains": [],
+          "id": "drinks-with-ice-tea-unsweet-ice-regular"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Tea, Unsweet - ice (Large)",
+          "contains": [],
+          "id": "drinks-with-ice-tea-unsweet-ice-large"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Tea, Sweet - ice (Regular)",
+          "contains": [],
+          "id": "drinks-with-ice-tea-sweet-ice-regular"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Tea, Sweet - ice (Large)",
+          "contains": [],
+          "id": "drinks-with-ice-tea-sweet-ice-large"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Mango Tea - ice (Regular)",
+          "contains": [],
+          "id": "drinks-with-ice-mango-tea-ice-regular"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Mango Tea - ice (Large)",
+          "contains": [],
+          "id": "drinks-with-ice-mango-tea-ice-large"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Mango Sweet Tea - ice (Regular)",
+          "contains": [],
+          "id": "drinks-with-ice-mango-sweet-tea-ice-regular"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Mango Sweet Tea - ice (Large)",
+          "contains": [],
+          "id": "drinks-with-ice-mango-sweet-tea-ice-large"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Coca-Cola - ice (Regular)",
+          "contains": [],
+          "id": "drinks-with-ice-coca-cola-ice-regular"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Coca-Cola - ice (Large)",
+          "contains": [],
+          "id": "drinks-with-ice-coca-cola-ice-large"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Diet Coke - ice (Regular)",
+          "contains": [],
+          "id": "drinks-with-ice-diet-coke-ice-regular"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Diet Coke - ice (Large)",
+          "contains": [],
+          "id": "drinks-with-ice-diet-coke-ice-large"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Coke Zero - ice (Regular)",
+          "contains": [],
+          "id": "drinks-with-ice-coke-zero-ice-regular"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Coke Zero - ice (Large)",
+          "contains": [],
+          "id": "drinks-with-ice-coke-zero-ice-large"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Sprite - ice (Regular)",
+          "contains": [],
+          "id": "drinks-with-ice-sprite-ice-regular"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Sprite - ice (Large)",
+          "contains": [],
+          "id": "drinks-with-ice-sprite-ice-large"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Fanta Orange - ice (Regular)",
+          "contains": [],
+          "id": "drinks-with-ice-fanta-orange-ice-regular"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Fanta Orange - ice (Large)",
+          "contains": [],
+          "id": "drinks-with-ice-fanta-orange-ice-large"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Dr Pepper - ice (Regular)",
+          "contains": [],
+          "id": "drinks-with-ice-dr-pepper-ice-regular"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Dr Pepper - ice (Large)",
+          "contains": [],
+          "id": "drinks-with-ice-dr-pepper-ice-large"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Lemonade, Natalie's - ice (Regular)",
+          "contains": [],
+          "id": "drinks-with-ice-lemonade-natalies-ice-regular"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Lemonade, Natalie's - ice (Large)",
+          "contains": [],
+          "id": "drinks-with-ice-lemonade-natalies-ice-large"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Hi-C Fruit Punch - ice (Regular)",
+          "contains": [],
+          "id": "drinks-with-ice-hi-c-fruit-punch-ice-regular"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Hi-C Fruit Punch - ice (Large)",
+          "contains": [],
+          "id": "drinks-with-ice-hi-c-fruit-punch-ice-large"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Hi-C Orange Lavaburst - ice (Regular)",
+          "contains": [],
+          "id": "drinks-with-ice-hi-c-orange-lavaburst-ice-regular"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Hi-C Orange Lavaburst - ice (Large)",
+          "contains": [],
+          "id": "drinks-with-ice-hi-c-orange-lavaburst-ice-large"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Powerade Mountain Blast - ice (Regular)",
+          "contains": [],
+          "id": "drinks-with-ice-powerade-mountain-blast-ice-regular"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Powerade Mountain Blast - ice (Large)",
+          "contains": [],
+          "id": "drinks-with-ice-powerade-mountain-blast-ice-large"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Vitaminwater XXX - ice (Regular)",
+          "contains": [],
+          "id": "drinks-with-ice-vitaminwater-xxx-ice-regular"
+        },
+        {
+          "category": "Drinks (with ice)",
+          "name": "Vitaminwater XXX - ice (Large)",
+          "contains": [],
+          "id": "drinks-with-ice-vitaminwater-xxx-ice-large"
         }
       ],
       "source": "official",

@@ -11,10 +11,14 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import chickFilA from './adapters/chick-fil-a.mjs';
+import firstWatch from './adapters/first-watch.mjs';
+import freddys from './adapters/freddys.mjs';
 import inNOut from './adapters/in-n-out.mjs';
+import papaJohns from './adapters/papa-johns.mjs';
+import polloTropical from './adapters/pollo-tropical.mjs';
 import sweetgreen from './adapters/sweetgreen.mjs';
 
-const ADAPTERS = [chickFilA, inNOut, sweetgreen];
+const ADAPTERS = [chickFilA, firstWatch, freddys, inNOut, papaJohns, polloTropical, sweetgreen];
 const OUTPUT = fileURLToPath(new URL('../../src/assets/data/chains.json', import.meta.url));
 const MIN_RATIO = 0.5;
 

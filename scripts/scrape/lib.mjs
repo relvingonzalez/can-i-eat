@@ -24,7 +24,7 @@ export function cleanText(text) {
 
 /** Labels restaurants use for allergens -> the app's catalog keys (see src/app/core/allergen-catalog.ts). */
 const LABEL_TO_KEYS = [
-  [/wheat\s*\(gluten\)|gluten\s*\(wheat\)/i, ['wheat', 'gluten']],
+  [/wheat\s*[(/]\s*gluten|gluten\s*[(/]\s*wheat/i, ['wheat', 'gluten']],
   [/^(milk|dairy)/i, ['milk']],
   [/^eggs?/i, ['egg']],
   [/^soy/i, ['soy']],
@@ -36,6 +36,7 @@ const LABEL_TO_KEYS = [
   [/^fish/i, ['fish']],
   [/^(shellfish|crustacean|mollus)/i, ['shellfish']],
   [/^mustard/i, ['mustard']],
+  [/^celery/i, ['celery']],
 ];
 
 export function labelToKeys(label) {
