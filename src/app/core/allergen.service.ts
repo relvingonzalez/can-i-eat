@@ -1,149 +1,166 @@
 import { Injectable } from '@angular/core';
-import { Observable, Subject, of } from 'rxjs';
-import { MessageService } from './message.service';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import {  map, mergeMap } from 'rxjs/operators';
-import { JSONSchema, StorageMap } from "@ngx-pwa/local-storage";
+import { BehaviorSubject, Observable, forkJoin } from 'rxjs';
+import { distinctUntilChanged, filter, map } from 'rxjs/operators';
+import { JSONSchema, StorageMap } from '@ngx-pwa/local-storage';
 
-import { Allergen } from '../shared/models/allergen.model';
+import { Allergen, Profile } from '../shared/models/allergen.model';
 
-const httpOptions = {
-  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-};
-
-const schema = {
+const allergensSchema = {
   type: 'array',
   items: {
     type: 'object',
     properties: {
       name: { type: 'string' },
-      derivatives: {
-        type: 'array',
-        items: {
-            type: 'string',
-        },
-      }
     },
-    required: ['name']
+    required: ['name'],
   },
 } satisfies JSONSchema;
 
+const profilesSchema = {
+  type: 'array',
+  items: {
+    type: 'object',
+    properties: {
+      id: { type: 'string' },
+      name: { type: 'string' },
+      allergens: allergensSchema,
+    },
+    required: ['id', 'name', 'allergens'],
+  },
+} satisfies JSONSchema;
+
+export interface ProfileState {
+  profiles: Profile[];
+  activeId: string;
+}
+
+function newId(): string {
+  return Math.random().toString(36).slice(2, 10);
+}
+
+function sameName(a: string, b: string): boolean {
+  return a.trim().toLowerCase() === b.trim().toLowerCase();
+}
+
+/**
+ * Keeps allergy profiles ("Me", "My kid") in browser storage. Everything else reads the
+ * active profile's allergens from allergens$.
+ */
 @Injectable({
   providedIn: 'root'
 })
 export class AllergenService {
-  private derivatives = new Map();
-  private allergensSource = new Subject<Allergen[]>();
-  data$ = this.allergensSource.asObservable();
+  private state = new BehaviorSubject<ProfileState | null>(null);
 
-  constructor(
-    private http: HttpClient,
-    private messageService: MessageService,
-    protected localStorage: StorageMap) {
-    this.createDerivativesMap();
+  readonly state$ = this.state.pipe(filter((s): s is ProfileState => !!s));
+  readonly profiles$ = this.state$.pipe(map(s => s.profiles));
+  readonly activeProfile$: Observable<Profile> = this.state$.pipe(
+    map(s => s.profiles.find(p => p.id === s.activeId) || s.profiles[0])
+  );
+  readonly allergens$: Observable<Allergen[]> = this.activeProfile$.pipe(
+    map(p => p.allergens),
+    distinctUntilChanged((a, b) => a.map(x => x.name).join('|') === b.map(x => x.name).join('|'))
+  );
+
+  constructor(protected localStorage: StorageMap) {
+    this.load();
   }
 
-
-  /** Log a AllergenService message with the MessageService */
-  private log(message: string) {
-    this.messageService.add(`AllergenService: ${message}`);
-  }
-
-  /**
-   * Handle Http operation that failed.
-   * Let the app continue.
-   * @param operation - name of the operation that failed
-   * @param result - optional value to return as the observable result
-   */
-  private handleError<T> (operation = 'operation', result?: T) {
-    return (error: any): Observable<T> => {
-
-      // TODO: send the error to remote logging infrastructure
-      console.error(error); // log to console instead
-
-      // TODO: better job of transforming error for user consumption
-      this.log(`${operation} failed: ${error.message}`);
-
-      // Let the app keep running by returning an empty result.
-      return of(result as T);
-    };
-  }
-
-  private createDerivativesMap() {
-    this.derivatives.set('milk', ['cheese', 'dairy']);
-    this.derivatives.set('dairy', ['milk', 'cheese']);
-    this.derivatives.set('gluten', ['wheat', 'barley', 'rye', 'malt']);
-  }
-
-  // stream of updated allergens
-  next(data: Allergen[]) {
-    this.allergensSource.next(data);
-  }
-
-  // add derivatives here
-  findDerivatives(allergen: Allergen): string[] {
-    var allergenName = allergen.name.toLowerCase();
-    return this.derivatives.get(allergenName) || [];
-  }
-
-  getProblemIngredients(allergens: Allergen[], ingredients: string) {
-    var passed = true,
-        problemIngredients = '';
-
-    for(let allergen of allergens) {
-      var allergenName = allergen.name.toLowerCase();
-      if(ingredients.includes(allergenName) || allergen.derivatives.some(derivative => ingredients.includes(derivative))) {
-        problemIngredients = problemIngredients ? `${problemIngredients}, ${allergenName}` : allergenName;
-      }
-    };
-    return problemIngredients;
-  }
-
-  getAllergens(): Observable<Allergen[]> {
-  	return this.localStorage.get<Allergen[]>('allergens', schema)
-    .pipe(
-      map((allergens) => {
-        if (allergens !== undefined) {
-          this.next(allergens);
-          return allergens;
+  private load(): void {
+    forkJoin({
+      profiles: this.localStorage.get<Profile[]>('profiles', profilesSchema),
+      activeId: this.localStorage.get('activeProfileId', { type: 'string' }),
+      // Allergens saved before profiles existed.
+      legacy: this.localStorage.get<Allergen[]>('allergens', allergensSchema),
+    }).subscribe({
+      next: ({ profiles, activeId, legacy }) => {
+        if (profiles?.length) {
+          this.state.next({ profiles, activeId: activeId || profiles[0].id });
+          return;
         }
-        return [];
-      })
-    );
+        const me: Profile = { id: newId(), name: 'Me', allergens: (legacy || []).map(a => ({ name: a.name })) };
+        this.save({ profiles: [me], activeId: me.id });
+      },
+      error: () => {
+        const me: Profile = { id: newId(), name: 'Me', allergens: [] };
+        this.state.next({ profiles: [me], activeId: me.id });
+      },
+    });
   }
 
-  getAllergen(name: string | null) : Observable<Allergen | undefined> {
-    return this.getAllergens().pipe(map((allergens) => {
-      return allergens.find(allergen => allergen.name === name);
-    }));
+  private save(state: ProfileState): void {
+    this.state.next(state);
+    this.localStorage.set('profiles', state.profiles, profilesSchema).subscribe();
+    this.localStorage.set('activeProfileId', state.activeId, { type: 'string' }).subscribe();
   }
 
-  /** POST: add a new Allergen to the server */
-  addAllergen(allergen: Allergen) : Observable<Allergen> {
-    return this.getAllergens()
-    .pipe(
-      map((allergens) => allergens),
-      mergeMap((allergens) => {
-        allergen.derivatives = this.findDerivatives(allergen);
-        allergens.push(allergen);
-        this.next(allergens);
-        return this.localStorage.set('allergens', allergens)
-          .pipe(map(() => allergen));
-      })
-    )
+  private updateActive(update: (profile: Profile) => Profile): void {
+    const state = this.state.value;
+    if (!state) {
+      return;
+    }
+    this.save({
+      ...state,
+      profiles: state.profiles.map(p => (p.id === state.activeId ? update(p) : p)),
+    });
   }
 
-  /** DELETE: delete the allergen from the server */
-  deleteAllergen(allergen: Allergen) : Observable<Allergen>{
-    return this.getAllergens()
-      .pipe(
-        map((allergens) => allergens),
-        mergeMap((allergens)=> {
-          allergens.splice(allergens.findIndex(a => a.name === allergen.name), 1);
-          this.next(allergens);
-          return this.localStorage.set('allergens', allergens)
-            .pipe(map(() => allergen));
-        })
-    );
+  addAllergen(name: string): void {
+    const trimmed = name.trim();
+    if (!trimmed) {
+      return;
+    }
+    this.updateActive(p => p.allergens.some(a => sameName(a.name, trimmed))
+      ? p
+      : { ...p, allergens: [...p.allergens, { name: trimmed }] });
+  }
+
+  removeAllergen(name: string): void {
+    this.updateActive(p => ({ ...p, allergens: p.allergens.filter(a => !sameName(a.name, name)) }));
+  }
+
+  toggleAllergen(name: string): void {
+    const active = this.activeProfile();
+    if (active?.allergens.some(a => sameName(a.name, name))) {
+      this.removeAllergen(name);
+    } else {
+      this.addAllergen(name);
+    }
+  }
+
+  activeProfile(): Profile | undefined {
+    const state = this.state.value;
+    return state?.profiles.find(p => p.id === state.activeId);
+  }
+
+  addProfile(name: string, allergens: Allergen[] = []): Profile {
+    const profile: Profile = { id: newId(), name: name.trim() || 'New profile', allergens };
+    const state = this.state.value || { profiles: [], activeId: profile.id };
+    this.save({ profiles: [...state.profiles, profile], activeId: profile.id });
+    return profile;
+  }
+
+  renameProfile(id: string, name: string): void {
+    const state = this.state.value;
+    if (!state || !name.trim()) {
+      return;
+    }
+    this.save({ ...state, profiles: state.profiles.map(p => (p.id === id ? { ...p, name: name.trim() } : p)) });
+  }
+
+  deleteProfile(id: string): void {
+    const state = this.state.value;
+    if (!state || state.profiles.length < 2) {
+      return;
+    }
+    const profiles = state.profiles.filter(p => p.id !== id);
+    this.save({ profiles, activeId: state.activeId === id ? profiles[0].id : state.activeId });
+  }
+
+  setActiveProfile(id: string): void {
+    const state = this.state.value;
+    if (state && state.profiles.some(p => p.id === id)) {
+      this.save({ ...state, activeId: id });
+    }
   }
 }

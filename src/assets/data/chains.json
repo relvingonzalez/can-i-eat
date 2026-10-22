@@ -1,0 +1,4323 @@
+{
+  "restaurants": [
+    {
+      "id": "chain-chick-fil-a",
+      "name": "Chick-fil-A",
+      "website": "https://www.chick-fil-a.com",
+      "cuisine": "Chicken",
+      "keywords": [
+        "chick-fil-a",
+        "chick fil a",
+        "chicken",
+        "sandwich",
+        "nuggets",
+        "fast food"
+      ],
+      "sourceUrl": "https://www.chick-fil-a.com/nutrition-allergens",
+      "logo": "https://www.chick-fil-a.com/wp-content/themes/cfa/favicon/apple-touch-icon.png",
+      "covers": [
+        "milk",
+        "egg",
+        "soy",
+        "wheat",
+        "sesame",
+        "treenuts",
+        "peanut",
+        "fish"
+      ],
+      "menu": [
+        {
+          "category": "Breakfast",
+          "name": "Waffle",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-waffle"
+        },
+        {
+          "category": "Breakfast",
+          "name": "4 ct Mini Yeast Rolls",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-4-ct-mini-yeast-rolls"
+        },
+        {
+          "category": "Breakfast",
+          "name": "English Muffin",
+          "contains": [
+            "wheat"
+          ],
+          "id": "breakfast-english-muffin"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Buttery Biscuit",
+          "contains": [
+            "milk",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-buttery-biscuit"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Breakfast Waffle",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-breakfast-waffle"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Large Fruit Cup",
+          "contains": [],
+          "id": "breakfast-large-fruit-cup"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Small Fruit Cup",
+          "contains": [],
+          "id": "breakfast-small-fruit-cup"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Medium Fruit Cup",
+          "contains": [],
+          "id": "breakfast-medium-fruit-cup"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Hash Brown Scramble Bowl w/ No Meat - no hash browns",
+          "contains": [
+            "milk",
+            "egg",
+            "soy"
+          ],
+          "id": "breakfast-hash-brown-scramble-bowl-w-no-meat-no-hash-browns"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Hash Brown Scramble Bowl w/ Bacon - no hash browns",
+          "contains": [
+            "milk",
+            "egg",
+            "soy"
+          ],
+          "id": "breakfast-hash-brown-scramble-bowl-w-bacon-no-hash-browns"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Hash Brown Scramble Bowl w/ Spicy Chicken - no hash browns",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-hash-brown-scramble-bowl-w-spicy-chicken-no-hash-browns"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Hash Brown Scramble Bowl w/ Grilled Filet - no hash browns",
+          "contains": [
+            "milk",
+            "egg",
+            "soy"
+          ],
+          "id": "breakfast-hash-brown-scramble-bowl-w-grilled-filet-no-hash-browns"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Hash Brown Scramble Bowl w/ Sausage - no hash browns",
+          "contains": [
+            "milk",
+            "egg",
+            "soy"
+          ],
+          "id": "breakfast-hash-brown-scramble-bowl-w-sausage-no-hash-browns"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Hash Brown Scramble Bowl w/ Nuggets - no hash browns",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-hash-brown-scramble-bowl-w-nuggets-no-hash-browns"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Hash Brown Scramble Bowl w/ No Meat",
+          "contains": [
+            "milk",
+            "egg",
+            "soy"
+          ],
+          "id": "breakfast-hash-brown-scramble-bowl-w-no-meat"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Hash Brown Scramble Bowl w/ Bacon",
+          "contains": [
+            "milk",
+            "egg",
+            "soy"
+          ],
+          "id": "breakfast-hash-brown-scramble-bowl-w-bacon"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Hash Brown Scramble Bowl w/ Spicy Chicken",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-hash-brown-scramble-bowl-w-spicy-chicken"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Hash Brown Scramble Bowl w/ Grilled Filet",
+          "contains": [
+            "milk",
+            "egg",
+            "soy"
+          ],
+          "id": "breakfast-hash-brown-scramble-bowl-w-grilled-filet"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Hash Brown Scramble Bowl w/ Sausage",
+          "contains": [
+            "milk",
+            "egg",
+            "soy"
+          ],
+          "id": "breakfast-hash-brown-scramble-bowl-w-sausage"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Hash Brown Scramble Bowl w/ Nuggets",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-hash-brown-scramble-bowl-w-nuggets"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Hash Brown Scramble Burrito w/ No Meat - no hash browns",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-hash-brown-scramble-burrito-w-no-meat-no-hash-browns"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Hash Brown Scramble Burrito w/ Bacon - no hash browns",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-hash-brown-scramble-burrito-w-bacon-no-hash-browns"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Hash Brown Scramble Burrito w/ Spicy Chicken - no hash browns",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-hash-brown-scramble-burrito-w-spicy-chicken-no-hash-browns"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Hash Brown Scramble Burrito w/ Grilled Filet - no hash brown",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-hash-brown-scramble-burrito-w-grilled-filet-no-hash-brown"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Hash Brown Scramble Burrito w/ Sausage - no hash browns",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-hash-brown-scramble-burrito-w-sausage-no-hash-browns"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Hash Brown Scramble Burrito w/ Nuggets - no hash browns",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-hash-brown-scramble-burrito-w-nuggets-no-hash-browns"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Hash Brown Scramble Burrito w/ No Meat",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-hash-brown-scramble-burrito-w-no-meat"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Hash Brown Scramble Burrito w/ Bacon",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-hash-brown-scramble-burrito-w-bacon"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Hash Brown Scramble Burrito w/ Spicy Chicken",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-hash-brown-scramble-burrito-w-spicy-chicken"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Hash Brown Scramble Burrito w/ Grilled Filet",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-hash-brown-scramble-burrito-w-grilled-filet"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Hash Brown Scramble Burrito w/ Sausage",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-hash-brown-scramble-burrito-w-sausage"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Hash Brown Scramble Burrito w/ Nuggets",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-hash-brown-scramble-burrito-w-nuggets"
+        },
+        {
+          "category": "Breakfast",
+          "name": "10 ct Chick-fil-A Chick-n-Minis®",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-10-ct-chick-fil-a-chick-n-minis"
+        },
+        {
+          "category": "Breakfast",
+          "name": "4 ct Chick-fil-A Chick-n-Minis®",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-4-ct-chick-fil-a-chick-n-minis"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Sausage, Egg & Cheese Muffin",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-sausage-egg-cheese-muffin"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Bacon, Egg & Cheese Muffin",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-bacon-egg-cheese-muffin"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Chicken, Egg & Cheese Muffin",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-chicken-egg-cheese-muffin"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Sausage, Egg & Cheese Biscuit",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-sausage-egg-cheese-biscuit"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Bacon, Egg & Cheese Biscuit",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-bacon-egg-cheese-biscuit"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Chicken, Egg & Cheese Biscuit",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-chicken-egg-cheese-biscuit"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Egg White Grill",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-egg-white-grill"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Spicy Chicken Biscuit",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-spicy-chicken-biscuit"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Chick-fil-A® Chicken Biscuit",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-chick-fil-a-chicken-biscuit"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Chicken & Waffles Breakfast Sandwich w/ Grilled Filet",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-chicken-waffles-breakfast-sandwich-w-grilled-filet"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Chicken & Waffles Breakfast Sandwich w/ Spicy Filet",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-chicken-waffles-breakfast-sandwich-w-spicy-filet"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Berry Parfait w/ Cookie Crumbs",
+          "contains": [
+            "milk",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-berry-parfait-w-cookie-crumbs"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Berry Parfait w/ Granola",
+          "contains": [
+            "milk",
+            "treenuts"
+          ],
+          "id": "breakfast-berry-parfait-w-granola"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Large Hash Browns",
+          "contains": [],
+          "id": "breakfast-large-hash-browns"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Small Hash Browns",
+          "contains": [],
+          "id": "breakfast-small-hash-browns"
+        },
+        {
+          "category": "Breakfast",
+          "name": "Chicken & Waffles Breakfast Sandwich w/ Chick-fil-A® Filet",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "breakfast-chicken-waffles-breakfast-sandwich-w-chick-fil-a-filet"
+        },
+        {
+          "category": "Entrées",
+          "name": "2 ct Chick-fil-A Chick-n-Strips®",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "entrees-2-ct-chick-fil-a-chick-n-strips"
+        },
+        {
+          "category": "Entrées",
+          "name": "10 ct Chick-fil-A Chick-n-Strips®",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "entrees-10-ct-chick-fil-a-chick-n-strips"
+        },
+        {
+          "category": "Entrées",
+          "name": "4 ct Chick-fil-A Chick-n-Strips®",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "entrees-4-ct-chick-fil-a-chick-n-strips"
+        },
+        {
+          "category": "Entrées",
+          "name": "3 ct Chick-fil-A Chick-n-Strips®",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "entrees-3-ct-chick-fil-a-chick-n-strips"
+        },
+        {
+          "category": "Entrées",
+          "name": "30 ct Grilled Nuggets",
+          "contains": [],
+          "id": "entrees-30-ct-grilled-nuggets"
+        },
+        {
+          "category": "Entrées",
+          "name": "12 ct Grilled Nuggets",
+          "contains": [],
+          "id": "entrees-12-ct-grilled-nuggets"
+        },
+        {
+          "category": "Entrées",
+          "name": "8 ct Grilled Nuggets",
+          "contains": [],
+          "id": "entrees-8-ct-grilled-nuggets"
+        },
+        {
+          "category": "Entrées",
+          "name": "30 ct Chick-fil-A® Nuggets",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "entrees-30-ct-chick-fil-a-nuggets"
+        },
+        {
+          "category": "Entrées",
+          "name": "12 ct Chick-fil-A® Nuggets",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "entrees-12-ct-chick-fil-a-nuggets"
+        },
+        {
+          "category": "Entrées",
+          "name": "8 ct Chick-fil-A® Nuggets",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "entrees-8-ct-chick-fil-a-nuggets"
+        },
+        {
+          "category": "Entrées",
+          "name": "Grilled Chicken Club w/ No Cheese",
+          "contains": [
+            "egg",
+            "wheat"
+          ],
+          "id": "entrees-grilled-chicken-club-w-no-cheese"
+        },
+        {
+          "category": "Entrées",
+          "name": "Grilled Chicken Club w/ American",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "entrees-grilled-chicken-club-w-american"
+        },
+        {
+          "category": "Entrées",
+          "name": "Grilled Chicken Club w/ Pepper Jack",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "entrees-grilled-chicken-club-w-pepper-jack"
+        },
+        {
+          "category": "Entrées",
+          "name": "Grilled Chicken Club w/ Colby Jack",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "entrees-grilled-chicken-club-w-colby-jack"
+        },
+        {
+          "category": "Entrées",
+          "name": "Spicy Deluxe Sandwich w/ No Cheese",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat",
+            "sesame"
+          ],
+          "id": "entrees-spicy-deluxe-sandwich-w-no-cheese"
+        },
+        {
+          "category": "Entrées",
+          "name": "Spicy Deluxe Sandwich w/ American",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat",
+            "sesame"
+          ],
+          "id": "entrees-spicy-deluxe-sandwich-w-american"
+        },
+        {
+          "category": "Entrées",
+          "name": "Spicy Deluxe Sandwich w/ Colby Jack",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat",
+            "sesame"
+          ],
+          "id": "entrees-spicy-deluxe-sandwich-w-colby-jack"
+        },
+        {
+          "category": "Entrées",
+          "name": "Spicy Deluxe Sandwich w/ Pepper Jack",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat",
+            "sesame"
+          ],
+          "id": "entrees-spicy-deluxe-sandwich-w-pepper-jack"
+        },
+        {
+          "category": "Entrées",
+          "name": "Chick-fil-A® Deluxe Sandwich w/ No Cheese",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat",
+            "sesame"
+          ],
+          "id": "entrees-chick-fil-a-deluxe-sandwich-w-no-cheese"
+        },
+        {
+          "category": "Entrées",
+          "name": "Chick-fil-A® Deluxe Sandwich w/ Pepper Jack",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat",
+            "sesame"
+          ],
+          "id": "entrees-chick-fil-a-deluxe-sandwich-w-pepper-jack"
+        },
+        {
+          "category": "Entrées",
+          "name": "Chick-fil-A® Deluxe Sandwich w/ Colby Jack",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat",
+            "sesame"
+          ],
+          "id": "entrees-chick-fil-a-deluxe-sandwich-w-colby-jack"
+        },
+        {
+          "category": "Entrées",
+          "name": "Chick-fil-A® Deluxe Sandwich w/ American",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat",
+            "sesame"
+          ],
+          "id": "entrees-chick-fil-a-deluxe-sandwich-w-american"
+        },
+        {
+          "category": "Entrées",
+          "name": "Chick-fil-A Cool Wrap®",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat",
+            "sesame"
+          ],
+          "id": "entrees-chick-fil-a-cool-wrap"
+        },
+        {
+          "category": "Entrées",
+          "name": "Grilled Chicken Sandwich",
+          "contains": [
+            "egg",
+            "wheat"
+          ],
+          "id": "entrees-grilled-chicken-sandwich"
+        },
+        {
+          "category": "Entrées",
+          "name": "Spicy Chicken Sandwich",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat",
+            "sesame"
+          ],
+          "id": "entrees-spicy-chicken-sandwich"
+        },
+        {
+          "category": "Entrées",
+          "name": "Chick-fil-A® Chicken Sandwich",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat",
+            "sesame"
+          ],
+          "id": "entrees-chick-fil-a-chicken-sandwich"
+        },
+        {
+          "category": "Entrées",
+          "name": "Chicken & Waffles Sandwich w/ Grilled Filet",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "entrees-chicken-waffles-sandwich-w-grilled-filet"
+        },
+        {
+          "category": "Entrées",
+          "name": "Chicken & Waffles Sandwich w/ Spicy Filet",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "entrees-chicken-waffles-sandwich-w-spicy-filet"
+        },
+        {
+          "category": "Entrées",
+          "name": "Chicken & Waffles Sandwich w/ Chick-fil-A® Filet",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "entrees-chicken-waffles-sandwich-w-chick-fil-a-filet"
+        },
+        {
+          "category": "Salads",
+          "name": "Market Salad w/ No Chicken",
+          "contains": [
+            "milk",
+            "treenuts"
+          ],
+          "id": "salads-market-salad-w-no-chicken"
+        },
+        {
+          "category": "Salads",
+          "name": "Market Salad w/ Grilled Filet (Warm)",
+          "contains": [
+            "milk",
+            "treenuts"
+          ],
+          "id": "salads-market-salad-w-grilled-filet-warm"
+        },
+        {
+          "category": "Salads",
+          "name": "Market Salad w/ Grilled Nuggets",
+          "contains": [
+            "milk",
+            "treenuts"
+          ],
+          "id": "salads-market-salad-w-grilled-nuggets"
+        },
+        {
+          "category": "Salads",
+          "name": "Market Salad w/ Nuggets",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat",
+            "treenuts"
+          ],
+          "id": "salads-market-salad-w-nuggets"
+        },
+        {
+          "category": "Salads",
+          "name": "Market Salad w/ Chick-fil-A Chick-n-Strips®",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat",
+            "treenuts"
+          ],
+          "id": "salads-market-salad-w-chick-fil-a-chick-n-strips"
+        },
+        {
+          "category": "Salads",
+          "name": "Market Salad w/ Spicy Grilled Filet (Cold)",
+          "contains": [
+            "milk",
+            "soy",
+            "treenuts"
+          ],
+          "id": "salads-market-salad-w-spicy-grilled-filet-cold"
+        },
+        {
+          "category": "Salads",
+          "name": "Market Salad w/ Grilled Filet (Cold)",
+          "contains": [
+            "milk",
+            "treenuts"
+          ],
+          "id": "salads-market-salad-w-grilled-filet-cold"
+        },
+        {
+          "category": "Salads",
+          "name": "Spicy Southwest Salad w/ No Chicken",
+          "contains": [
+            "milk",
+            "egg"
+          ],
+          "id": "salads-spicy-southwest-salad-w-no-chicken"
+        },
+        {
+          "category": "Salads",
+          "name": "Spicy Southwest Salad w/ Grilled Filet (Warm)",
+          "contains": [
+            "milk",
+            "egg"
+          ],
+          "id": "salads-spicy-southwest-salad-w-grilled-filet-warm"
+        },
+        {
+          "category": "Salads",
+          "name": "Spicy Southwest Salad w/ Chick-fil-A Chick-n-Strips®",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "salads-spicy-southwest-salad-w-chick-fil-a-chick-n-strips"
+        },
+        {
+          "category": "Salads",
+          "name": "Spicy Southwest Salad w/ Grilled Nuggets",
+          "contains": [
+            "milk",
+            "egg"
+          ],
+          "id": "salads-spicy-southwest-salad-w-grilled-nuggets"
+        },
+        {
+          "category": "Salads",
+          "name": "Spicy Southwest Salad w/ Nuggets",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "salads-spicy-southwest-salad-w-nuggets"
+        },
+        {
+          "category": "Salads",
+          "name": "Spicy Southwest Salad w/ Grilled Filet (Cold)",
+          "contains": [
+            "milk",
+            "egg"
+          ],
+          "id": "salads-spicy-southwest-salad-w-grilled-filet-cold"
+        },
+        {
+          "category": "Salads",
+          "name": "Spicy Southwest Salad w/ Spicy Grilled Filet (Cold)",
+          "contains": [
+            "milk",
+            "egg",
+            "soy"
+          ],
+          "id": "salads-spicy-southwest-salad-w-spicy-grilled-filet-cold"
+        },
+        {
+          "category": "Salads",
+          "name": "Cobb Salad w/ No Chicken",
+          "contains": [
+            "milk",
+            "egg"
+          ],
+          "id": "salads-cobb-salad-w-no-chicken"
+        },
+        {
+          "category": "Salads",
+          "name": "Cobb Salad w/ Grilled Filet (Warm)",
+          "contains": [
+            "milk",
+            "egg"
+          ],
+          "id": "salads-cobb-salad-w-grilled-filet-warm"
+        },
+        {
+          "category": "Salads",
+          "name": "Cobb Salad w/ Grilled Filet (Cold)",
+          "contains": [
+            "milk",
+            "egg"
+          ],
+          "id": "salads-cobb-salad-w-grilled-filet-cold"
+        },
+        {
+          "category": "Salads",
+          "name": "Cobb Salad w/ Chick-fil-A Chick-n-Strips®",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "salads-cobb-salad-w-chick-fil-a-chick-n-strips"
+        },
+        {
+          "category": "Salads",
+          "name": "Cobb Salad w/ Grilled Nuggets",
+          "contains": [
+            "milk",
+            "egg"
+          ],
+          "id": "salads-cobb-salad-w-grilled-nuggets"
+        },
+        {
+          "category": "Salads",
+          "name": "Cobb Salad w/ Spicy Grilled Filet (Cold)",
+          "contains": [
+            "milk",
+            "egg",
+            "soy"
+          ],
+          "id": "salads-cobb-salad-w-spicy-grilled-filet-cold"
+        },
+        {
+          "category": "Salads",
+          "name": "Cobb Salad w/ Nuggets",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "salads-cobb-salad-w-nuggets"
+        },
+        {
+          "category": "Sides",
+          "name": "Small Mac & Cheese",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "sides-small-mac-cheese"
+        },
+        {
+          "category": "Sides",
+          "name": "Medium Mac & Cheese",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "sides-medium-mac-cheese"
+        },
+        {
+          "category": "Sides",
+          "name": "Small Chick-fil-A Waffle Potato Fries®",
+          "contains": [],
+          "id": "sides-small-chick-fil-a-waffle-potato-fries"
+        },
+        {
+          "category": "Sides",
+          "name": "Large Chick-fil-A Waffle Potato Fries®",
+          "contains": [],
+          "id": "sides-large-chick-fil-a-waffle-potato-fries"
+        },
+        {
+          "category": "Sides",
+          "name": "Medium Chick-fil-A Waffle Potato Fries®",
+          "contains": [],
+          "id": "sides-medium-chick-fil-a-waffle-potato-fries"
+        },
+        {
+          "category": "Sides",
+          "name": "Side Salad",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "sides-side-salad"
+        },
+        {
+          "category": "Sides",
+          "name": "Bowl of Chicken Noodle Soup",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "sides-bowl-of-chicken-noodle-soup"
+        },
+        {
+          "category": "Sides",
+          "name": "Cup of Chicken Noodle Soup",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "sides-cup-of-chicken-noodle-soup"
+        },
+        {
+          "category": "Sides",
+          "name": "Chicken Tortilla Soup",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "sides-chicken-tortilla-soup"
+        },
+        {
+          "category": "Sides",
+          "name": "Kale Crunch Side",
+          "contains": [
+            "treenuts"
+          ],
+          "id": "sides-kale-crunch-side"
+        },
+        {
+          "category": "Sides",
+          "name": "Large Fruit Cup",
+          "contains": [],
+          "id": "sides-large-fruit-cup"
+        },
+        {
+          "category": "Sides",
+          "name": "Small Fruit Cup",
+          "contains": [],
+          "id": "sides-small-fruit-cup"
+        },
+        {
+          "category": "Sides",
+          "name": "Medium Fruit Cup",
+          "contains": [],
+          "id": "sides-medium-fruit-cup"
+        },
+        {
+          "category": "Sides",
+          "name": "Berry Parfait w/ Cookie Crumbs",
+          "contains": [
+            "milk",
+            "soy",
+            "wheat"
+          ],
+          "id": "sides-berry-parfait-w-cookie-crumbs"
+        },
+        {
+          "category": "Sides",
+          "name": "Berry Parfait w/ Granola",
+          "contains": [
+            "milk",
+            "treenuts"
+          ],
+          "id": "sides-berry-parfait-w-granola"
+        },
+        {
+          "category": "Sides",
+          "name": "Buddy Fruits® Apple Sauce",
+          "contains": [],
+          "id": "sides-buddy-fruits-apple-sauce"
+        },
+        {
+          "category": "Sides",
+          "name": "Chick-fil-A® Sauce Flavored Waffle Potato Chips",
+          "contains": [],
+          "id": "sides-chick-fil-a-sauce-flavored-waffle-potato-chips"
+        },
+        {
+          "category": "Sides",
+          "name": "Original Flavor Waffle Potato Chips",
+          "contains": [],
+          "id": "sides-original-flavor-waffle-potato-chips"
+        },
+        {
+          "category": "Kid's Meals (nutrition per entrée only)",
+          "name": "Mac & Cheese Kid’s Meal",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "kids-meals-nutrition-per-entree-only-mac-cheese-kids-meal"
+        },
+        {
+          "category": "Kid's Meals (nutrition per entrée only)",
+          "name": "5 Ct Grilled Nuggets Kid's Meal",
+          "contains": [],
+          "id": "kids-meals-nutrition-per-entree-only-5-ct-grilled-nuggets-kids-meal"
+        },
+        {
+          "category": "Kid's Meals (nutrition per entrée only)",
+          "name": "2 Ct Chick-n-Strips® Kid's Meal",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "kids-meals-nutrition-per-entree-only-2-ct-chick-n-strips-kids-meal"
+        },
+        {
+          "category": "Kid's Meals (nutrition per entrée only)",
+          "name": "5 Ct Nuggets Kid's Meal",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "kids-meals-nutrition-per-entree-only-5-ct-nuggets-kids-meal"
+        },
+        {
+          "category": "Treats",
+          "name": "Chocolate Fudge Brownie",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "treats-chocolate-fudge-brownie"
+        },
+        {
+          "category": "Treats",
+          "name": "6 pack Chocolate Chunk Cookie",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "treats-6-pack-chocolate-chunk-cookie"
+        },
+        {
+          "category": "Treats",
+          "name": "Chocolate Chunk Cookie",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "treats-chocolate-chunk-cookie"
+        },
+        {
+          "category": "Treats",
+          "name": "Frosted Powerade® Mountain Berry Blast",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-frosted-powerade-mountain-berry-blast"
+        },
+        {
+          "category": "Treats",
+          "name": "Frosted Barq’s® Red Flash",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-frosted-barqs-red-flash"
+        },
+        {
+          "category": "Treats",
+          "name": "Frosted Fanta® Strawberry",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-frosted-fanta-strawberry"
+        },
+        {
+          "category": "Treats",
+          "name": "Frosted Fanta® Orange",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-frosted-fanta-orange"
+        },
+        {
+          "category": "Treats",
+          "name": "Frosted Mello Yello®",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-frosted-mello-yello"
+        },
+        {
+          "category": "Treats",
+          "name": "Frosted Caffeine Free Barq’s® Root Beer",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-frosted-caffeine-free-barqs-root-beer"
+        },
+        {
+          "category": "Treats",
+          "name": "Frosted Sprite®",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-frosted-sprite"
+        },
+        {
+          "category": "Treats",
+          "name": "Frosted Hi-C® Orange",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-frosted-hi-c-orange"
+        },
+        {
+          "category": "Treats",
+          "name": "Frosted Hi-C® Fruit Punch",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-frosted-hi-c-fruit-punch"
+        },
+        {
+          "category": "Treats",
+          "name": "Frosted Coca-Cola® Cherry",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-frosted-coca-cola-cherry"
+        },
+        {
+          "category": "Treats",
+          "name": "Frosted Caffeine Free Diet Coke®",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-frosted-caffeine-free-diet-coke"
+        },
+        {
+          "category": "Treats",
+          "name": "Frosted Coke® Zero Sugar",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-frosted-coke-zero-sugar"
+        },
+        {
+          "category": "Treats",
+          "name": "Frosted Diet Coke®",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-frosted-diet-coke"
+        },
+        {
+          "category": "Treats",
+          "name": "Frosted Coke®",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-frosted-coke"
+        },
+        {
+          "category": "Treats",
+          "name": "Frosted Barq’s® Root Beer",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-frosted-barqs-root-beer"
+        },
+        {
+          "category": "Treats",
+          "name": "Frosted Diet Dr Pepper®",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-frosted-diet-dr-pepper"
+        },
+        {
+          "category": "Treats",
+          "name": "Frosted Dr Pepper®",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-frosted-dr-pepper"
+        },
+        {
+          "category": "Treats",
+          "name": "Frosted Lemonade w/ Diet Lemonade",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-frosted-lemonade-w-diet-lemonade"
+        },
+        {
+          "category": "Treats",
+          "name": "Frosted Lemonade",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-frosted-lemonade"
+        },
+        {
+          "category": "Treats",
+          "name": "Pineapple Dragonfruit Frosted Lemonade w/ Diet Lemonade",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-pineapple-dragonfruit-frosted-lemonade-w-diet-lemonade"
+        },
+        {
+          "category": "Treats",
+          "name": "Pineapple Dragonfruit Frosted Lemonade",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-pineapple-dragonfruit-frosted-lemonade"
+        },
+        {
+          "category": "Treats",
+          "name": "S’mores Frosted Coffee",
+          "contains": [
+            "milk",
+            "soy",
+            "wheat"
+          ],
+          "id": "treats-smores-frosted-coffee"
+        },
+        {
+          "category": "Treats",
+          "name": "Toasted Marshmallow Whipped Topping",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-toasted-marshmallow-whipped-topping"
+        },
+        {
+          "category": "Treats",
+          "name": "Chick-fil-A® Icedream® Cone",
+          "contains": [
+            "milk",
+            "soy",
+            "wheat"
+          ],
+          "id": "treats-chick-fil-a-icedream-cone"
+        },
+        {
+          "category": "Treats",
+          "name": "Chick-fil-A® Icedream® Cup",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-chick-fil-a-icedream-cup"
+        },
+        {
+          "category": "Treats",
+          "name": "Vanilla Milkshake",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-vanilla-milkshake"
+        },
+        {
+          "category": "Treats",
+          "name": "Strawberry Milkshake",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-strawberry-milkshake"
+        },
+        {
+          "category": "Treats",
+          "name": "Chocolate Milkshake",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-chocolate-milkshake"
+        },
+        {
+          "category": "Treats",
+          "name": "Cookies & Cream Milkshake",
+          "contains": [
+            "milk",
+            "soy",
+            "wheat"
+          ],
+          "id": "treats-cookies-cream-milkshake"
+        },
+        {
+          "category": "Treats",
+          "name": "Vanilla Frosted Coffee",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-vanilla-frosted-coffee"
+        },
+        {
+          "category": "Treats",
+          "name": "Mocha Frosted Coffee",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-mocha-frosted-coffee"
+        },
+        {
+          "category": "Treats",
+          "name": "Caramel Frosted Coffee",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-caramel-frosted-coffee"
+        },
+        {
+          "category": "Treats",
+          "name": "Frosted Coffee",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-frosted-coffee"
+        },
+        {
+          "category": "Treats",
+          "name": "Dr Pepper® Float",
+          "contains": [
+            "milk"
+          ],
+          "id": "treats-dr-pepper-float"
+        },
+        {
+          "category": "Drinks",
+          "name": "Gallon Pineapple Dragonfruit Unsweet Tea",
+          "contains": [],
+          "id": "drinks-gallon-pineapple-dragonfruit-unsweet-tea"
+        },
+        {
+          "category": "Drinks",
+          "name": "Gallon Pineapple Dragonfruit Sweet Tea",
+          "contains": [],
+          "id": "drinks-gallon-pineapple-dragonfruit-sweet-tea"
+        },
+        {
+          "category": "Drinks",
+          "name": "Gallon Pineapple Dragonfruit Sunjoy® (1/2 Unsweet Tea, 1/2 Diet Lemonade)",
+          "contains": [],
+          "id": "drinks-gallon-pineapple-dragonfruit-sunjoy-12-unsweet-tea-12-diet-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Gallon Pineapple Dragonfruit Sunjoy® (1/2 Sweet Tea, 1/2 Diet Lemonade)",
+          "contains": [],
+          "id": "drinks-gallon-pineapple-dragonfruit-sunjoy-12-sweet-tea-12-diet-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Gallon Pineapple Dragonfruit Sunjoy® (1/2 Unsweet Tea, 1/2 Lemonade)",
+          "contains": [],
+          "id": "drinks-gallon-pineapple-dragonfruit-sunjoy-12-unsweet-tea-12-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Gallon Pineapple Dragonfruit Sunjoy® (1/2 Sweet Tea, 1/2 Lemonade)",
+          "contains": [],
+          "id": "drinks-gallon-pineapple-dragonfruit-sunjoy-12-sweet-tea-12-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Gallon Pineapple Dragonfruit Diet Lemonade",
+          "contains": [],
+          "id": "drinks-gallon-pineapple-dragonfruit-diet-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Gallon Pineapple Dragonfruit Lemonade",
+          "contains": [],
+          "id": "drinks-gallon-pineapple-dragonfruit-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Bag of Ice",
+          "contains": [],
+          "id": "drinks-bag-of-ice"
+        },
+        {
+          "category": "Drinks",
+          "name": "Gallon Sunjoy® (1/2 Unsweet Tea, 1/2 Diet Lemonade)",
+          "contains": [],
+          "id": "drinks-gallon-sunjoy-12-unsweet-tea-12-diet-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Gallon Sunjoy® (1/2 Unsweet Tea, 1/2 Lemonade)",
+          "contains": [],
+          "id": "drinks-gallon-sunjoy-12-unsweet-tea-12-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Gallon Sunjoy® (1/2 Sweet Tea, 1/2 Diet Lemonade)",
+          "contains": [],
+          "id": "drinks-gallon-sunjoy-12-sweet-tea-12-diet-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Gallon Sunjoy® (1/2 Sweet Tea, 1/2 Lemonade)",
+          "contains": [],
+          "id": "drinks-gallon-sunjoy-12-sweet-tea-12-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Gallon Chick-fil-A® Iced Tea (1/2 Sweet Tea, 1/2 Unsweet Tea)",
+          "contains": [],
+          "id": "drinks-gallon-chick-fil-a-iced-tea-12-sweet-tea-12-unsweet-tea"
+        },
+        {
+          "category": "Drinks",
+          "name": "Gallon Freshly-Brewed Iced Tea Unsweetened",
+          "contains": [],
+          "id": "drinks-gallon-freshly-brewed-iced-tea-unsweetened"
+        },
+        {
+          "category": "Drinks",
+          "name": "Gallon Freshly-Brewed Iced Tea Sweetened",
+          "contains": [],
+          "id": "drinks-gallon-freshly-brewed-iced-tea-sweetened"
+        },
+        {
+          "category": "Drinks",
+          "name": "Gallon Chick-fil-A® Lemonade (1/2 Lemonade, 1/2 Diet Lemonade)",
+          "contains": [],
+          "id": "drinks-gallon-chick-fil-a-lemonade-12-lemonade-12-diet-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Gallon Chick-fil-A® Diet Lemonade",
+          "contains": [],
+          "id": "drinks-gallon-chick-fil-a-diet-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Gallon Chick-fil-A® Lemonade",
+          "contains": [],
+          "id": "drinks-gallon-chick-fil-a-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Large Freshly-Brewed Sweetened Iced Tea",
+          "contains": [],
+          "id": "drinks-large-freshly-brewed-sweetened-iced-tea"
+        },
+        {
+          "category": "Drinks",
+          "name": "Medium Freshly-Brewed Sweetened Iced Tea",
+          "contains": [],
+          "id": "drinks-medium-freshly-brewed-sweetened-iced-tea"
+        },
+        {
+          "category": "Drinks",
+          "name": "Small Freshly-Brewed Sweetened Iced Tea",
+          "contains": [],
+          "id": "drinks-small-freshly-brewed-sweetened-iced-tea"
+        },
+        {
+          "category": "Drinks",
+          "name": "Toasted Marshmallow Hot Coffee",
+          "contains": [],
+          "id": "drinks-toasted-marshmallow-hot-coffee"
+        },
+        {
+          "category": "Drinks",
+          "name": "Large Dr Pepper®",
+          "contains": [],
+          "id": "drinks-large-dr-pepper"
+        },
+        {
+          "category": "Drinks",
+          "name": "Medium Dr Pepper®",
+          "contains": [],
+          "id": "drinks-medium-dr-pepper"
+        },
+        {
+          "category": "Drinks",
+          "name": "Small Dr Pepper®",
+          "contains": [],
+          "id": "drinks-small-dr-pepper"
+        },
+        {
+          "category": "Drinks",
+          "name": "Large Coca-Cola®",
+          "contains": [],
+          "id": "drinks-large-coca-cola"
+        },
+        {
+          "category": "Drinks",
+          "name": "Medium Coca-Cola®",
+          "contains": [],
+          "id": "drinks-medium-coca-cola"
+        },
+        {
+          "category": "Drinks",
+          "name": "Small Coca-Cola®",
+          "contains": [],
+          "id": "drinks-small-coca-cola"
+        },
+        {
+          "category": "Drinks",
+          "name": "Large Sunjoy® (1/2 Sweet Tea, 1/2 Diet Lemonade)",
+          "contains": [],
+          "id": "drinks-large-sunjoy-12-sweet-tea-12-diet-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Medium Sunjoy® (1/2 Sweet Tea, 1/2 Diet Lemonade)",
+          "contains": [],
+          "id": "drinks-medium-sunjoy-12-sweet-tea-12-diet-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Small Sunjoy® (1/2 Sweet Tea, 1/2 Diet Lemonade)",
+          "contains": [],
+          "id": "drinks-small-sunjoy-12-sweet-tea-12-diet-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Large Sunjoy® (1/2 Unsweet Tea, 1/2 Lemonade)",
+          "contains": [],
+          "id": "drinks-large-sunjoy-12-unsweet-tea-12-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Medium Sunjoy® (1/2 Unsweet Tea, 1/2 Lemonade)",
+          "contains": [],
+          "id": "drinks-medium-sunjoy-12-unsweet-tea-12-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Small Sunjoy® (1/2 Unsweet Tea, 1/2 Lemonade)",
+          "contains": [],
+          "id": "drinks-small-sunjoy-12-unsweet-tea-12-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Large Sunjoy® (1/2 Unsweet Tea, 1/2 Diet Lemonade)",
+          "contains": [],
+          "id": "drinks-large-sunjoy-12-unsweet-tea-12-diet-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Medium Sunjoy® (1/2 Unsweet Tea, 1/2 Diet Lemonade)",
+          "contains": [],
+          "id": "drinks-medium-sunjoy-12-unsweet-tea-12-diet-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Small Sunjoy® (1/2 Unsweet Tea, 1/2 Diet Lemonade)",
+          "contains": [],
+          "id": "drinks-small-sunjoy-12-unsweet-tea-12-diet-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Large Sunjoy® (1/2 Sweet Tea, 1/2 Lemonade)",
+          "contains": [],
+          "id": "drinks-large-sunjoy-12-sweet-tea-12-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Medium Sunjoy® (1/2 Sweet Tea, 1/2 Lemonade)",
+          "contains": [],
+          "id": "drinks-medium-sunjoy-12-sweet-tea-12-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Small Sunjoy® (1/2 Sweet Tea, 1/2 Lemonade)",
+          "contains": [],
+          "id": "drinks-small-sunjoy-12-sweet-tea-12-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Large Chick-fil-A® Diet Lemonade",
+          "contains": [],
+          "id": "drinks-large-chick-fil-a-diet-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Medium Chick-fil-A® Diet Lemonade",
+          "contains": [],
+          "id": "drinks-medium-chick-fil-a-diet-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Small Chick-fil-A® Diet Lemonade",
+          "contains": [],
+          "id": "drinks-small-chick-fil-a-diet-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Large Chick-fil-A® Lemonade",
+          "contains": [],
+          "id": "drinks-large-chick-fil-a-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Medium Chick-fil-A® Lemonade",
+          "contains": [],
+          "id": "drinks-medium-chick-fil-a-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Small Chick-fil-A® Lemonade",
+          "contains": [],
+          "id": "drinks-small-chick-fil-a-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Large Freshly-Brewed Unsweetened Iced Tea",
+          "contains": [],
+          "id": "drinks-large-freshly-brewed-unsweetened-iced-tea"
+        },
+        {
+          "category": "Drinks",
+          "name": "Medium Freshly-Brewed Unsweetened Iced Tea",
+          "contains": [],
+          "id": "drinks-medium-freshly-brewed-unsweetened-iced-tea"
+        },
+        {
+          "category": "Drinks",
+          "name": "Small Freshly-Brewed Unsweetened Iced Tea",
+          "contains": [],
+          "id": "drinks-small-freshly-brewed-unsweetened-iced-tea"
+        },
+        {
+          "category": "Drinks",
+          "name": "Pineapple Dragonfruit Diet Lemonade",
+          "contains": [],
+          "id": "drinks-pineapple-dragonfruit-diet-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Pineapple Dragonfruit Lemonade",
+          "contains": [],
+          "id": "drinks-pineapple-dragonfruit-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Iced Coffee",
+          "contains": [],
+          "id": "drinks-iced-coffee"
+        },
+        {
+          "category": "Drinks",
+          "name": "Honest Kids® Apple Juice",
+          "contains": [],
+          "id": "drinks-honest-kids-apple-juice"
+        },
+        {
+          "category": "Drinks",
+          "name": "1% Chocolate Milk",
+          "contains": [
+            "milk"
+          ],
+          "id": "drinks-1-chocolate-milk"
+        },
+        {
+          "category": "Drinks",
+          "name": "1% Milk",
+          "contains": [
+            "milk"
+          ],
+          "id": "drinks-1-milk"
+        },
+        {
+          "category": "Drinks",
+          "name": "Simply Orange®",
+          "contains": [],
+          "id": "drinks-simply-orange"
+        },
+        {
+          "category": "Drinks",
+          "name": "DASANI® Bottled Water",
+          "contains": [],
+          "id": "drinks-dasani-bottled-water"
+        },
+        {
+          "category": "Drinks",
+          "name": "Toasted Marshmallow Cream Cold Brew",
+          "contains": [
+            "milk"
+          ],
+          "id": "drinks-toasted-marshmallow-cream-cold-brew"
+        },
+        {
+          "category": "Drinks",
+          "name": "Toasted Marshmallow Iced Coffee",
+          "contains": [
+            "milk"
+          ],
+          "id": "drinks-toasted-marshmallow-iced-coffee"
+        },
+        {
+          "category": "Drinks",
+          "name": "Pineapple Dragonfruit Unsweet Tea",
+          "contains": [],
+          "id": "drinks-pineapple-dragonfruit-unsweet-tea"
+        },
+        {
+          "category": "Drinks",
+          "name": "Pineapple Dragonfruit Sweet Tea",
+          "contains": [],
+          "id": "drinks-pineapple-dragonfruit-sweet-tea"
+        },
+        {
+          "category": "Drinks",
+          "name": "Pineapple Dragonfruit Sunjoy® (Unsweet Tea, Diet Lemonade)",
+          "contains": [],
+          "id": "drinks-pineapple-dragonfruit-sunjoy-unsweet-tea-diet-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Pineapple Dragonfruit Sunjoy® (Unsweet Tea, Lemonade)",
+          "contains": [],
+          "id": "drinks-pineapple-dragonfruit-sunjoy-unsweet-tea-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Pineapple Dragonfruit Sunjoy® (Sweet Tea, Diet Lemonade)",
+          "contains": [],
+          "id": "drinks-pineapple-dragonfruit-sunjoy-sweet-tea-diet-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Pineapple Dragonfruit Sunjoy® (Sweet Tea, Lemonade)",
+          "contains": [],
+          "id": "drinks-pineapple-dragonfruit-sunjoy-sweet-tea-lemonade"
+        },
+        {
+          "category": "Drinks",
+          "name": "Pineapple Dragonfruit & Sprite®",
+          "contains": [],
+          "id": "drinks-pineapple-dragonfruit-sprite"
+        },
+        {
+          "category": "Coffee",
+          "name": "Hot Coffee",
+          "contains": [],
+          "id": "coffee-hot-coffee"
+        },
+        {
+          "category": "Coffee",
+          "name": "Toasted Marshmallow Hot Coffee",
+          "contains": [],
+          "id": "coffee-toasted-marshmallow-hot-coffee"
+        },
+        {
+          "category": "Coffee",
+          "name": "Vanilla Frosted Coffee",
+          "contains": [
+            "milk"
+          ],
+          "id": "coffee-vanilla-frosted-coffee"
+        },
+        {
+          "category": "Coffee",
+          "name": "Mocha Frosted Coffee",
+          "contains": [
+            "milk"
+          ],
+          "id": "coffee-mocha-frosted-coffee"
+        },
+        {
+          "category": "Coffee",
+          "name": "Caramel Frosted Coffee",
+          "contains": [
+            "milk"
+          ],
+          "id": "coffee-caramel-frosted-coffee"
+        },
+        {
+          "category": "Coffee",
+          "name": "Frosted Coffee",
+          "contains": [
+            "milk"
+          ],
+          "id": "coffee-frosted-coffee"
+        },
+        {
+          "category": "Coffee",
+          "name": "Cream Cold Brew",
+          "contains": [
+            "milk"
+          ],
+          "id": "coffee-cream-cold-brew"
+        },
+        {
+          "category": "Coffee",
+          "name": "Toasted Marshmallow Cream Cold Brew",
+          "contains": [
+            "milk"
+          ],
+          "id": "coffee-toasted-marshmallow-cream-cold-brew"
+        },
+        {
+          "category": "Coffee",
+          "name": "Vanilla Cream Cold Brew",
+          "contains": [
+            "milk"
+          ],
+          "id": "coffee-vanilla-cream-cold-brew"
+        },
+        {
+          "category": "Coffee",
+          "name": "Mocha Cream Cold Brew",
+          "contains": [
+            "milk"
+          ],
+          "id": "coffee-mocha-cream-cold-brew"
+        },
+        {
+          "category": "Coffee",
+          "name": "Caramel Cream Cold Brew",
+          "contains": [
+            "milk"
+          ],
+          "id": "coffee-caramel-cream-cold-brew"
+        },
+        {
+          "category": "Coffee",
+          "name": "Iced Coffee",
+          "contains": [
+            "milk"
+          ],
+          "id": "coffee-iced-coffee"
+        },
+        {
+          "category": "Coffee",
+          "name": "Toasted Marshmallow Iced Coffee",
+          "contains": [
+            "milk"
+          ],
+          "id": "coffee-toasted-marshmallow-iced-coffee"
+        },
+        {
+          "category": "Coffee",
+          "name": "Vanilla Iced Coffee",
+          "contains": [
+            "milk"
+          ],
+          "id": "coffee-vanilla-iced-coffee"
+        },
+        {
+          "category": "Coffee",
+          "name": "Mocha Iced Coffee",
+          "contains": [
+            "milk"
+          ],
+          "id": "coffee-mocha-iced-coffee"
+        },
+        {
+          "category": "Coffee",
+          "name": "Caramel Iced Coffee",
+          "contains": [
+            "milk"
+          ],
+          "id": "coffee-caramel-iced-coffee"
+        },
+        {
+          "category": "Coffee",
+          "name": "S’mores Frosted Coffee",
+          "contains": [
+            "milk",
+            "soy",
+            "wheat"
+          ],
+          "id": "coffee-smores-frosted-coffee"
+        },
+        {
+          "category": "Dipping Sauces",
+          "name": "Honey Roasted BBQ Sauce",
+          "contains": [
+            "egg"
+          ],
+          "id": "dipping-sauces-honey-roasted-bbq-sauce"
+        },
+        {
+          "category": "Dipping Sauces",
+          "name": "Zesty Buffalo Sauce",
+          "contains": [
+            "milk",
+            "egg"
+          ],
+          "id": "dipping-sauces-zesty-buffalo-sauce"
+        },
+        {
+          "category": "Dipping Sauces",
+          "name": "Sweet & Spicy Sriracha Sauce",
+          "contains": [
+            "soy",
+            "wheat"
+          ],
+          "id": "dipping-sauces-sweet-spicy-sriracha-sauce"
+        },
+        {
+          "category": "Dipping Sauces",
+          "name": "Polynesian Sauce",
+          "contains": [],
+          "id": "dipping-sauces-polynesian-sauce"
+        },
+        {
+          "category": "Dipping Sauces",
+          "name": "Honey Mustard Sauce",
+          "contains": [],
+          "id": "dipping-sauces-honey-mustard-sauce"
+        },
+        {
+          "category": "Dipping Sauces",
+          "name": "Garden Herb Ranch Sauce",
+          "contains": [
+            "milk",
+            "egg"
+          ],
+          "id": "dipping-sauces-garden-herb-ranch-sauce"
+        },
+        {
+          "category": "Dipping Sauces",
+          "name": "Chick-fil-A® Sauce",
+          "contains": [
+            "egg"
+          ],
+          "id": "dipping-sauces-chick-fil-a-sauce"
+        },
+        {
+          "category": "Dipping Sauces",
+          "name": "Barbeque Sauce",
+          "contains": [],
+          "id": "dipping-sauces-barbeque-sauce"
+        },
+        {
+          "category": "Dipping Sauces",
+          "name": "Classic Syrup",
+          "contains": [],
+          "id": "dipping-sauces-classic-syrup"
+        },
+        {
+          "category": "Dressings",
+          "name": "Zesty Apple Cider Vinaigrette Dressing",
+          "contains": [],
+          "id": "dressings-zesty-apple-cider-vinaigrette-dressing"
+        },
+        {
+          "category": "Dressings",
+          "name": "Light Italian Dressing",
+          "contains": [],
+          "id": "dressings-light-italian-dressing"
+        },
+        {
+          "category": "Dressings",
+          "name": "Light Balsamic Vinaigrette Dressing",
+          "contains": [],
+          "id": "dressings-light-balsamic-vinaigrette-dressing"
+        },
+        {
+          "category": "Dressings",
+          "name": "Garden Herb Ranch Dressing",
+          "contains": [
+            "milk",
+            "egg"
+          ],
+          "id": "dressings-garden-herb-ranch-dressing"
+        },
+        {
+          "category": "Dressings",
+          "name": "Fat-Free Honey Mustard Dressing",
+          "contains": [],
+          "id": "dressings-fat-free-honey-mustard-dressing"
+        },
+        {
+          "category": "Dressings",
+          "name": "Creamy Salsa Dressing",
+          "contains": [
+            "egg"
+          ],
+          "id": "dressings-creamy-salsa-dressing"
+        },
+        {
+          "category": "Dressings",
+          "name": "Avocado Lime Ranch Dressing",
+          "contains": [
+            "milk",
+            "egg"
+          ],
+          "id": "dressings-avocado-lime-ranch-dressing"
+        },
+        {
+          "category": "Buns",
+          "name": "Multigrain Brioche Bun",
+          "contains": [
+            "wheat"
+          ],
+          "id": "buns-multigrain-brioche-bun"
+        },
+        {
+          "category": "Buns",
+          "name": "Buttery White Bun",
+          "contains": [
+            "soy",
+            "wheat",
+            "sesame"
+          ],
+          "id": "buns-buttery-white-bun"
+        },
+        {
+          "category": "Buns",
+          "name": "Gluten Free Bun",
+          "contains": [
+            "egg"
+          ],
+          "id": "buns-gluten-free-bun"
+        },
+        {
+          "category": "Buns",
+          "name": "White Bun (Unbuttered)",
+          "contains": [
+            "wheat",
+            "sesame"
+          ],
+          "id": "buns-white-bun-unbuttered"
+        },
+        {
+          "category": "Proteins",
+          "name": "Chick-fil-A® Filet",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "proteins-chick-fil-a-filet"
+        },
+        {
+          "category": "Proteins",
+          "name": "Spicy Filet",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "proteins-spicy-filet"
+        },
+        {
+          "category": "Proteins",
+          "name": "Grilled Filet",
+          "contains": [],
+          "id": "proteins-grilled-filet"
+        },
+        {
+          "category": "Proteins",
+          "name": "Spicy Breakfast Filet",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "proteins-spicy-breakfast-filet"
+        },
+        {
+          "category": "Proteins",
+          "name": "Chick-fil-A® Breakfast Filet",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "proteins-chick-fil-a-breakfast-filet"
+        },
+        {
+          "category": "Proteins",
+          "name": "Grilled Breakfast Filet",
+          "contains": [],
+          "id": "proteins-grilled-breakfast-filet"
+        },
+        {
+          "category": "Proteins",
+          "name": "Sausage",
+          "contains": [],
+          "id": "proteins-sausage"
+        },
+        {
+          "category": "Proteins",
+          "name": "Bacon",
+          "contains": [],
+          "id": "proteins-bacon"
+        },
+        {
+          "category": "Salad Toppings",
+          "name": "Roasted Nut Blend",
+          "contains": [
+            "treenuts"
+          ],
+          "id": "salad-toppings-roasted-nut-blend"
+        },
+        {
+          "category": "Salad Toppings",
+          "name": "Seasoned Tortilla Strips",
+          "contains": [
+            "milk"
+          ],
+          "id": "salad-toppings-seasoned-tortilla-strips"
+        },
+        {
+          "category": "Salad Toppings",
+          "name": "Harvest Nut Granola",
+          "contains": [
+            "treenuts"
+          ],
+          "id": "salad-toppings-harvest-nut-granola"
+        },
+        {
+          "category": "Salad Toppings",
+          "name": "Crispy Bell Peppers",
+          "contains": [
+            "wheat"
+          ],
+          "id": "salad-toppings-crispy-bell-peppers"
+        },
+        {
+          "category": "Salad Toppings",
+          "name": "Chili Lime Pepitas",
+          "contains": [],
+          "id": "salad-toppings-chili-lime-pepitas"
+        },
+        {
+          "category": "Salad Toppings",
+          "name": "Blue Cheese Crumbles",
+          "contains": [
+            "milk"
+          ],
+          "id": "salad-toppings-blue-cheese-crumbles"
+        },
+        {
+          "category": "Sandwich Toppings",
+          "name": "Pepper Jack Cheese",
+          "contains": [
+            "milk"
+          ],
+          "id": "sandwich-toppings-pepper-jack-cheese"
+        },
+        {
+          "category": "Sandwich Toppings",
+          "name": "Colby Jack Cheese",
+          "contains": [
+            "milk"
+          ],
+          "id": "sandwich-toppings-colby-jack-cheese"
+        },
+        {
+          "category": "Sandwich Toppings",
+          "name": "American Cheese",
+          "contains": [
+            "milk"
+          ],
+          "id": "sandwich-toppings-american-cheese"
+        },
+        {
+          "category": "Sandwich Toppings",
+          "name": "Tomato",
+          "contains": [],
+          "id": "sandwich-toppings-tomato"
+        },
+        {
+          "category": "Sandwich Toppings",
+          "name": "Lettuce",
+          "contains": [],
+          "id": "sandwich-toppings-lettuce"
+        },
+        {
+          "category": "Sandwich Toppings",
+          "name": "Bacon",
+          "contains": [],
+          "id": "sandwich-toppings-bacon"
+        },
+        {
+          "category": "Soup Toppings",
+          "name": "Saltines",
+          "contains": [
+            "soy",
+            "wheat"
+          ],
+          "id": "soup-toppings-saltines"
+        },
+        {
+          "category": "Trays",
+          "name": "Large Chick-n-Strips™ Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "trays-large-chick-n-stripsTM-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Medium Chick-n-Strips™ Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "trays-medium-chick-n-stripsTM-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Small Chick-n-Strips™ Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "trays-small-chick-n-stripsTM-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Large Chick-fil-A® Nuggets Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "trays-large-chick-fil-a-nuggets-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Medium Chick-fil-A®Nuggets Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "trays-medium-chick-fil-anuggets-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Small Chick-fil-A® Nuggets Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "trays-small-chick-fil-a-nuggets-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "30 ct Chick-fil-A® Nuggets Football-Shaped Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "trays-30-ct-chick-fil-a-nuggets-football-shaped-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "10 ct Chick-fil-A Chick-n-Minis® Football-Shaped Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "trays-10-ct-chick-fil-a-chick-n-minis-football-shaped-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Large Chocolate Chunk Cookie and Chocolate Fudge Brownie Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "trays-large-chocolate-chunk-cookie-and-chocolate-fudge-brownie-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Small Chocolate Chunk Cookie and Chocolate Fudge Brownie Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "trays-small-chocolate-chunk-cookie-and-chocolate-fudge-brownie-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Large Chocolate Fudge Brownie Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "trays-large-chocolate-fudge-brownie-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Small Chocolate Fudge Brownie Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "trays-small-chocolate-fudge-brownie-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Large Chocolate Chunk Cookie Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "trays-large-chocolate-chunk-cookie-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Small Chocolate Chunk Cookie Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "trays-small-chocolate-chunk-cookie-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Large Kale Crunch Side Tray",
+          "contains": [
+            "treenuts"
+          ],
+          "id": "trays-large-kale-crunch-side-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Small Kale Crunch Side Tray",
+          "contains": [
+            "treenuts"
+          ],
+          "id": "trays-small-kale-crunch-side-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Large Garden Salad Tray",
+          "contains": [
+            "milk"
+          ],
+          "id": "trays-large-garden-salad-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Small Garden Salad Tray",
+          "contains": [
+            "milk"
+          ],
+          "id": "trays-small-garden-salad-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Large Mac & Cheese Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "trays-large-mac-cheese-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Small Mac & Cheese Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "trays-small-mac-cheese-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Large Spicy Chilled Grilled Chicken Sub Sandwich Tray",
+          "contains": [
+            "milk",
+            "soy",
+            "wheat"
+          ],
+          "id": "trays-large-spicy-chilled-grilled-chicken-sub-sandwich-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Medium Spicy Chilled Grilled Chicken Sub Sandwich Tray",
+          "contains": [
+            "milk",
+            "soy",
+            "wheat"
+          ],
+          "id": "trays-medium-spicy-chilled-grilled-chicken-sub-sandwich-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Small Spicy Chilled Grilled Chicken Sub Sandwich Tray",
+          "contains": [
+            "milk",
+            "soy",
+            "wheat"
+          ],
+          "id": "trays-small-spicy-chilled-grilled-chicken-sub-sandwich-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Large Chilled Grilled Chicken Sub Sandwich Tray",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "id": "trays-large-chilled-grilled-chicken-sub-sandwich-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Medium Chilled Grilled Chicken Sub Sandwich Tray",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "id": "trays-medium-chilled-grilled-chicken-sub-sandwich-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Small Chilled Grilled Chicken Sub Sandwich Tray",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "id": "trays-small-chilled-grilled-chicken-sub-sandwich-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Grilled Chicken Bundle",
+          "contains": [
+            "milk",
+            "wheat"
+          ],
+          "id": "trays-grilled-chicken-bundle"
+        },
+        {
+          "category": "Trays",
+          "name": "Large Southwest Veggie Wrap Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat",
+            "sesame"
+          ],
+          "id": "trays-large-southwest-veggie-wrap-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Medium Southwest Veggie Wrap Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat",
+            "sesame"
+          ],
+          "id": "trays-medium-southwest-veggie-wrap-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Small Southwest Veggie Wrap Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat",
+            "sesame"
+          ],
+          "id": "trays-small-southwest-veggie-wrap-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Large Spicy Cool Wrap® Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat",
+            "sesame"
+          ],
+          "id": "trays-large-spicy-cool-wrap-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Medium Spicy Cool Wrap® Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat",
+            "sesame"
+          ],
+          "id": "trays-medium-spicy-cool-wrap-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Small Spicy Cool Wrap® Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat",
+            "sesame"
+          ],
+          "id": "trays-small-spicy-cool-wrap-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Large Chick-fil-A® Cool Wrap Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat",
+            "sesame"
+          ],
+          "id": "trays-large-chick-fil-a-cool-wrap-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Medium Chick-fil-A® Cool Wrap Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat",
+            "sesame"
+          ],
+          "id": "trays-medium-chick-fil-a-cool-wrap-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Small Chick-fil-A® Cool Wrap Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat",
+            "sesame"
+          ],
+          "id": "trays-small-chick-fil-a-cool-wrap-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Large Chilled Chick-n-Strips® (Cooked & Chilled for Later) Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "trays-large-chilled-chick-n-strips-cooked-chilled-for-later-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Medium Chilled Chick-n-Strips® (Cooked & Chilled for Later) Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "trays-medium-chilled-chick-n-strips-cooked-chilled-for-later-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Small Chilled Chick-n-Strips® (Cooked & Chilled for Later) Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "trays-small-chilled-chick-n-strips-cooked-chilled-for-later-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Large Chilled Chick-fil-A® Nuggets Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "trays-large-chilled-chick-fil-a-nuggets-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Medium Chilled Chick-fil-A® Nuggets Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "trays-medium-chilled-chick-fil-a-nuggets-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Small Chilled Chick-fil-A® Nuggets Tray",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "trays-small-chilled-chick-fil-a-nuggets-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Large Fruit Tray",
+          "contains": [],
+          "id": "trays-large-fruit-tray"
+        },
+        {
+          "category": "Trays",
+          "name": "Small Fruit Tray",
+          "contains": [],
+          "id": "trays-small-fruit-tray"
+        },
+        {
+          "category": "Catering Entrées",
+          "name": "12 ct Chick-fil-A® Nuggets",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "catering-entrees-12-ct-chick-fil-a-nuggets"
+        },
+        {
+          "category": "Catering Entrées",
+          "name": "8 ct Chick-fil-A® Nuggets",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "catering-entrees-8-ct-chick-fil-a-nuggets"
+        },
+        {
+          "category": "Catering Entrées",
+          "name": "Spicy Chicken Sandwich",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat",
+            "sesame"
+          ],
+          "id": "catering-entrees-spicy-chicken-sandwich"
+        },
+        {
+          "category": "Catering Entrées",
+          "name": "Chick-fil-A® Chicken Sandwich",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat",
+            "sesame"
+          ],
+          "id": "catering-entrees-chick-fil-a-chicken-sandwich"
+        },
+        {
+          "category": "Catering Entrées",
+          "name": "Spicy Chilled Grilled Chicken Sub Sandwich",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "catering-entrees-spicy-chilled-grilled-chicken-sub-sandwich"
+        },
+        {
+          "category": "Catering Entrées",
+          "name": "Chilled Grilled Chicken Sub Sandwich",
+          "contains": [
+            "milk",
+            "egg",
+            "wheat"
+          ],
+          "id": "catering-entrees-chilled-grilled-chicken-sub-sandwich"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Gallon Pineapple Dragonfruit Unsweet Tea",
+          "contains": [],
+          "id": "catering-drinks-gallon-pineapple-dragonfruit-unsweet-tea"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Gallon Pineapple Dragonfruit Sweet Tea",
+          "contains": [],
+          "id": "catering-drinks-gallon-pineapple-dragonfruit-sweet-tea"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Gallon Pineapple Dragonfruit Sunjoy® (1/2 Unsweet Tea, 1/2 Diet Lemonade)",
+          "contains": [],
+          "id": "catering-drinks-gallon-pineapple-dragonfruit-sunjoy-12-unsweet-tea-12-diet-lemonade"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Gallon Pineapple Dragonfruit Sunjoy® (1/2 Sweet Tea, 1/2 Diet Lemonade)",
+          "contains": [],
+          "id": "catering-drinks-gallon-pineapple-dragonfruit-sunjoy-12-sweet-tea-12-diet-lemonade"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Gallon Pineapple Dragonfruit Sunjoy® (1/2 Unsweet Tea, 1/2 Lemonade)",
+          "contains": [],
+          "id": "catering-drinks-gallon-pineapple-dragonfruit-sunjoy-12-unsweet-tea-12-lemonade"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Gallon Pineapple Dragonfruit Sunjoy® (1/2 Sweet Tea, 1/2 Lemonade)",
+          "contains": [],
+          "id": "catering-drinks-gallon-pineapple-dragonfruit-sunjoy-12-sweet-tea-12-lemonade"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Gallon Pineapple Dragonfruit Diet Lemonade",
+          "contains": [],
+          "id": "catering-drinks-gallon-pineapple-dragonfruit-diet-lemonade"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Gallon Pineapple Dragonfruit Lemonade",
+          "contains": [],
+          "id": "catering-drinks-gallon-pineapple-dragonfruit-lemonade"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Bottled Diet Lemonade",
+          "contains": [],
+          "id": "catering-drinks-bottled-diet-lemonade"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Bottled Lemonade",
+          "contains": [],
+          "id": "catering-drinks-bottled-lemonade"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Bottled Unsweet Tea",
+          "contains": [],
+          "id": "catering-drinks-bottled-unsweet-tea"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Bottled Sweet Tea",
+          "contains": [],
+          "id": "catering-drinks-bottled-sweet-tea"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Catering Coffee",
+          "contains": [],
+          "id": "catering-drinks-catering-coffee"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Bag of Ice",
+          "contains": [],
+          "id": "catering-drinks-bag-of-ice"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Gallon Sunjoy® (1/2 Unsweet Tea, 1/2 Diet Lemonade)",
+          "contains": [],
+          "id": "catering-drinks-gallon-sunjoy-12-unsweet-tea-12-diet-lemonade"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Gallon Sunjoy® (1/2 Unsweet Tea, 1/2 Lemonade)",
+          "contains": [],
+          "id": "catering-drinks-gallon-sunjoy-12-unsweet-tea-12-lemonade"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Gallon Sunjoy® (1/2 Sweet Tea, 1/2 Diet Lemonade)",
+          "contains": [],
+          "id": "catering-drinks-gallon-sunjoy-12-sweet-tea-12-diet-lemonade"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Gallon Sunjoy® (1/2 Sweet Tea, 1/2 Lemonade)",
+          "contains": [],
+          "id": "catering-drinks-gallon-sunjoy-12-sweet-tea-12-lemonade"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Gallon Chick-fil-A® Iced Tea (1/2 Sweet Tea, 1/2 Unsweet Tea)",
+          "contains": [],
+          "id": "catering-drinks-gallon-chick-fil-a-iced-tea-12-sweet-tea-12-unsweet-tea"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Gallon Freshly-Brewed Iced Tea Unsweetened",
+          "contains": [],
+          "id": "catering-drinks-gallon-freshly-brewed-iced-tea-unsweetened"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Gallon Freshly-Brewed Iced Tea Sweetened",
+          "contains": [],
+          "id": "catering-drinks-gallon-freshly-brewed-iced-tea-sweetened"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Gallon Chick-fil-A® Lemonade (1/2 Lemonade, 1/2 Diet Lemonade)",
+          "contains": [],
+          "id": "catering-drinks-gallon-chick-fil-a-lemonade-12-lemonade-12-diet-lemonade"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Gallon Chick-fil-A® Diet Lemonade",
+          "contains": [],
+          "id": "catering-drinks-gallon-chick-fil-a-diet-lemonade"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Gallon Chick-fil-A® Lemonade",
+          "contains": [],
+          "id": "catering-drinks-gallon-chick-fil-a-lemonade"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Honest Kids® Apple Juice",
+          "contains": [],
+          "id": "catering-drinks-honest-kids-apple-juice"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "1% Chocolate Milk",
+          "contains": [
+            "milk"
+          ],
+          "id": "catering-drinks-1-chocolate-milk"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "1% Milk",
+          "contains": [
+            "milk"
+          ],
+          "id": "catering-drinks-1-milk"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "Simply Orange®",
+          "contains": [],
+          "id": "catering-drinks-simply-orange"
+        },
+        {
+          "category": "Catering Drinks",
+          "name": "DASANI® Bottled Water",
+          "contains": [],
+          "id": "catering-drinks-dasani-bottled-water"
+        }
+      ],
+      "source": "official",
+      "lastVerified": "2026-10-22"
+    },
+    {
+      "id": "chain-in-n-out",
+      "name": "In-N-Out Burger",
+      "website": "https://www.in-n-out.com",
+      "cuisine": "Burgers",
+      "keywords": [
+        "in-n-out",
+        "in n out",
+        "innout",
+        "burger",
+        "burgers",
+        "fries",
+        "shakes",
+        "fast food"
+      ],
+      "sourceUrl": "https://www.in-n-out.com/menu/nutrition-info",
+      "replaces": [
+        "UHdgmxdFk67yHsNdxYCd"
+      ],
+      "logo": "https://www.in-n-out.com/ResourcePackages/INNOUT/content/images/logo-2021.svg?package=INNOUT",
+      "covers": [
+        "milk",
+        "egg",
+        "fish",
+        "shellfish",
+        "treenuts",
+        "peanut",
+        "wheat",
+        "soy",
+        "sesame"
+      ],
+      "notes": [],
+      "menu": [
+        {
+          "category": "Burgers",
+          "name": "Double-Double®",
+          "ingredients": "Bun*: Enriched Wheat Flour (Wheat Flour, Malted Barley Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Sugar, Yeast, Soybean Oil. Contains 2% of less of: Wheat Gluten, Salt, Malt, Mold Inhibitor (Cultured Wheat Starch, Wheat Flour, Citric Acid, Tricalcium Phosphate, Sunflower Oil), Dough Conditioner (Calcium Sulfate, Enriched Wheat Flour [Wheat Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid], Ascorbic Acid, Enzymes, Sunflower Oil), Cultured Wheat Flour (Natural Preservative), Sodium Stearoyl Lactylate Allergen: Wheat (Gluten)\n100% Ground Beef + Seasoning (Salt, Black Pepper, Canola Oil)\nCheese: Milk, Cheese Culture, Salt, Cream, Milkfat, Water, Sodium Citrate, Sodium Hexametaphosphate or Tetrasodium Pyrophosphate, Sorbic Acid (Preservative), Enzymes, Citric Acid, Soy or Sunflower Lecithin, Color Added (Contains one or more natural colors: Apo Carotenal, Beta Carotene, Annatto Extract, Paprika Oleoresin) Allergens: Milk, Soy\nSpread: Soybean Oil and/or Canola Oil, Cucumbers, Tomatoes, Distilled White Vinegar, Whole Eggs, Vinegar, Water, Sugar, Mustard Seeds, Salt, Corn Syrup, Spices, Turmeric, Onion Powder, Garlic Powder, Xanthan Gum, Sodium Benzoate (preservative), Paprika, Calcium Chloride, Lemon Juice Concentrate, Calcium Disodium EDTA, Yellow Prussiate of Soda, Natural Flavors, Polysorbate 80 Allergen: Egg\nLettuce\nTomato\nOnion\n*Produced in a facility where milk, sesame, and soy are present, and possibly on the same line/equipment",
+          "contains": [
+            "wheat",
+            "gluten",
+            "milk",
+            "soy",
+            "egg"
+          ],
+          "id": "burgers-double-double"
+        },
+        {
+          "category": "Burgers",
+          "name": "Double-Double® — With mustard & ketchup instead of spread",
+          "ingredients": "Bun*: Enriched Wheat Flour (Wheat Flour, Malted Barley Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Sugar, Yeast, Soybean Oil. Contains 2% of less of: Wheat Gluten, Salt, Malt, Mold Inhibitor (Cultured Wheat Starch, Wheat Flour, Citric Acid, Tricalcium Phosphate, Sunflower Oil), Dough Conditioner (Calcium Sulfate, Enriched Wheat Flour [Wheat Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid], Ascorbic Acid, Enzymes, Sunflower Oil), Cultured Wheat Flour (Natural Preservative), Sodium Stearoyl Lactylate Allergen: Wheat (Gluten)\n100% Ground Beef + Seasoning (Salt, Black Pepper, Canola Oil)\nCheese: Milk, Cheese Culture, Salt, Cream, Milkfat, Water, Sodium Citrate, Sodium Hexametaphosphate or Tetrasodium Pyrophosphate, Sorbic Acid (Preservative), Enzymes, Citric Acid, Soy or Sunflower Lecithin, Color Added (Contains one or more natural colors: Apo Carotenal, Beta Carotene, Annatto Extract, Paprika Oleoresin) Allergens: Milk, Soy\nKetchup: Tomato Concentrate, Sugar, Distilled Vinegar, Salt, Spices, Onion Powder, Natural Flavors\nMustard: Distilled Vinegar, Water, Mustard Seed, Salt, Turmeric, Paprika, Spices, Natural flavors, Garlic Powder\nLettuce\nTomato\nOnion\n*Produced in a facility where milk, sesame, and soy are present, and possibly on the same line/equipment",
+          "contains": [
+            "wheat",
+            "gluten",
+            "milk",
+            "soy"
+          ],
+          "id": "burgers-double-double-with-mustard-ketchup-instead-of-spread"
+        },
+        {
+          "category": "Burgers",
+          "name": "Double-Double® — Protein Style® (bun replaced with lettuce)",
+          "ingredients": "100% Ground Beef + Seasoning (Salt, Black Pepper, Canola Oil)\nCheese: Milk, Cheese Culture, Salt, Cream, Milkfat, Water, Sodium Citrate, Sodium Hexametaphosphate or Tetrasodium Pyrophosphate, Sorbic Acid (Preservative), Enzymes, Citric Acid, Soy or Sunflower Lecithin, Color Added (Contains one or more natural colors: Apo Carotenal, Beta Carotene, Annatto Extract, Paprika Oleoresin) Allergens: Milk, Soy\nSpread: Soybean Oil and/or Canola Oil, Cucumbers, Tomatoes, Distilled White Vinegar, Whole Eggs, Vinegar, Water, Sugar, Mustard Seeds, Salt, Corn Syrup, Spices, Turmeric, Onion Powder, Garlic Powder, Xanthan Gum, Sodium Benzoate (preservative), Paprika, Calcium Chloride, Lemon Juice Concentrate, Calcium Disodium EDTA, Yellow Prussiate of Soda, Natural Flavors, Polysorbate 80. Allergen: Egg\nLettuce\nTomato\nOnion",
+          "contains": [
+            "milk",
+            "soy",
+            "egg"
+          ],
+          "id": "burgers-double-double-protein-style-bun-replaced-with-lettuce"
+        },
+        {
+          "category": "Burgers",
+          "name": "Cheeseburger",
+          "ingredients": "Bun*: Enriched Wheat Flour (Wheat Flour, Malted Barley Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Sugar, Yeast, Soybean Oil. Contains 2% of less of: Wheat Gluten, Salt, Malt, Mold Inhibitor (Cultured Wheat Starch, Wheat Flour, Citric Acid, Tricalcium Phosphate, Sunflower Oil), Dough Conditioner (Calcium Sulfate, Enriched Wheat Flour [Wheat Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid], Ascorbic Acid, Enzymes, Sunflower Oil), Cultured Wheat Flour (Natural Preservative), Sodium Stearoyl Lactylate Allergen: Wheat (Gluten)\n100% Ground Beef + Seasoning (Salt, Black Pepper, Canola Oil)\nCheese: Milk, Cheese Culture, Salt, Cream, Milkfat, Water, Sodium Citrate, Sodium Hexametaphosphate or Tetrasodium Pyrophosphate, Sorbic Acid (Preservative), Enzymes, Citric Acid, Soy or Sunflower Lecithin, Color Added (Contains one or more natural colors: Apo Carotenal, Beta Carotene, Annatto Extract, Paprika Oleoresin) Allergens: Milk, Soy\nSpread: Soybean Oil and/or Canola Oil, Cucumbers, Tomatoes, Distilled White Vinegar, Whole Eggs, Vinegar, Water, Sugar, Mustard Seeds, Salt, Corn Syrup, Spices, Turmeric, Onion Powder, Garlic Powder, Xanthan Gum, Sodium Benzoate (preservative), Paprika, Calcium Chloride, Lemon Juice Concentrate, Calcium Disodium EDTA, Yellow Prussiate of Soda, Natural Flavors, Polysorbate 80 Allergen: Egg\nLettuce\nTomato\nOnion\n*Produced in a facility where milk, sesame, and soy are present, and possibly on the same line/equipment",
+          "contains": [
+            "wheat",
+            "gluten",
+            "milk",
+            "soy",
+            "egg"
+          ],
+          "id": "burgers-cheeseburger"
+        },
+        {
+          "category": "Burgers",
+          "name": "Cheeseburger — With mustard & ketchup instead of spread",
+          "ingredients": "Bun*: Enriched Wheat Flour (Wheat Flour, Malted Barley Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Sugar, Yeast, Soybean Oil. Contains 2% of less of: Wheat Gluten, Salt, Malt, Mold Inhibitor (Cultured Wheat Starch, Wheat Flour, Citric Acid, Tricalcium Phosphate, Sunflower Oil), Dough Conditioner (Calcium Sulfate, Enriched Wheat Flour [Wheat Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid], Ascorbic Acid, Enzymes, Sunflower Oil), Cultured Wheat Flour (Natural Preservative), Sodium Stearoyl Lactylate Allergen: Wheat (Gluten)\n100% Ground Beef + Seasoning (Salt, Black Pepper, Canola Oil)\nCheese: Milk, Cheese Culture, Salt, Cream, Milkfat, Water, Sodium Citrate, Sodium Hexametaphosphate or Tetrasodium Pyrophosphate, Sorbic Acid (Preservative), Enzymes, Citric Acid, Soy or Sunflower Lecithin, Color Added (Contains one or more natural colors: Apo Carotenal, Beta Carotene, Annatto Extract, Paprika Oleoresin) Allergens: Milk, Soy\nKetchup: Tomato Concentrate, Sugar, Distilled Vinegar, Salt, Spices, Onion Powder, Natural Flavors\nMustard: Distilled Vinegar, Water, Mustard Seed, Salt, Turmeric, Paprika, Spices, Natural flavors, Garlic Powder\nLettuce\nTomato\nOnion\n*Produced in a facility where milk, sesame, and soy are present, and possibly on the same line/equipment",
+          "contains": [
+            "wheat",
+            "gluten",
+            "milk",
+            "soy"
+          ],
+          "id": "burgers-cheeseburger-with-mustard-ketchup-instead-of-spread"
+        },
+        {
+          "category": "Burgers",
+          "name": "Cheeseburger — Protein Style® (bun replaced with lettuce)",
+          "ingredients": "100% Ground Beef + Seasoning (Salt, Black Pepper, Canola Oil)\nCheese: Milk, Cheese Culture, Salt, Cream, Milkfat, Water, Sodium Citrate, Sodium Hexametaphosphate or Tetrasodium Pyrophosphate, Sorbic Acid (Preservative), Enzymes, Citric Acid, Soy or Sunflower Lecithin, Color Added (Contains one or more natural colors: Apo Carotenal, Beta Carotene, Annatto Extract, Paprika Oleoresin) Allergens: Milk, Soy\nSpread: Soybean Oil and/or Canola Oil, Cucumbers, Tomatoes, Distilled White Vinegar, Whole Eggs, Vinegar, Water, Sugar, Mustard Seeds, Salt, Corn Syrup, Spices, Turmeric, Onion Powder, Garlic Powder, Xanthan Gum, Sodium Benzoate (preservative), Paprika, Calcium Chloride, Lemon Juice Concentrate, Calcium Disodium EDTA, Yellow Prussiate of Soda, Natural Flavors, Polysorbate 80. Allergen: Egg\nLettuce\nTomato\nOnion",
+          "contains": [
+            "milk",
+            "soy",
+            "egg"
+          ],
+          "id": "burgers-cheeseburger-protein-style-bun-replaced-with-lettuce"
+        },
+        {
+          "category": "Burgers",
+          "name": "Hamburger",
+          "ingredients": "Bun*: Enriched Wheat Flour (Wheat Flour, Malted Barley Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Sugar, Yeast, Soybean Oil. Contains 2% of less of: Wheat Gluten, Salt, Malt, Mold Inhibitor (Cultured Wheat Starch, Wheat Flour, Citric Acid, Tricalcium Phosphate, Sunflower Oil), Dough Conditioner (Calcium Sulfate, Enriched Wheat Flour [Wheat Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid], Ascorbic Acid, Enzymes, Sunflower Oil), Cultured Wheat Flour (Natural Preservative), Sodium Stearoyl Lactylate Allergen: Wheat (Gluten)\n100% Ground Beef + Seasoning (Salt, Black Pepper, Canola Oil)\nSpread: Soybean Oil and/or Canola Oil, Cucumbers, Tomatoes, Distilled White Vinegar, Whole Eggs, Vinegar, Water, Sugar, Mustard Seeds, Salt, Corn Syrup, Spices, Turmeric, Onion Powder, Garlic Powder, Xanthan Gum, Sodium Benzoate (preservative), Paprika, Calcium Chloride, Lemon Juice Concentrate, Calcium Disodium EDTA, Yellow Prussiate of Soda, Natural Flavors, Polysorbate 80 Allergen: Egg\nTomato\nOnion\nLettuce\n*Produced in a facility where milk, sesame, and soy are present, and possibly on the same line/equipment",
+          "contains": [
+            "wheat",
+            "gluten",
+            "egg"
+          ],
+          "id": "burgers-hamburger"
+        },
+        {
+          "category": "Burgers",
+          "name": "Hamburger — With mustard & ketchup instead of spread",
+          "ingredients": "Bun*: Enriched Wheat Flour (Wheat Flour, Malted Barley Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Sugar, Yeast, Soybean Oil. Contains 2% of less of: Wheat Gluten, Salt, Malt, Mold Inhibitor (Cultured Wheat Starch, Wheat Flour, Citric Acid, Tricalcium Phosphate, Sunflower Oil), Dough Conditioner (Calcium Sulfate, Enriched Wheat Flour [Wheat Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid], Ascorbic Acid, Enzymes, Sunflower Oil), Cultured Wheat Flour (Natural Preservative), Sodium Stearoyl Lactylate Allergen: Wheat (Gluten)\n100% Ground Beef + Seasoning (Salt, Black Pepper, Canola Oil)\nKetchup: Tomato Concentrate, Sugar, Distilled Vinegar, Salt, Spices, Onion Powder, Natural Flavors\nMustard: Distilled Vinegar, Water, Mustard Seed, Salt, Turmeric, Paprika, Spices, Natural flavors, Garlic Powder\nLettuce\nTomato\nOnion\n*Produced in a facility where milk, sesame, and soy are present, and possibly on the same line/equipment",
+          "contains": [
+            "wheat",
+            "gluten"
+          ],
+          "id": "burgers-hamburger-with-mustard-ketchup-instead-of-spread"
+        },
+        {
+          "category": "Burgers",
+          "name": "Hamburger — Protein Style® (bun replaced with lettuce)",
+          "ingredients": "100% Ground Beef + Seasoning (Salt, Black Pepper, Canola Oil)\nSpread: Soybean Oil and/or Canola Oil, Cucumbers, Tomatoes, Distilled White Vinegar, Whole Eggs, Vinegar, Water, Sugar, Mustard Seeds, Salt, Corn Syrup, Spices, Turmeric, Onion Powder, Garlic Powder, Xanthan Gum, Sodium Benzoate (preservative), Paprika, Calcium Chloride, Lemon Juice Concentrate, Calcium Disodium EDTA, Yellow Prussiate of Soda, Natural Flavors, Polysorbate 80. Allergen: Egg\nLettuce\nTomato\nOnion",
+          "contains": [
+            "egg"
+          ],
+          "id": "burgers-hamburger-protein-style-bun-replaced-with-lettuce"
+        },
+        {
+          "category": "Fries",
+          "name": "French Fries",
+          "ingredients": "Potatoes, Sunflower Oil (Dimethylpolysiloxane [foaming reducer]), Seasoning (Salt, Black Pepper, Canola Oil)",
+          "contains": [],
+          "id": "fries-french-fries"
+        },
+        {
+          "category": "Shakes",
+          "name": "Chocolate Shake",
+          "ingredients": "Real Ice Cream Mix* (Pasteurized Milk, Cream, Sugar, Corn Syrup Solids, Condensed Skim Milk, Whey Powder, Stabilizer (Mono & Diglycerides, Cellulose Gum, Tetrasodium Pyrophosphate, Carrageenan, Polysorbate 80, Dextrose), Vanilla, Annatto [color]), Chocolate Syrup (Corn Syrup, Sugar, Water, Cocoa [Natural and Dutch Processed with Alkali], Caramel Color, Salt, Potassium Sorbate, Citric Acid, Natural Flavors, Soy Lecithin) Allergens: Milk, Soy\n*Produced in a facility where egg products are present, and possibly on the same line/equipment",
+          "contains": [
+            "milk"
+          ],
+          "id": "shakes-chocolate-shake"
+        },
+        {
+          "category": "Shakes",
+          "name": "Vanilla Shake",
+          "ingredients": "Real Ice Cream* (Pasteurized Milk, Cream, Sugar, Corn Syrup Solids, Condensed Skim Milk, Whey Powder, Stabilizer (Mono & Diglycerides, Cellulose Gum, Tetrasodium Pyrophosphate, Carrageenan, Polysorbate 80, Dextrose), Vanilla, Annatto [color]) Allergen: Milk\n*Produced in a facility where egg and soy products are present, and possibly on the same line/equipment",
+          "contains": [
+            "milk"
+          ],
+          "id": "shakes-vanilla-shake"
+        },
+        {
+          "category": "Shakes",
+          "name": "Strawberry Shake",
+          "ingredients": "Real Ice Cream Mix* (Pasteurized Milk, Cream, Sugar, Corn Syrup Solids, Condensed Skim Milk, Whey Powder, Stabilizer (Mono & Diglycerides, Cellulose Gum, Tetrasodium Pyrophosphate, Carrageenan, Polysorbate 80, Dextrose), Vanilla, Annatto [color]), Strawberry Syrup (Sugar, Water, Strawberry Juice Concentrate, Natural Flavors, Vegetable Juice [color], Citric Acid, Beta-Carotene [color], Sodium Benzoate [preservative]) Allergen: Milk\n*Produced in a facility where egg and soy products are present, and possibly on the same line/equipment",
+          "contains": [
+            "milk"
+          ],
+          "id": "shakes-strawberry-shake"
+        },
+        {
+          "category": "Drinks & extras",
+          "name": "Coca-Cola",
+          "ingredients": "Carbonated Water, Syrup (High Fructose Corn Syrup, Water, Caramel Color, Phosphoric Acid, Natural Flavors, Caffeine)",
+          "contains": [],
+          "id": "drinks-extras-coca-cola"
+        },
+        {
+          "category": "Drinks & extras",
+          "name": "Diet Coca-Cola",
+          "ingredients": "Carbonated Water, Syrup (Water, Caramel Color, Phosphoric Acid, Sodium Saccharin, Natural Flavors, Citric Acid, Potassium Citrate, Potassium Benzoate [to protect taste], Caffeine, Aspartame, Dimethylpolysiloxane)",
+          "contains": [],
+          "id": "drinks-extras-diet-coca-cola"
+        },
+        {
+          "category": "Drinks & extras",
+          "name": "Cherry Coke",
+          "ingredients": "Carbonated Water, Syrup (High Fructose Corn Syrup, Water, Caramel Color, Phosphoric Acid, Natural Flavors, Caffeine)",
+          "contains": [],
+          "id": "drinks-extras-cherry-coke"
+        },
+        {
+          "category": "Drinks & extras",
+          "name": "Barq's Root Beer",
+          "ingredients": "Carbonated Water, Syrup (High Fructose Corn Syrup, Water, Sodium Benzoate [to protect taste], Caramel Color, Artificial and Natural Flavors, Citric Acid, Caffeine, Acacia)",
+          "contains": [],
+          "id": "drinks-extras-barqs-root-beer"
+        },
+        {
+          "category": "Drinks & extras",
+          "name": "7-Up",
+          "ingredients": "Carbonated Water, Syrup (High Fructose Corn Syrup, Water, Citric Acid, Potassium Citrate, Natural Flavors, Sodium Benzoate [preservative], Calcium Disodium EDTA [to protect flavor])",
+          "contains": [],
+          "id": "drinks-extras-7-up"
+        },
+        {
+          "category": "Drinks & extras",
+          "name": "Dr. Pepper",
+          "ingredients": "Carbonated Water, Syrup (High Fructose Corn Syrup, Water, Caramel Color, Phosphoric Acid, Caffeine, Sodium Benzoate [preservative], Natural and Artificial Flavors, Dimethylpolysiloxane)",
+          "contains": [],
+          "id": "drinks-extras-dr-pepper"
+        },
+        {
+          "category": "Drinks & extras",
+          "name": "Signature Pink Lemonade",
+          "ingredients": "Water, Syrup (Sugar, Water, Citric Acid, Lemon Juice Concentrate, Lemon Pulp, Natural Flavors, Pectin, Sodium Benzoate [preservative] Sodium Citrate, Vegetable Juice [for color], Beta Carotene [for color], Stabilizer (Guar gum, Propylene glycol alginate))",
+          "contains": [],
+          "id": "drinks-extras-signature-pink-lemonade"
+        },
+        {
+          "category": "Drinks & extras",
+          "name": "Lite Pink Lemonade",
+          "ingredients": "Water, Syrup (Water, Lemon Juice Concentrate, Citric Acid, Natural Flavors, Lemon Pulp, Xanthan Gum, Stevia Leaf Extract, Pectin, Sodium Citrate, Vegetable Juice [color], Beta Carotene [color], Monk Fruit)",
+          "contains": [],
+          "id": "drinks-extras-lite-pink-lemonade"
+        },
+        {
+          "category": "Drinks & extras",
+          "name": "Sweet Iced Tea*",
+          "ingredients": "Water, Orange Pekoe and Pekoe Cut Black Tea, Granulated Sugar",
+          "contains": [],
+          "id": "drinks-extras-sweet-iced-tea"
+        },
+        {
+          "category": "Drinks & extras",
+          "name": "Unsweetened Iced Tea",
+          "ingredients": "Water, Orange Pekoe and Pekoe Cut Black Tea",
+          "contains": [],
+          "id": "drinks-extras-unsweetened-iced-tea"
+        },
+        {
+          "category": "Drinks & extras",
+          "name": "Milk",
+          "ingredients": "2% Reduced Fat Milk (Combination of Reduced Fat Milk or Milk, Nonfat Milk, Nonfat Milk Solids, Vitamin A Palmitate, Vitamin D3) Allergens: Milk",
+          "contains": [
+            "milk"
+          ],
+          "id": "drinks-extras-milk"
+        },
+        {
+          "category": "Drinks & extras",
+          "name": "Hot Cocoa",
+          "ingredients": "Water, Premium Cocoa Mix* (Sugar, Cocoa Processed with Alkali, Creamer [Coconut Oil, Maltodextrin, Sodium Caseinate {Milk Derivative}, Silicon Dioxide, Sodium Citrate, Soy Lecithin], Nonfat Dry Milk, Whey Powder, Salt, Guar Gum, Gum Arabic, Natural Flavor [contains dairy], Silicon Dioxide [to prevent caking]). Allergens: Milk; Soy\n*Produced in a facility where tree nuts, eggs, and wheat are present, and possibly on the same line/equipment",
+          "contains": [
+            "milk"
+          ],
+          "id": "drinks-extras-hot-cocoa"
+        },
+        {
+          "category": "Drinks & extras",
+          "name": "Hot Cocoa — Hot Cocoa w/ Marshmallows",
+          "ingredients": "Water, Premium Cocoa Mix* (Sugar, Cocoa Processed with Alkali, Creamer [Coconut Oil, Maltodextrin, Sodium Caseinate {Milk Derivative}, Silicon Dioxide, Sodium Citrate, Soy Lecithin], Nonfat Dry Milk, Whey Powder, Salt, Guar Gum, Gum Arabic, Natural Flavor [contains dairy], Silicon Dioxide [to prevent caking]). Allergens: Milk; Soy\nDehydrated Marshmallows+ (Sugar, Corn Syrup, Modified Corn Starch, Contains Less Than 2% of Gelatin, Sodium Hexametaphosphate, Natural Flavor)\n*Produced in a facility where tree nuts, eggs, and wheat are present, and possibly on the same line/equipment\n+Produced in a facility where soy, wheat, milk, egg, tree nuts, peanuts, and sesame are present, and possibly on the same line/equipment",
+          "contains": [
+            "milk"
+          ],
+          "id": "drinks-extras-hot-cocoa-hot-cocoa-w-marshmallows"
+        },
+        {
+          "category": "Drinks & extras",
+          "name": "Coffee",
+          "ingredients": "Coffee",
+          "contains": [],
+          "id": "drinks-extras-coffee"
+        },
+        {
+          "category": "Drinks & extras",
+          "name": "Decaf Coffee",
+          "ingredients": "Decaf Coffee",
+          "contains": [],
+          "id": "drinks-extras-decaf-coffee"
+        }
+      ],
+      "source": "official",
+      "lastVerified": "2026-10-22"
+    },
+    {
+      "id": "chain-sweetgreen",
+      "name": "Sweetgreen",
+      "website": "https://www.sweetgreen.com",
+      "cuisine": "Salads & bowls",
+      "keywords": [
+        "sweetgreen",
+        "salad",
+        "salads",
+        "bowls",
+        "healthy",
+        "vegetarian"
+      ],
+      "sourceUrl": "https://www.sweetgreen.com/nutrition/",
+      "logo": "https://www.sweetgreen.com/apple-touch-icon.png",
+      "covers": [
+        "gluten"
+      ],
+      "notes": [
+        "Heads up — Our salmon’s marinade temporarily contains wheat (gluten).",
+        "Sweetgreen tracks nine major allergens across menu items: dairy, eggs, fish, shellfish, wheat, peanuts, tree nuts, soy, and sesame.",
+        "Sweetgreen kitchens are not allergen-free environments and cross-contamination may occur. Please inform your in-store team member of any food allergies."
+      ],
+      "menu": [
+        {
+          "category": "Salads",
+          "name": "Molly’s Pickle Caesar Salad",
+          "contains": [
+            "gluten"
+          ],
+          "id": "salads-mollys-pickle-caesar-salad"
+        },
+        {
+          "category": "Salads",
+          "name": "Chicken Sesame Crunch Salad",
+          "contains": [
+            "gluten"
+          ],
+          "id": "salads-chicken-sesame-crunch-salad"
+        },
+        {
+          "category": "Salads",
+          "name": "Buffalo Chicken",
+          "contains": [
+            "gluten"
+          ],
+          "id": "salads-buffalo-chicken"
+        },
+        {
+          "category": "Salads",
+          "name": "Super Green Goddess",
+          "contains": [],
+          "id": "salads-super-green-goddess"
+        },
+        {
+          "category": "Salads",
+          "name": "Kale Caesar",
+          "contains": [
+            "gluten"
+          ],
+          "id": "salads-kale-caesar"
+        },
+        {
+          "category": "Salads",
+          "name": "Hummus Crunch",
+          "contains": [
+            "gluten"
+          ],
+          "id": "salads-hummus-crunch"
+        },
+        {
+          "category": "Salads",
+          "name": "Guacamole Greens",
+          "contains": [],
+          "id": "salads-guacamole-greens"
+        },
+        {
+          "category": "Bowls",
+          "name": "Mediterranean Market (Select Boston locations only)",
+          "contains": [],
+          "id": "bowls-mediterranean-market-select-boston-locations-only"
+        },
+        {
+          "category": "Bowls",
+          "name": "Autumn Harvest Bowl",
+          "contains": [],
+          "id": "bowls-autumn-harvest-bowl"
+        },
+        {
+          "category": "Bowls",
+          "name": "Crispy Rice Bowl",
+          "contains": [],
+          "id": "bowls-crispy-rice-bowl"
+        },
+        {
+          "category": "Bowls",
+          "name": "Harvest Bowl",
+          "contains": [],
+          "id": "bowls-harvest-bowl"
+        },
+        {
+          "category": "Bowls",
+          "name": "Chicken Pesto Parm",
+          "contains": [
+            "gluten"
+          ],
+          "id": "bowls-chicken-pesto-parm"
+        },
+        {
+          "category": "Bowls",
+          "name": "Steak Honey Crunch",
+          "contains": [
+            "gluten"
+          ],
+          "id": "bowls-steak-honey-crunch"
+        },
+        {
+          "category": "Bowls",
+          "name": "Shroomami",
+          "contains": [],
+          "id": "bowls-shroomami"
+        },
+        {
+          "category": "Bowls",
+          "name": "Chicken Avocado Ranch",
+          "contains": [
+            "gluten"
+          ],
+          "id": "bowls-chicken-avocado-ranch"
+        },
+        {
+          "category": "Bowls",
+          "name": "Omega Glow",
+          "contains": [
+            "gluten"
+          ],
+          "id": "bowls-omega-glow"
+        },
+        {
+          "category": "Warm plates",
+          "name": "Maple Glazed Salmon Plate",
+          "contains": [
+            "gluten"
+          ],
+          "id": "warm-plates-maple-glazed-salmon-plate"
+        },
+        {
+          "category": "Warm plates",
+          "name": "Caramelized Garlic Steak",
+          "contains": [],
+          "id": "warm-plates-caramelized-garlic-steak"
+        },
+        {
+          "category": "Warm plates",
+          "name": "Mezze Medley (Select Boston locations only)",
+          "contains": [],
+          "id": "warm-plates-mezze-medley-select-boston-locations-only"
+        },
+        {
+          "category": "Warm plates",
+          "name": "Miso Glazed Salmon",
+          "contains": [
+            "gluten"
+          ],
+          "id": "warm-plates-miso-glazed-salmon"
+        },
+        {
+          "category": "Warm plates",
+          "name": "Hot Honey Chicken",
+          "contains": [
+            "gluten"
+          ],
+          "id": "warm-plates-hot-honey-chicken"
+        },
+        {
+          "category": "Warm plates",
+          "name": "Steak Mezze",
+          "contains": [
+            "gluten"
+          ],
+          "id": "warm-plates-steak-mezze"
+        },
+        {
+          "category": "Wraps",
+          "name": "Molly's Big Dill Caesar",
+          "contains": [
+            "gluten"
+          ],
+          "id": "wraps-mollys-big-dill-caesar"
+        },
+        {
+          "category": "Wraps",
+          "name": "Classic Chicken Caesar",
+          "contains": [
+            "gluten"
+          ],
+          "id": "wraps-classic-chicken-caesar"
+        },
+        {
+          "category": "Wraps",
+          "name": "Cali Chicken Club",
+          "contains": [
+            "gluten"
+          ],
+          "id": "wraps-cali-chicken-club"
+        },
+        {
+          "category": "Wraps",
+          "name": "Chicken Jalapeño Ranch",
+          "contains": [
+            "gluten"
+          ],
+          "id": "wraps-chicken-jalapeno-ranch"
+        },
+        {
+          "category": "Kids meals",
+          "name": "Ranchy Chicken + Rice",
+          "contains": [],
+          "id": "kids-meals-ranchy-chicken-rice"
+        },
+        {
+          "category": "Kids meals",
+          "name": "Little Harvest",
+          "contains": [],
+          "id": "kids-meals-little-harvest"
+        },
+        {
+          "category": "Kids meals",
+          "name": "Mini Mezze",
+          "contains": [
+            "gluten"
+          ],
+          "id": "kids-meals-mini-mezze"
+        },
+        {
+          "category": "Sides",
+          "name": "Molly’s Double Chick Scoop",
+          "contains": [],
+          "id": "sides-mollys-double-chick-scoop"
+        },
+        {
+          "category": "Sides",
+          "name": "Roasted Bacon Brussels",
+          "contains": [],
+          "id": "sides-roasted-bacon-brussels"
+        },
+        {
+          "category": "Sides",
+          "name": "Roasted Brussels",
+          "contains": [],
+          "id": "sides-roasted-brussels"
+        },
+        {
+          "category": "Sides",
+          "name": "Olive Oil Tortilla",
+          "contains": [
+            "gluten"
+          ],
+          "id": "sides-olive-oil-tortilla"
+        },
+        {
+          "category": "Sides",
+          "name": "Rosemary Focaccia",
+          "contains": [
+            "gluten"
+          ],
+          "id": "sides-rosemary-focaccia"
+        },
+        {
+          "category": "Sides",
+          "name": "SG X Siete: Green Goddess Ranch Potato Chips",
+          "contains": [],
+          "id": "sides-sg-x-siete-green-goddess-ranch-potato-chips"
+        },
+        {
+          "category": "Sides",
+          "name": "Hummus + Focaccia",
+          "contains": [
+            "gluten"
+          ],
+          "id": "sides-hummus-focaccia"
+        },
+        {
+          "category": "Sides",
+          "name": "Siete Sea Salt Potato Chips",
+          "contains": [],
+          "id": "sides-siete-sea-salt-potato-chips"
+        },
+        {
+          "category": "Sides",
+          "name": "Roasted Sweet Potatoes + Hot Honey Mustard",
+          "contains": [],
+          "id": "sides-roasted-sweet-potatoes-hot-honey-mustard"
+        },
+        {
+          "category": "Sides",
+          "name": "Roasted Sweet Potatoes + Green Goddess Ranch",
+          "contains": [],
+          "id": "sides-roasted-sweet-potatoes-green-goddess-ranch"
+        },
+        {
+          "category": "Dessert",
+          "name": "Hu Salty Dark Chocolate Bar",
+          "contains": [],
+          "id": "dessert-hu-salty-dark-chocolate-bar"
+        },
+        {
+          "category": "Dessert",
+          "name": "Sourdough Chocolate Chip Cookie (Select locations only)",
+          "contains": [
+            "gluten"
+          ],
+          "id": "dessert-sourdough-chocolate-chip-cookie-select-locations-only"
+        },
+        {
+          "category": "Dessert",
+          "name": "Hu Cashews + Vanilla Bean Hunks",
+          "contains": [],
+          "id": "dessert-hu-cashews-vanilla-bean-hunks"
+        },
+        {
+          "category": "Dessert",
+          "name": "Crispy Rice Treat",
+          "contains": [],
+          "id": "dessert-crispy-rice-treat"
+        },
+        {
+          "category": "Beverages",
+          "name": "Mott’s Apple Juice (Select locations only)",
+          "contains": [],
+          "id": "beverages-motts-apple-juice-select-locations-only"
+        },
+        {
+          "category": "Beverages",
+          "name": "Sweetgreen Lemonade (Select locations only)",
+          "contains": [],
+          "id": "beverages-sweetgreen-lemonade-select-locations-only"
+        },
+        {
+          "category": "Beverages",
+          "name": "Hibiscus Berry Tea (Select locations only)",
+          "contains": [],
+          "id": "beverages-hibiscus-berry-tea-select-locations-only"
+        },
+        {
+          "category": "Beverages",
+          "name": "Ginger Greens (Select locations only)",
+          "contains": [],
+          "id": "beverages-ginger-greens-select-locations-only"
+        },
+        {
+          "category": "Beverages",
+          "name": "Honest Kids Apple Juice (Select locations only)",
+          "contains": [],
+          "id": "beverages-honest-kids-apple-juice-select-locations-only"
+        },
+        {
+          "category": "Beverages",
+          "name": "Strawberry Mint (Select locations only)",
+          "contains": [],
+          "id": "beverages-strawberry-mint-select-locations-only"
+        },
+        {
+          "category": "Beverages",
+          "name": "Tree Top Apple Juice (Select Seattle locations only)",
+          "contains": [],
+          "id": "beverages-tree-top-apple-juice-select-seattle-locations-only"
+        },
+        {
+          "category": "Beverages",
+          "name": "OLIPOP Lemon Lime Soda",
+          "contains": [],
+          "id": "beverages-olipop-lemon-lime-soda"
+        },
+        {
+          "category": "Beverages",
+          "name": "OLIPOP Vintage Cola",
+          "contains": [],
+          "id": "beverages-olipop-vintage-cola"
+        },
+        {
+          "category": "Beverages",
+          "name": "Harney & Sons Organic Lemonade",
+          "contains": [],
+          "id": "beverages-harney-sons-organic-lemonade"
+        },
+        {
+          "category": "Beverages",
+          "name": "Spindrift Raspberry Lime",
+          "contains": [],
+          "id": "beverages-spindrift-raspberry-lime"
+        },
+        {
+          "category": "Beverages",
+          "name": "Health-Ade Kombucha Blueberry Pomegranate",
+          "contains": [],
+          "id": "beverages-health-ade-kombucha-blueberry-pomegranate"
+        },
+        {
+          "category": "Beverages",
+          "name": "Spindrift Lemon",
+          "contains": [],
+          "id": "beverages-spindrift-lemon"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Golden Quinoa",
+          "ingredients": "Organic white quinoa",
+          "id": "ingredients-bases-toppings-golden-quinoa"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Tortilla",
+          "ingredients": "Wheat flour, water, extra virgin olive oil, sea salt",
+          "id": "ingredients-bases-toppings-tortilla"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Organic Arugula",
+          "ingredients": "Organic arugula",
+          "id": "ingredients-bases-toppings-organic-arugula"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Organic Baby Spinach",
+          "ingredients": "Organic baby spinach",
+          "id": "ingredients-bases-toppings-organic-baby-spinach"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Chopped Romaine",
+          "ingredients": "Romaine lettuce",
+          "id": "ingredients-bases-toppings-chopped-romaine"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Organic Shredded Kale",
+          "ingredients": "Organic kale",
+          "id": "ingredients-bases-toppings-organic-shredded-kale"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Organic Spring Mix",
+          "ingredients": "Organic baby lettuces and greens",
+          "id": "ingredients-bases-toppings-organic-spring-mix"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "White Rice",
+          "ingredients": "White rice",
+          "id": "ingredients-bases-toppings-white-rice"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Wild Rice",
+          "ingredients": "Wild rice",
+          "id": "ingredients-bases-toppings-wild-rice"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Corn Salsa",
+          "ingredients": "Fire roasted corn, tomatoes, hot sauce (water, red chili pepper, onion, bell pepper, carrot, cider vinegar, tomato paste, garlic, nutritional yeast, sea salt, spice, dehydrated garlic, dehydrated onion, ascorbic acid), red onion, lime juice, umami seasoning (salt, nutritional yeast, garlic, onion, spices), sea salt, dried parsley",
+          "id": "ingredients-bases-toppings-corn-salsa"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Crispy Noodles",
+          "ingredients": "Chow mein noodles (wheat flour, vegetable oil [soybean oil, hydrogenated soybean oil and/or canola oil], rice flour, salt)",
+          "id": "ingredients-bases-toppings-crispy-noodles"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Sesame Crunch",
+          "ingredients": "Hulled white sesame seeds, organic maple syrup, sea salt",
+          "id": "ingredients-bases-toppings-sesame-crunch"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Garlic Breadcrumbs",
+          "ingredients": "Whole wheat sourdough bread (enriched wheat flour [niacin, reduced iron, thiamine mononitrate, riboflavin, folic acid], malted barley flour, water, whole wheat flour, sea salt), extra virgin olive oil, garlic, umami seasoning (salt, nutritional yeast, garlic, onion, spices)",
+          "id": "ingredients-bases-toppings-garlic-breadcrumbs"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Grillo's Pickle Spear",
+          "id": "ingredients-bases-toppings-grillos-pickle-spear"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Ground Caraway Seeds",
+          "ingredients": "Ground caraway seeds",
+          "id": "ingredients-bases-toppings-ground-caraway-seeds"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Herby Tomato & Cucumber Medley (Select Boston locations only)",
+          "ingredients": "Cucumbers, organic grape tomatoes, red onion, lemon juice, white wine vinegar, organic maple syrup, sea salt, dill, crushed red pepper",
+          "id": "ingredients-bases-toppings-herby-tomato-cucumber-medley-select-boston-locations-only"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Raw Carrots",
+          "ingredients": "Carrots",
+          "id": "ingredients-bases-toppings-raw-carrots"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Roasted Red Peppers (Select Boston locations only)",
+          "ingredients": "Red bell peppers, pesto vinaigrette (avocado oil, water, white wine vinegar, basil, spinach, umami seasoning [salt, nutritional yeast, garlic, onion, spices], garlic), umami seasoning (salt, nutritional yeast, garlic, onion, spices)",
+          "id": "ingredients-bases-toppings-roasted-red-peppers-select-boston-locations-only"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Seasoned Chickpeas",
+          "ingredients": "Chickpeas (chickpeas, water, sea salt), lemon juice, umami seasoning (salt, nutritional yeast, garlic, onion, spices), avocado oil, blackening spice (salt, chili powder, cumin, paprika, black pepper, coriander, red pepper), dried parsley",
+          "id": "ingredients-bases-toppings-seasoned-chickpeas"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Focaccia Breadstick",
+          "ingredients": "Rosemary focaccia (enriched wheat flour [niacin, reduced iron, thiamine mononitrate, riboflavin, folic acid], malted barley flour, water, olive pomace oil, sea salt, yeast, enzymes, kosher salt, rosemary)",
+          "id": "ingredients-bases-toppings-focaccia-breadstick"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Apples",
+          "ingredients": "Apples",
+          "id": "ingredients-bases-toppings-apples"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Basil",
+          "ingredients": "Basil",
+          "id": "ingredients-bases-toppings-basil"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Cilantro",
+          "ingredients": "Cilantro",
+          "id": "ingredients-bases-toppings-cilantro"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Crispy Onions",
+          "ingredients": "Onion, palm oil, wheat flour, salt",
+          "id": "ingredients-bases-toppings-crispy-onions"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Crispy Rice",
+          "ingredients": "Puffed brown rice, sorghum crisps, coconut milk (coconut extract, water, citric acid, sodium metabisulfite), canola oil, lime juice, kosher salt, chili powder (chili pepper, spices, salt, garlic, silicon dioxide, ethoxyquin), garlic powder, honey, ground coriander, nutritional yeast, black pepper, onion powder",
+          "id": "ingredients-bases-toppings-crispy-rice"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Cucumbers",
+          "ingredients": "Cucumbers",
+          "id": "ingredients-bases-toppings-cucumbers"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Nori Sesame Seasoning",
+          "ingredients": "Toasted sesame seeds, salt, nori",
+          "id": "ingredients-bases-toppings-nori-sesame-seasoning"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Pickled Onions",
+          "ingredients": "Red onion, white wine vinegar, water, organic maple syrup, sea salt",
+          "id": "ingredients-bases-toppings-pickled-onions"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Roasted Almonds",
+          "ingredients": "Almonds",
+          "id": "ingredients-bases-toppings-roasted-almonds"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Roasted Sweet Potatoes",
+          "ingredients": "Sweet potatoes, extra virgin olive oil, umami seasoning (salt, nutritional yeast, garlic, onion, spices)",
+          "id": "ingredients-bases-toppings-roasted-sweet-potatoes"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Shredded Cabbage",
+          "ingredients": "Red cabbage",
+          "id": "ingredients-bases-toppings-shredded-cabbage"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Spicy Broccoli",
+          "ingredients": "Broccoli, extra virgin olive oil, umami seasoning (salt, nutritional yeast, garlic, onion, spices), crushed red pepper",
+          "id": "ingredients-bases-toppings-spicy-broccoli"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Tomatoes",
+          "ingredients": "Cherry tomatoes",
+          "id": "ingredients-bases-toppings-tomatoes"
+        },
+        {
+          "category": "Ingredients: Bases & toppings",
+          "name": "Bread",
+          "ingredients": "Bread",
+          "id": "ingredients-bases-toppings-bread"
+        },
+        {
+          "category": "Ingredients: Proteins and toppings",
+          "name": "Molly's Chicken Salad",
+          "id": "ingredients-proteins-and-toppings-mollys-chicken-salad"
+        },
+        {
+          "category": "Ingredients: Proteins and toppings",
+          "name": "Maple Glazed Brussels",
+          "ingredients": "Brussels sprouts, maple syrup, avocado oil, umami seasoning (salt, nutritional yeast, garlic, onion, spices), blackening spice (salt, chili powder, cumin, paprika, black pepper, coriander, red pepper)",
+          "id": "ingredients-proteins-and-toppings-maple-glazed-brussels"
+        },
+        {
+          "category": "Ingredients: Proteins and toppings",
+          "name": "Antibiotic-Free Miso Glazed Salmon",
+          "ingredients": "Atlantic salmon. Miso glaze varies by supplier. Girard's (contains wheat): maple syrup, soy sauce (water, wheat, soybeans, salt, alcohol [to retain freshness]), white miso paste (water, whole soybeans, rice, sea salt, koji starter [Aspergillus oryzae]), rice vinegar, avocado oil. Contains less than 2% citrus flour, spices, salt. Celtrade: maple syrup, soy sauce (water, soybeans, salt, alcohol), white miso paste (water, soybeans, rice, salt, alcohol), rice vinegar. Contains 0.5% or less red hot chili pepper powder, salt, spices.",
+          "id": "ingredients-proteins-and-toppings-antibiotic-free-miso-glazed-salmon"
+        },
+        {
+          "category": "Ingredients: Proteins and toppings",
+          "name": "Avocado",
+          "ingredients": "Avocado",
+          "id": "ingredients-proteins-and-toppings-avocado"
+        },
+        {
+          "category": "Ingredients: Proteins and toppings",
+          "name": "Antibiotic-Free Blackened Chicken",
+          "ingredients": "Chicken, blackening spice (salt, chili powder, cumin, paprika, black pepper, coriander, red pepper), avocado oil, balsamic vinegar",
+          "id": "ingredients-proteins-and-toppings-antibiotic-free-blackened-chicken"
+        },
+        {
+          "category": "Ingredients: Proteins and toppings",
+          "name": "Antibiotic-Free Grass-Fed Caramelized Garlic Steak",
+          "ingredients": "Seared beef (beef, water, salt, vinegar, black pepper), caramelized garlic seasoning (garlic, nutritional yeast, salt, onion)",
+          "id": "ingredients-proteins-and-toppings-antibiotic-free-grass-fed-caramelized-garlic-steak"
+        },
+        {
+          "category": "Ingredients: Proteins and toppings",
+          "name": "Antibiotic-Free Roasted Chicken",
+          "ingredients": "Chicken, avocado oil, umami seasoning (salt, nutritional yeast, garlic, onion, spices)",
+          "id": "ingredients-proteins-and-toppings-antibiotic-free-roasted-chicken"
+        },
+        {
+          "category": "Ingredients: Proteins and toppings",
+          "name": "Roasted Tofu",
+          "ingredients": "Organic tofu (water, organic soybeans, calcium sulfate), avocado oil, blackening spice (salt, chili powder, cumin, paprika, black pepper, coriander, red pepper)",
+          "id": "ingredients-proteins-and-toppings-roasted-tofu"
+        },
+        {
+          "category": "Ingredients: Proteins and toppings",
+          "name": "Warm Portobello Mix",
+          "ingredients": "Portobello mushrooms, cremini mushrooms, extra virgin olive oil, umami seasoning (salt, nutritional yeast, garlic, onion, spices)",
+          "id": "ingredients-proteins-and-toppings-warm-portobello-mix"
+        },
+        {
+          "category": "Ingredients: Proteins and toppings",
+          "name": "Warm Roasted Sweet Potatoes",
+          "ingredients": "Sweet potatoes, extra virgin olive oil, umami seasoning (salt, nutritional yeast, garlic, onion, spices)",
+          "id": "ingredients-proteins-and-toppings-warm-roasted-sweet-potatoes"
+        },
+        {
+          "category": "Ingredients: Proteins and toppings",
+          "name": "Crumbled Bacon",
+          "ingredients": "Pork, water, salt, vinegar, citrus extracts, pomegranate extract, rosemary extract, cultured celery powder",
+          "id": "ingredients-proteins-and-toppings-crumbled-bacon"
+        },
+        {
+          "category": "Ingredients: Proteins and toppings",
+          "name": "Feta Crumble",
+          "ingredients": "Pasteurized milk, cheese cultures, salt, enzymes",
+          "id": "ingredients-proteins-and-toppings-feta-crumble"
+        },
+        {
+          "category": "Ingredients: Proteins and toppings",
+          "name": "Napa Cabbage Slaw",
+          "ingredients": "Napa cabbage, red cabbage, organic maple syrup, white wine vinegar, carrots, kale, lime juice, sea salt, mint",
+          "id": "ingredients-proteins-and-toppings-napa-cabbage-slaw"
+        },
+        {
+          "category": "Ingredients: Proteins and toppings",
+          "name": "Goat Cheese",
+          "ingredients": "Pasteurized goat milk, salt, cultures, enzymes",
+          "id": "ingredients-proteins-and-toppings-goat-cheese"
+        },
+        {
+          "category": "Ingredients: Proteins and toppings",
+          "name": "Hard Boiled Egg",
+          "ingredients": "Egg",
+          "id": "ingredients-proteins-and-toppings-hard-boiled-egg"
+        },
+        {
+          "category": "Ingredients: Proteins and toppings",
+          "name": "Hummus",
+          "ingredients": "Cooked chickpeas (chickpeas, water), tahini (ground sesame), water, canola oil, natural flavors, sea salt, dried roasted garlic, citric acid, spice",
+          "id": "ingredients-proteins-and-toppings-hummus"
+        },
+        {
+          "category": "Ingredients: Proteins and toppings",
+          "name": "Parmesan Crisps",
+          "ingredients": "Parmesan cheese (pasteurized milk, cheese cultures, salt, enzymes), black pepper",
+          "id": "ingredients-proteins-and-toppings-parmesan-crisps"
+        },
+        {
+          "category": "Ingredients: Proteins and toppings",
+          "name": "Shaved Parmesan",
+          "ingredients": "Cultured milk, salt, enzymes",
+          "id": "ingredients-proteins-and-toppings-shaved-parmesan"
+        },
+        {
+          "category": "Ingredients: Proteins and toppings",
+          "name": "White Cheddar",
+          "ingredients": "Pasteurized milk, cheese cultures, salt, enzymes",
+          "id": "ingredients-proteins-and-toppings-white-cheddar"
+        },
+        {
+          "category": "Ingredients: Dressings",
+          "name": "Balsamic Vinaigrette",
+          "ingredients": "Sunflower oil, balsamic vinegar (wine vinegar, concentrated grape must, cooked grape must), honey, prepared mustard (water, mustard seed, apple vinegar, sea salt, spices), salt, spice, water",
+          "id": "ingredients-dressings-balsamic-vinaigrette"
+        },
+        {
+          "category": "Ingredients: Dressings",
+          "name": "Balsamic Vinegar",
+          "ingredients": "Balsamic vinegar",
+          "id": "ingredients-dressings-balsamic-vinegar"
+        },
+        {
+          "category": "Ingredients: Dressings",
+          "name": "Caesar",
+          "ingredients": "Sunflower oil, yogurt (milk, skim milk powder, bacterial culture), lemon juice, water, apple vinegar, parmesan cheese (pasteurized partly skim milk, cheese cultures, salt, enzymes), anchovy paste (anchovies, salt, olive oil, acetic acid), egg yolks, citrus flour, distilled vinegar, garlic, mustard flour, salt, spice, spice extract",
+          "id": "ingredients-dressings-caesar"
+        },
+        {
+          "category": "Ingredients: Dressings",
+          "name": "Charred Jalapeño Ranch",
+          "ingredients": "Organic whole milk yogurt, avocado oil mayonnaise (avocado oil, cage-free egg yolks, water, distilled vinegar, salt, lime juice concentrate, citric acid, lime oil), roasted jalapeño peppers, red onion, garlic, avocado oil, blackening spice (salt, chili powder, cumin, paprika, black pepper, coriander, red pepper), pickled red onions (red onion, white wine vinegar, water, organic maple syrup, sea salt), lime juice, umami seasoning (salt, nutritional yeast, garlic, onion, spices), organic maple syrup",
+          "id": "ingredients-dressings-charred-jalapeno-ranch"
+        },
+        {
+          "category": "Ingredients: Dressings",
+          "name": "Citrus Sesame Vinaigrette",
+          "ingredients": "Avocado oil, orange juice concentrate, maple syrup, rice vinegar, tahini (ground sesame seeds), carrot juice, water, toasted sesame oil, ginger puree (ginger, water), dijon mustard (distilled vinegar, water, mustard seed, salt, spices), salt",
+          "id": "ingredients-dressings-citrus-sesame-vinaigrette"
+        },
+        {
+          "category": "Ingredients: Dressings",
+          "name": "Crushed Red Pepper",
+          "ingredients": "Crushed red chili pepper flakes",
+          "id": "ingredients-dressings-crushed-red-pepper"
+        },
+        {
+          "category": "Ingredients: Dressings",
+          "name": "Dill Pickle AYOH!",
+          "ingredients": "Avocado oil, dill pickle relish (cucumber, vinegar, water, salt, calcium chloride), cage-free egg yolks, dijon mustard (white distilled vinegar, water, mustard seed, salt), water, dill pickle seasoning (maltodextrin, salt, garlic powder, vinegar, sugar, onion powder, yeast extract, spices, citric acid, natural flavors, parsley, tartaric acid), distilled vinegar, salt, garlic powder, dill, apple cider vinegar, mustard flour",
+          "id": "ingredients-dressings-dill-pickle-ayoh"
+        },
+        {
+          "category": "Ingredients: Dressings",
+          "name": "Extra Virgin Olive Oil",
+          "ingredients": "Extra virgin olive oil",
+          "id": "ingredients-dressings-extra-virgin-olive-oil"
+        },
+        {
+          "category": "Ingredients: Dressings",
+          "name": "Garlic Aioli",
+          "ingredients": "avocado oil mayonnaise (avocado oil, cage-free egg yolks, water, distilled vinegar, salt, lime juice concentrate, citric acid, lime oil), water, organic maple syrup, garlic, lemon juice, umami seasoning (salt, nutritional yeast, garlic, onion, spices)",
+          "id": "ingredients-dressings-garlic-aioli"
+        },
+        {
+          "category": "Ingredients: Dressings",
+          "name": "Green Goddess Ranch",
+          "ingredients": "avocado oil mayonnaise (avocado oil, cage-free egg yolks, water, distilled vinegar, salt, lime juice concentrate, citric acid, lime oil), organic whole milk yogurt, dill, red onion, basil, cilantro, lemon juice, white wine vinegar, hot sauce (water, red chili pepper, onion, bell pepper, carrot, cider vinegar, tomato paste, garlic, nutritional yeast, sea salt, spice, dehydrated garlic, dehydrated onion, ascorbic acid), sea salt, spinach, garlic, black pepper",
+          "id": "ingredients-dressings-green-goddess-ranch"
+        },
+        {
+          "category": "Ingredients: Dressings",
+          "name": "Honey BBQ Sauce",
+          "ingredients": "Water, date syrup, honey, tomato paste, distilled vinegar, yellow mustard (distilled vinegar, water, mustard seed, salt, turmeric, paprika, spice, garlic powder), salt, caramel color, apple juice concentrate, natural smoke flavor, spices, onion, garlic, paprika, lime juice concentrate, tamarind paste, natural flavor",
+          "id": "ingredients-dressings-honey-bbq-sauce"
+        },
+        {
+          "category": "Ingredients: Dressings",
+          "name": "Hot Honey Mustard Sauce",
+          "ingredients": "Sunflower oil, honey, prepared mustard (water, mustard seed, distilled vinegar, salt, turmeric, spices, naturally occurring sulfites), apple vinegar, seasoning (salt, dried yeast, garlic, onion, spices), crushed red chili pepper, salt",
+          "id": "ingredients-dressings-hot-honey-mustard-sauce"
+        },
+        {
+          "category": "Ingredients: Dressings",
+          "name": "Lemon Squeeze",
+          "ingredients": "Lemon juice",
+          "id": "ingredients-dressings-lemon-squeeze"
+        },
+        {
+          "category": "Ingredients: Dressings",
+          "name": "Lime Cilantro Jalapeno Sauce",
+          "ingredients": "Avocado oil, lime juice, red onion, cilantro, arugula, white wine vinegar, jalapeño peppers, umami seasoning (salt, nutritional yeast, garlic, onion, spices), garlic",
+          "id": "ingredients-dressings-lime-cilantro-jalapeno-sauce"
+        },
+        {
+          "category": "Ingredients: Dressings",
+          "name": "Lime Squeeze",
+          "ingredients": "Lime juice",
+          "id": "ingredients-dressings-lime-squeeze"
+        },
+        {
+          "category": "Ingredients: Dressings",
+          "name": "Miso Sesame Ginger",
+          "ingredients": "Sunflower oil, water, miso paste (soybeans, fermented rice, sea salt, water), ginger, rice vinegar, soy sauce (water, soybeans, salt, alcohol), maple syrup, garlic, crushed red chili pepper, fava bean flour, roasted sesame oil, seasoning (salt, dried yeast, spices, garlic, onion)",
+          "id": "ingredients-dressings-miso-sesame-ginger"
+        },
+        {
+          "category": "Ingredients: Dressings",
+          "name": "Pesto Vinaigrette",
+          "ingredients": "Sunflower oil, extra virgin olive oil, water, basil, apple cider vinegar, garlic, umami seasoning (salt, nutritional yeast, garlic, onion, spices)",
+          "id": "ingredients-dressings-pesto-vinaigrette"
+        },
+        {
+          "category": "Ingredients: Dressings",
+          "name": "Smoky Tahini Dressing (Select Boston locations only)",
+          "ingredients": "Water, tahini (ground sesame seeds), organic maple syrup, hot sauce (water, red chili pepper, onion, bell pepper, carrot, cider vinegar, tomato paste, garlic, nutritional yeast, sea salt, spice, dehydrated garlic, dehydrated onion, ascorbic acid), lemon juice, white wine vinegar, garlic, sea salt, paprika, crushed red pepper",
+          "id": "ingredients-dressings-smoky-tahini-dressing-select-boston-locations-only"
+        },
+        {
+          "category": "Ingredients: Dressings",
+          "name": "Spicy Cashew",
+          "ingredients": "Sunflower oil, cashew butter, maple syrup, lime juice, water, rice vinegar, cilantro, roasted sesame oil, garlic, seasoning (salt, dried yeast, spices, garlic, onion), ginger, crushed red chili pepper",
+          "id": "ingredients-dressings-spicy-cashew"
+        },
+        {
+          "category": "Ingredients: Dressings",
+          "name": "Sweetgreen Hot Sauce",
+          "ingredients": "Water, red chili pepper, onion, bell pepper, carrot, cider vinegar, tomato paste, garlic, nutritional yeast, sea salt, spice, dehydrated garlic, dehydrated onion, ascorbic acid",
+          "id": "ingredients-dressings-sweetgreen-hot-sauce"
+        },
+        {
+          "category": "Ingredients: Dressings",
+          "name": "Umami Seasoning",
+          "ingredients": "Salt, nutritional yeast, garlic, onion, spices",
+          "id": "ingredients-dressings-umami-seasoning"
+        },
+        {
+          "category": "Ingredients: Beverages",
+          "name": "Mott’s Apple Juice (Select locations only)",
+          "ingredients": "Apple juice from concentrate, water, ascorbic acid",
+          "id": "ingredients-beverages-motts-apple-juice-select-locations-only"
+        },
+        {
+          "category": "Ingredients: Beverages",
+          "name": "Sweetgreen Lemonade (Select locations only)",
+          "ingredients": "Water, lemon juice, organic agave nectar, lemon, clementine",
+          "id": "ingredients-beverages-sweetgreen-lemonade-select-locations-only"
+        },
+        {
+          "category": "Ingredients: Beverages",
+          "name": "Hibiscus Berry Tea (Select locations only)",
+          "ingredients": "Brewed hibiscus tea, organic agave nectar",
+          "id": "ingredients-beverages-hibiscus-berry-tea-select-locations-only"
+        },
+        {
+          "category": "Ingredients: Beverages",
+          "name": "Ginger Greens (Select locations only)",
+          "ingredients": "Water, lemon juice, organic agave nectar, ginger, baby spinach, lemon, apple",
+          "id": "ingredients-beverages-ginger-greens-select-locations-only"
+        },
+        {
+          "category": "Ingredients: Beverages",
+          "name": "Honest Kids Apple Juice (Select locations only)",
+          "ingredients": "Filtered water, organic apple juice from concentrate, natural flavor, vitamin C (ascorbic acid), organic natural flavor, citric acid",
+          "id": "ingredients-beverages-honest-kids-apple-juice-select-locations-only"
+        },
+        {
+          "category": "Ingredients: Beverages",
+          "name": "Strawberry Mint (Select locations only)",
+          "ingredients": "Water, lemon juice, organic agave nectar, strawberries, lemon, mint",
+          "id": "ingredients-beverages-strawberry-mint-select-locations-only"
+        },
+        {
+          "category": "Ingredients: Beverages",
+          "name": "Tree Top Apple Juice (Select Seattle locations only)",
+          "ingredients": "Organic apple juice from concentrate (water, concentrated organic apple juice)",
+          "id": "ingredients-beverages-tree-top-apple-juice-select-seattle-locations-only"
+        },
+        {
+          "category": "Ingredients: Beverages",
+          "name": "OLIPOP Lemon Lime Soda",
+          "ingredients": "Carbonated water, OLISMART (cassava root fiber, chicory root inulin, Jerusalem artichoke inulin, nopal cactus extract, marshmallow root extract, calendula flower extract, kudzu root extract), quince juice concentrate, lemon juice, apple juice concentrate, cassava root syrup, key lime juice concentrate, stevia leaf extract, Himalayan pink salt, natural key lime flavor",
+          "id": "ingredients-beverages-olipop-lemon-lime-soda"
+        },
+        {
+          "category": "Ingredients: Beverages",
+          "name": "OLIPOP Vintage Cola",
+          "ingredients": "Carbonated water, OLISMART (cassava root fiber, chicory root inulin, Jerusalem artichoke inulin, nopal cactus, marshmallow root, calendula flower, kudzu root), cassava root syrup, apple juice concentrate, lime juice, natural cola flavor, alpinia root, stevia leaf, Himalayan pink salt, green tea caffeine, natural vanilla flavor, natural caramel flavor, cinnamon",
+          "id": "ingredients-beverages-olipop-vintage-cola"
+        },
+        {
+          "category": "Ingredients: Beverages",
+          "name": "Harney & Sons Organic Lemonade",
+          "ingredients": "Triple filtered water, organic maple syrup, organic lemon juice concentrate, organic lemon flavor",
+          "id": "ingredients-beverages-harney-sons-organic-lemonade"
+        },
+        {
+          "category": "Ingredients: Beverages",
+          "name": "Still Water",
+          "ingredients": "Purified water",
+          "id": "ingredients-beverages-still-water"
+        },
+        {
+          "category": "Ingredients: Beverages",
+          "name": "Spindrift Raspberry Lime",
+          "ingredients": "Lemon juice, carbonated water, raspberry puree, lime juice",
+          "id": "ingredients-beverages-spindrift-raspberry-lime"
+        },
+        {
+          "category": "Ingredients: Beverages",
+          "name": "Sparkling Water",
+          "ingredients": "Carbonated purified water",
+          "id": "ingredients-beverages-sparkling-water"
+        },
+        {
+          "category": "Ingredients: Beverages",
+          "name": "Organic Hibiscus Berry Tea",
+          "ingredients": "Brewed infusion (triple filtered water, organic hibiscus, organic rose hips, organic orange peel, crimson clover, organic beet root, organic strawberry flavor, natural raspberry flavor), citric acid, pink Himalayan salt",
+          "id": "ingredients-beverages-organic-hibiscus-berry-tea"
+        },
+        {
+          "category": "Ingredients: Beverages",
+          "name": "Organic Jasmine Green Tea",
+          "ingredients": "Brewed infusion (triple filtered water, organic jasmine green tea, organic yaupon, organic soba), citric acid, pink Himalayan salt",
+          "id": "ingredients-beverages-organic-jasmine-green-tea"
+        },
+        {
+          "category": "Ingredients: Beverages",
+          "name": "Health-Ade Kombucha Blueberry Pomegranate",
+          "ingredients": "Organic kombucha (filtered water, acids from fermentation, cane sugar, live kombucha cultures, black tea, green tea, carbonation), pomegranate juice (water, pomegranate juice concentrate), blueberry puree, pomegranate essence, live active cultures (Bacillus coagulans)",
+          "id": "ingredients-beverages-health-ade-kombucha-blueberry-pomegranate"
+        },
+        {
+          "category": "Ingredients: Beverages",
+          "name": "Spindrift Lemon",
+          "id": "ingredients-beverages-spindrift-lemon"
+        }
+      ],
+      "source": "official",
+      "lastVerified": "2026-10-22"
+    }
+  ]
+}

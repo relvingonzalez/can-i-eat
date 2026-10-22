@@ -1,18 +1,138 @@
-/* DashboardComponent's private CSS styles */
-a {
-  text-decoration: none;
+@import '../../variables';
+
+.hero {
+  background:
+    radial-gradient(circle at 85% 20%, rgba(255, 213, 79, .35), transparent 40%),
+    linear-gradient(135deg, #00695c 0%, #00897b 55%, #26a69a 100%);
+  color: #fff;
+
+  h1 {
+    color: #fff;
+    font-size: clamp(28px, 5vw, 44px);
+    margin: 16px 0 8px;
+  }
+
+  .lead {
+    font-size: 17px;
+    max-width: 620px;
+    opacity: .92;
+    margin: 0 0 20px;
+  }
 }
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+
+.hero-inner {
+  padding-top: 24px;
+  padding-bottom: 28px;
 }
-h3 {
-  text-align: center; margin-bottom: 0;
+
+.onboarding {
+  color: var(--text);
+  max-width: 760px;
+
+  h2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    margin: 0 0 4px;
+  }
 }
-h4 {
-  position: relative;
+
+.done {
+  margin-top: 16px;
 }
-.restaurant {
-  width: 100%;
+
+.checking {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+
+  .muted {
+    color: rgba(255, 255, 255, .85);
+  }
+
+  .tag {
+    background: rgba(255, 255, 255, .18);
+    border: 1px solid rgba(255, 255, 255, .35);
+    border-radius: 999px;
+    padding: 3px 12px;
+    text-transform: capitalize;
+  }
+
+  a {
+    color: #fff;
+  }
+}
+
+.stats {
+  margin: 14px 0 0;
+  font-size: 16px;
+
+  strong {
+    font-size: 22px;
+  }
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 22px;
+  margin: 24px 0 12px;
+
+  .mat-icon {
+    color: var(--contains);
+  }
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0;
+
+  .section-title {
+    margin: 0;
+    flex: 1 1 100%;
+  }
+
+  .search {
+    flex: 1 1 280px;
+  }
+}
+
+.cta {
+  margin: 32px 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  h3 {
+    margin: 0 0 4px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .toolbar .section-title {
+    flex: 0 0 auto;
+    margin-right: auto;
+  }
+
+  .toolbar .search {
+    flex: 0 1 360px;
+  }
 }

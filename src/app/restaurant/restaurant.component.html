@@ -1,10 +1,32 @@
-<a class="restaurant-component" [routerLink]="['/restaurant/detail/', restaurant.id]">
-	<mat-card appearance="outlined" [matBadge]="restaurant.safetyRating + ' %'" matBadgeSize="medium">
-		<mat-card-header>
-			<mat-card-title>{{restaurant.name}}</mat-card-title>
-		</mat-card-header>
-		<mat-card-content>
-			<img mat-card-image [src]="restaurant.logo" alt="Photo of restaurant">
-		</mat-card-content>
-	</mat-card>
+<a class="restaurant-card" [routerLink]="['/restaurant/detail', restaurant.id]">
+  <div class="top">
+    <app-restaurant-avatar [name]="restaurant.name" [logo]="restaurant.logo" [size]="52" />
+    <div class="title">
+      <h3>{{ restaurant.name }}</h3>
+      <span class="source" [class]="'source ' + restaurant.source">
+        @if (restaurant.source === 'official') { <mat-icon>verified</mat-icon> }
+        {{ sourceLabels[restaurant.source] }}
+      </span>
+    </div>
+    @if (restaurant.favorite) {
+      <mat-icon class="fav" aria-label="Favorite">favorite</mat-icon>
+    }
+  </div>
+
+  @if (restaurant.menu.length && !rated) {
+    <p class="muted no-menu">{{ restaurant.menu.length }} menu items{{ restaurant.cuisine ? ' · ' + restaurant.cuisine : '' }}</p>
+  } @else if (restaurant.menu.length) {
+    <div class="score-row">
+      <span class="score" [class]="'score ' + scoreClass">{{ restaurant.safetyRating }}%</span>
+      <span class="muted">{{ restaurant.counts?.safe }} of {{ restaurant.menu.length }} items safe</span>
+    </div>
+    <div class="bar" aria-hidden="true">
+      <span class="safe" [style.width.%]="share(restaurant.counts?.safe)"></span>
+      <span class="may" [style.width.%]="share(restaurant.counts?.['may-contain'])"></span>
+      <span class="unknown" [style.width.%]="share(restaurant.counts?.unknown)"></span>
+      <span class="contains" [style.width.%]="share(restaurant.counts?.contains)"></span>
+    </div>
+  } @else {
+    <p class="muted no-menu">No menu yet. Know it? Add it!</p>
+  }
 </a>

@@ -1,20 +1,76 @@
-<div class="tab-body">
-  <h2>My Allergens</h2>
+@if (vm$ | async; as vm) {
+  <div class="page">
+    <h1 class="page-title">My allergies</h1>
+    <p class="page-subtitle">Every menu is checked against the active profile. Make one for each person you order for.</p>
 
-  <mat-form-field class="allergen-list">
-    <mat-chip-grid #chipList>
-      <mat-chip-option *ngFor="let allergen of allergens"
-               [removable]="true" (removed)="delete(allergen)" selected selectable="false">
-        {{allergen.name}}
-        <button matChipRemove [attr.aria-label]="'remove ' + allergen.name">
-          <mat-icon>cancel</mat-icon>
+    <section class="profiles" aria-label="Profiles">
+      @for (profile of vm.profiles; track profile.id) {
+        <button type="button" class="profile" [class.on]="profile.id === vm.active.id" (click)="switchTo(profile)"
+                [attr.aria-pressed]="profile.id === vm.active.id">
+          <mat-icon>person</mat-icon> {{ profile.name }} <span class="count">{{ profile.allergens.length }}</span>
         </button>
-      </mat-chip-option>
-      <input placeholder="New Allergen..."
-             [matChipInputFor]="chipList"
-             [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
-             [matChipInputAddOnBlur]="addOnBlur"
-             (matChipInputTokenEnd)="add($event)">
-    </mat-chip-grid>
-  </mat-form-field>
-</div>
+      }
+      <form class="new-profile" (ngSubmit)="addProfile()">
+        <input [(ngModel)]="newProfileName" name="newProfileName" placeholder="Add a person (e.g. Sam)" aria-label="New profile name" />
+        <button mat-icon-button type="submit" aria-label="Add profile"><mat-icon>person_add</mat-icon></button>
+      </form>
+    </section>
+
+    <section class="card">
+      <div class="profile-header">
+        @if (renaming) {
+          <form class="rename" (ngSubmit)="saveRename(vm.active)">
+            <mat-form-field appearance="outline" subscriptSizing="dynamic">
+              <mat-label>Profile name</mat-label>
+              <input matInput [(ngModel)]="renameValue" name="renameValue" />
+            </mat-form-field>
+            <button mat-flat-button color="primary" type="submit">Save</button>
+            <button mat-button type="button" (click)="renaming = false">Cancel</button>
+          </form>
+        } @else {
+          <h2>{{ vm.active.name }}</h2>
+          <div class="actions">
+            <button mat-button (click)="startRename(vm.active)"><mat-icon>edit</mat-icon> Rename</button>
+            <button mat-button (click)="share(vm.active)" [disabled]="!vm.active.allergens.length"><mat-icon>share</mat-icon> Share</button>
+            @if (vm.profiles.length > 1) {
+              <button mat-button color="warn" (click)="deleteProfile(vm.active)"><mat-icon>delete</mat-icon> Delete</button>
+            }
+          </div>
+        }
+      </div>
+
+      <h3>Common allergens</h3>
+      <app-allergen-picker />
+
+      <h3>Anything else?</h3>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Type an ingredient and press Enter</mat-label>
+        <mat-chip-grid #chipGrid aria-label="Allergies">
+          @for (allergen of vm.active.allergens; track allergen.name) {
+            <mat-chip-row (removed)="remove(allergen)">
+              {{ allergen.name }}
+              <button matChipRemove [attr.aria-label]="'Remove ' + allergen.name"><mat-icon>cancel</mat-icon></button>
+            </mat-chip-row>
+          }
+          <input placeholder="e.g. kiwi, garlic, pine nuts" [matChipInputFor]="chipGrid"
+                 [matChipInputSeparatorKeyCodes]="separatorKeysCodes" [matChipInputAddOnBlur]="true"
+                 (matChipInputTokenEnd)="add($event)" />
+        </mat-chip-grid>
+      </mat-form-field>
+
+      @if (vm.active.allergens.length) {
+        <h3>What we look for</h3>
+        <ul class="keywords">
+          @for (allergen of vm.active.allergens; track allergen.name) {
+            <li><strong>{{ allergen.name }}:</strong><span class="muted"> {{ keywordsFor(allergen) }}</span></li>
+          }
+        </ul>
+      }
+    </section>
+
+    <p class="next">
+      <a mat-flat-button color="primary" routerLink="/dashboard"><mat-icon>restaurant</mat-icon> See safe restaurants</a>
+      <a mat-stroked-button routerLink="/chef-card"><mat-icon>badge</mat-icon> Make a chef card</a>
+    </p>
+  </div>
+}

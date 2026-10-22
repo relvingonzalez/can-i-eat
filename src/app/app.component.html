@@ -1,2 +1,59 @@
+<header class="app-header no-print">
+  <div class="header-inner">
+    <a class="brand" routerLink="/dashboard">
+      <img src="assets/Icon-512.png" alt="" width="32" height="32" />
+      <span>Can I Eat?</span>
+    </a>
 
-<router-outlet />
+    @if (profiles$ | async; as p) {
+      <button mat-stroked-button class="profile-button" [matMenuTriggerFor]="profileMenu" aria-label="Switch profile">
+        <mat-icon>person</mat-icon>
+        <span class="profile-name">{{ p.active.name }}</span>
+        <span class="profile-count">{{ p.active.allergens.length }}</span>
+      </button>
+      <mat-menu #profileMenu="matMenu">
+        @for (profile of p.profiles; track profile.id) {
+          <button mat-menu-item (click)="switchProfile(profile.id)">
+            <mat-icon>{{ profile.id === p.active.id ? 'radio_button_checked' : 'radio_button_unchecked' }}</mat-icon>
+            <span>{{ profile.name }} · {{ profile.allergens.length }} allergies</span>
+          </button>
+        }
+        <button mat-menu-item routerLink="/allergens">
+          <mat-icon>manage_accounts</mat-icon>
+          <span>Manage profiles</span>
+        </button>
+      </mat-menu>
+    }
+  </div>
+
+  <nav class="app-nav" aria-label="Main">
+    @for (link of nav; track link.path) {
+      <a [routerLink]="link.path" routerLinkActive="active" ariaCurrentWhenActive="page">
+        <mat-icon aria-hidden="true">{{ link.icon }}</mat-icon>
+        <span>{{ link.label }}</span>
+      </a>
+    }
+  </nav>
+</header>
+
+<main>
+  <router-outlet />
+</main>
+
+<footer class="app-footer no-print">
+  <p>
+    <strong>Always double-check with staff.</strong>
+    Menus and recipes change, and kitchens share equipment. "Safe" means we found none of your allergens in the
+    published data, not that a dish is guaranteed allergen-free.
+  </p>
+  <p>
+    <a class="coffee" href="https://buymeacoffee.com/relvingonzalez" target="_blank" rel="noopener">☕ Buy me a coffee</a>
+    <span class="muted"> · Can I Eat? is free, with no ads or tracking.</span>
+  </p>
+  <p class="links">
+    <a routerLink="/submit">Suggest a restaurant</a> ·
+    <a href="https://github.com/relvingonzalez/can-i-eat" target="_blank" rel="noopener">Source code</a> ·
+    Places © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> ·
+    Products © <a href="https://world.openfoodfacts.org" target="_blank" rel="noopener">Open Food Facts</a>
+  </p>
+</footer>

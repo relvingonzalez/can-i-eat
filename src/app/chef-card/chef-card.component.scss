@@ -1,0 +1,104 @@
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+
+  .spacer {
+    flex: 1;
+  }
+}
+
+.chef-card {
+  max-width: 720px;
+  margin: 0 auto 32px;
+  background: #fffdf5;
+  border: 3px solid #f4b400;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: var(--shadow-hover);
+  overflow: auto;
+
+  header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    .icon {
+      font-size: 40px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(24px, 5vw, 34px);
+      line-height: 1.15;
+    }
+  }
+
+  .intro {
+    font-size: 18px;
+    margin: 18px 0 4px;
+  }
+
+  .en {
+    display: block;
+    margin: 0;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 400;
+  }
+
+  .allergens {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0;
+    display: grid;
+    gap: 10px;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #fff;
+      border: 1px solid #f1e3b0;
+      border-radius: 12px;
+      padding: 10px 14px;
+      font-size: 20px;
+    }
+
+    .emoji {
+      font-size: 28px;
+    }
+  }
+
+  .severe {
+    margin: 16px 0 4px;
+    padding: 10px 14px;
+    background: var(--contains-bg);
+    color: var(--contains);
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 17px;
+  }
+
+  .thanks {
+    font-size: 18px;
+    margin: 16px 0 0;
+  }
+
+  &:fullscreen {
+    max-width: none;
+    border-radius: 0;
+    border-width: 8px;
+    padding: 6vh 6vw;
+    font-size: 125%;
+  }
+}
+
+@media print {
+  .chef-card {
+    box-shadow: none;
+    margin: 0;
+  }
+}

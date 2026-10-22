@@ -1,4 +1,9 @@
-export class Allergen {
+export interface Allergen {
   name: string;
-  derivatives: string[];
+}
+
+export interface Profile {
+  id: string;
+  name: string;
+  allergens: Allergen[];
 }

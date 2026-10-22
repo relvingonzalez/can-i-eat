@@ -1,42 +1,87 @@
-# Can I eat?
+# Can I Eat?
 
-This is an MVP personal project for people with food allergies to see a restaurant's safe menu for them to eat. It is developed with Angular, Angular Material, SCSS, standalone components, Firebase, and more.
+Pick your food allergies and see which menu items are safe at restaurants, checked against official allergen charts and full ingredient lists.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+**Live:** https://can-i-eat.vercel.app · ☕ [Buy me a coffee](https://buymeacoffee.com/relvingonzalez)
 
-# How to use it?
+![Restaurants rated for a milk + peanut allergy](docs/screenshots/dashboard.png)
 
-- First, you should run the codebase using ng serve, or visit the live example at: https://can-i-eat.vercel.app/dashboard.
-- Then,you should click on the "My Allergens" and add your food allergies, one at a time. For example, you can add dairy, milk, egg, soy, or anything. Press enter or "," after each one.
-- After you've added your allergens, head back to the "Restaurants" tab by clicking on the upper Restaurants link.
-- From here, you can see each restaurant's rating based on how safe it would be for you to eat there.
-- Click on any restaurant to see the restaurant details page, where you can navigate through the restaurant's menu.
-- here, you can toggle the switch to only see the menu that is safe for you. You can also expand each menu item to see the ingredients.
+## Features
 
+- **Restaurant safety ratings.** Every menu item is checked against your allergies and marked *Safe*, *May contain*, *Contains*, or *Not enough info*.
+- **Smart matching.** "Milk" also catches whey, casein, butter, ghee and friends; "egg" doesn't flag eggplant; "may contain" and "produced in a facility with" statements count as cross-contact; refined soybean/peanut oil shows as a heads-up instead of a hard fail. Matched words are highlighted in the ingredient list.
+- **Find a dish.** Search every menu at once ("chicken", "shake") for dishes that work for you.
+- **Near me.** Nearby restaurants on a map, highlighting the ones with menus we can check, plus allergy-friendly tags (gluten-free, vegan…) from OpenStreetMap.
+- **Scan a product.** Scan a grocery barcode and check it with Open Food Facts.
+- **Chef card.** A full-screen card listing your allergies in 8 languages to show your server.
+- **Profiles.** Keep allergy lists for everyone you order for, and share one with a link.
+- **Community submissions.** Anyone can suggest a restaurant's allergen menu; it shows up after review, clearly labeled.
 
+| Menu with highlights | Chef card | Near me | Mobile |
+| --- | --- | --- | --- |
+| ![](docs/screenshots/menu.png) | ![](docs/screenshots/chef-card.png) | ![](docs/screenshots/near-me.png) | ![](docs/screenshots/mobile-dishes.png) |
 
+## How the data works
 
+Everything runs on free tiers with no server to maintain.
 
-## Development server
+| Data | Where it comes from | Where it lives |
+| --- | --- | --- |
+| Chain menus (Chick-fil-A, In-N-Out, Sweetgreen) | Scraped from each chain's official allergen/nutrition page by `scripts/scrape` | `src/assets/data/chains.json` |
+| Hand-entered menus (Olive Garden, Pizza Hut, Subway…) | Exported once from the old Firestore `restaurants` collection | `src/assets/data/restaurants.json` |
+| Community menus | The in-app *Suggest a restaurant* form | Firestore `submissions` collection |
+| Nearby places | [OpenStreetMap](https://www.openstreetmap.org) via the Overpass API | Fetched live in the browser |
+| Packaged products | [Open Food Facts](https://world.openfoodfacts.org) | Fetched live in the browser |
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Your allergies, profiles and favorites are stored only in your browser.
 
-## Code scaffolding
+### Keeping chain menus fresh
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+A GitHub Action (`.github/workflows/refresh-menus.yml`) re-runs the scrapers every Monday and commits `chains.json` if anything changed; Vercel redeploys on the push. You can also run it by hand from the Actions tab, or locally:
 
-## Build
+```bash
+npm run data:scrape               # all chains
+npm run data:scrape -- sweetgreen # just one
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+If a site changes and a scraper breaks (or suddenly returns far fewer items), the previous data is kept and the error is printed, so a redesign can't wipe a menu.
 
-## Running unit tests
+### Adding a chain
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Add a file to `scripts/scrape/adapters/` (copy one of the existing ones) and register it in `scripts/scrape/index.mjs`. An adapter returns menu items with either:
 
-## Running end-to-end tests
+- `contains: ['milk', 'egg', ...]`: allergen flags from an allergen chart (keys are in `src/app/core/allergen-catalog.ts`), plus `covers`, the list of allergens that chart tracks, so untracked ones show as *Not enough info* rather than *Safe*; and/or
+- `ingredients: '...'`: the full ingredient text, which the app checks word by word.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Only use data the restaurant publishes itself, and never type allergen data from memory.
 
-## Further help
+### Reviewing community submissions
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Deploy the Firestore rules once: `npx firebase-tools deploy --only firestore:rules` (or paste `firestore.rules` into the Firebase console). They let anyone *create* a pending submission and *read* approved ones, and nothing else.
+2. New submissions appear in the Firebase console under `submissions` with `status: "pending"`.
+3. To publish one, change its `status` to `approved`. To hide it, set `rejected`.
+
+If you edit the old `restaurants` collection in the console, run `npm run data:export` to refresh `restaurants.json`.
+
+## Development
+
+Requires Node 20.
+
+```bash
+npm install
+npm start          # http://localhost:4200
+npm test           # unit tests (allergen matching)
+npm run build
+```
+
+Built with Angular 17 (standalone components), Angular Material, Leaflet and ZXing.
+
+## Support
+
+Can I Eat? is free, with no ads or tracking. If it helps you, you can [buy me a coffee ☕](https://buymeacoffee.com/relvingonzalez).
+
+## Disclaimer
+
+This is a helper, not a guarantee. Recipes change, data can be wrong or out of date, and kitchens share equipment. Always confirm with restaurant staff, and follow your allergist's advice.
+
+Place data © OpenStreetMap contributors (ODbL). Product data © Open Food Facts contributors (ODbL). Restaurant menus and logos belong to their respective owners.

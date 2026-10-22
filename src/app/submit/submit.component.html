@@ -1,0 +1,102 @@
+<div class="page narrow">
+  @if (state === 'sent') {
+    <div class="card done">
+      <mat-icon>celebration</mat-icon>
+      <h1 class="page-title">Thank you!</h1>
+      <p>Your menu was submitted. It'll show up for everyone once it's been reviewed.</p>
+      <p class="muted">Enjoying Can I Eat? It's a free side project. <a href="https://buymeacoffee.com/relvingonzalez" target="_blank" rel="noopener">Buy me a coffee ☕</a></p>
+      <p class="actions">
+        <button mat-flat-button color="primary" (click)="reset()">Submit another</button>
+        <a mat-button routerLink="/dashboard">Back to restaurants</a>
+      </p>
+    </div>
+  } @else {
+    <h1 class="page-title">Suggest a restaurant</h1>
+    <p class="page-subtitle">
+      Know a place that publishes its allergens, or asked the staff? Share what you found. Submissions are reviewed before they're
+      shown, and they're always labeled as community data.
+    </p>
+
+    <form [formGroup]="form" (ngSubmit)="submit()">
+      <section class="card">
+        <h2>The restaurant</h2>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Restaurant name</mat-label>
+          <input matInput formControlName="restaurantName" required />
+          <mat-error>Required</mat-error>
+        </mat-form-field>
+        <div class="row">
+          <mat-form-field appearance="outline">
+            <mat-label>City</mat-label>
+            <input matInput formControlName="city" />
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Website</mat-label>
+            <input matInput formControlName="website" type="url" />
+          </mat-form-field>
+        </div>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Where did this info come from?</mat-label>
+          <textarea matInput formControlName="sourceNote" rows="2"
+                    placeholder="A link to their allergen menu, or e.g. &quot;Printed allergen binder at the counter, Oct 2026&quot;"></textarea>
+          <mat-error>Please tell us your source</mat-error>
+        </mat-form-field>
+
+        <h3>Which allergens does your source list?</h3>
+        <p class="muted hint">Untick any it doesn't mention, so we don't show dishes as free from something nobody checked.</p>
+        <div class="checks">
+          @for (a of allergens; track a.key) {
+            <mat-checkbox color="primary" [checked]="form.controls.covers.value.includes(a.key)"
+                          (change)="toggle(form.controls.covers, a.key)">{{ a.emoji }} {{ a.label }}</mat-checkbox>
+          }
+        </div>
+      </section>
+
+      <h2 class="items-title">Menu items</h2>
+      @for (item of items.controls; track item; let i = $index) {
+        <section class="card item" [formGroup]="$any(item)">
+          <div class="item-header">
+            <strong>Item {{ i + 1 }}</strong>
+            @if (items.length > 1) {
+              <button mat-icon-button type="button" (click)="removeItem(i)" aria-label="Remove item"><mat-icon>delete</mat-icon></button>
+            }
+          </div>
+          <div class="row">
+            <mat-form-field appearance="outline">
+              <mat-label>Dish name</mat-label>
+              <input matInput formControlName="name" required />
+              <mat-error>Required</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+              <mat-label>Category (optional)</mat-label>
+              <input matInput formControlName="category" placeholder="Mains, Sides, Desserts…" />
+            </mat-form-field>
+          </div>
+          <p class="label">Contains</p>
+          <div class="checks">
+            @for (a of allergens; track a.key) {
+              <mat-checkbox color="warn" [checked]="$any(item).controls.contains.value.includes(a.key)"
+                            (change)="toggle($any(item).controls.contains, a.key)">{{ a.label }}</mat-checkbox>
+            }
+          </div>
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Ingredients (optional, but very helpful)</mat-label>
+            <textarea matInput formControlName="ingredients" rows="2"></textarea>
+          </mat-form-field>
+        </section>
+      }
+
+      <button mat-stroked-button type="button" (click)="addItem()"><mat-icon>add</mat-icon> Add another item</button>
+
+      @if (state === 'error') {
+        <p class="error"><mat-icon>error</mat-icon> Something went wrong sending your submission. Please try again.</p>
+      }
+
+      <div class="submit-row">
+        <button mat-flat-button color="primary" type="submit" [disabled]="state === 'sending'">
+          {{ state === 'sending' ? 'Sending…' : 'Submit for review' }}
+        </button>
+      </div>
+    </form>
+  }
+</div>

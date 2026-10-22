@@ -1,0 +1,69 @@
+@if (vm$ | async; as vm) {
+  <div class="page">
+    <div class="no-print">
+      <h1 class="page-title">Chef card</h1>
+      <p class="page-subtitle">Show this to your server or the kitchen. Pick their language; the English stays underneath so you know what it says.</p>
+
+      <div class="controls">
+        <mat-form-field appearance="outline" subscriptSizing="dynamic">
+          <mat-label>Language</mat-label>
+          <mat-select [value]="vm.language.code" (selectionChange)="setLanguage($event.value)">
+            @for (language of languages; track language.code) {
+              <mat-option [value]="language.code">{{ language.label }}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+        <mat-checkbox color="primary" [(ngModel)]="severe">Severe allergy</mat-checkbox>
+        <span class="spacer"></span>
+        <button mat-stroked-button (click)="print()"><mat-icon>print</mat-icon> Print</button>
+        <button mat-flat-button color="primary" (click)="fullscreen()"><mat-icon>fullscreen</mat-icon> Show full screen</button>
+      </div>
+    </div>
+
+    @if (vm.profile.allergens.length) {
+      <article #card class="chef-card" [attr.lang]="vm.language.code">
+        <header>
+          <span class="icon" aria-hidden="true">⚠️</span>
+          <div>
+            <h2>{{ vm.language.title }}</h2>
+            @if (vm.language.code !== 'en') { <p class="en">{{ english.title }}</p> }
+          </div>
+        </header>
+
+        <p class="intro">{{ vm.language.intro }}</p>
+        @if (vm.language.code !== 'en') { <p class="en">{{ english.intro }}</p> }
+
+        <ul class="allergens">
+          @for (line of vm.known; track line.english) {
+            <li>
+              <span class="emoji" aria-hidden="true">{{ line.emoji }}</span>
+              <span>
+                <strong>{{ line.text }}</strong>
+                @if (vm.language.code !== 'en') { <span class="en">{{ line.english }}</span> }
+              </span>
+            </li>
+          }
+          @if (vm.other.length) {
+            <li>
+              <span class="emoji" aria-hidden="true">➕</span>
+              <span><strong>{{ vm.language.other }} {{ vm.other.join(', ') }}</strong></span>
+            </li>
+          }
+        </ul>
+
+        @if (severe) {
+          <p class="severe">{{ vm.language.severe }}</p>
+          @if (vm.language.code !== 'en') { <p class="en">{{ english.severe }}</p> }
+        }
+
+        <p class="thanks">{{ vm.language.thanks }} 🙏</p>
+      </article>
+    } @else {
+      <div class="empty-state card">
+        <mat-icon>badge</mat-icon>
+        <p>Add your allergies first and your card will appear here.</p>
+        <a mat-flat-button color="primary" routerLink="/allergens">Add allergies</a>
+      </div>
+    }
+  </div>
+}

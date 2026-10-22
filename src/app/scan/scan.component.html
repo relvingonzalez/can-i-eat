@@ -1,0 +1,89 @@
+<div class="page">
+  <h1 class="page-title">Scan a product</h1>
+  <p class="page-subtitle">Check packaged food at the store. Scan the barcode and we'll check its ingredients and allergen labels.</p>
+
+  <div class="scanner card">
+    <div class="viewport" [class.active]="scanning">
+      <video #video playsinline muted></video>
+      @if (!scanning) {
+        <button mat-flat-button color="primary" class="start" (click)="startCamera()">
+          <mat-icon>photo_camera</mat-icon> Scan barcode
+        </button>
+      } @else {
+        <span class="aim" aria-hidden="true"></span>
+        <button mat-stroked-button class="stop" (click)="stopCamera()">Stop</button>
+      }
+    </div>
+    @if (cameraError) {
+      <p class="error">{{ cameraError }}</p>
+    }
+
+    <form class="manual" (ngSubmit)="search(manualCode)">
+      <mat-form-field appearance="outline" subscriptSizing="dynamic">
+        <mat-label>Or type the barcode number</mat-label>
+        <input matInput [(ngModel)]="manualCode" name="code" inputmode="numeric" autocomplete="off" />
+      </mat-form-field>
+      <button mat-stroked-button type="submit" [disabled]="!manualCode">Look up</button>
+    </form>
+  </div>
+
+  @if (lookup$ | async; as lookup) {
+    @switch (lookup.state) {
+      @case ('loading') {
+        <mat-spinner class="spinner-center" diameter="40" />
+      }
+      @case ('not-found') {
+        <div class="card result empty">
+          <mat-icon>inventory_2</mat-icon>
+          <p>We couldn't find that product on Open Food Facts.</p>
+          <p class="muted">It's a free, open database anyone can add to.
+            <a href="https://world.openfoodfacts.org/contribute" target="_blank" rel="noopener">Add it there</a> and it'll work here too.</p>
+        </div>
+      }
+      @case ('error') {
+        <div class="card result empty">
+          <mat-icon>wifi_off</mat-icon>
+          <p>Couldn't reach Open Food Facts. Check your connection and try again.</p>
+        </div>
+      }
+      @case ('found') {
+        @if (lookup.state === 'found') {
+          <article class="card result">
+            <div class="product">
+              @if (lookup.product.image && !imageFailed) {
+                <img [src]="lookup.product.image" alt="" (error)="imageFailed = true" />
+              }
+              <div>
+                <h2>{{ lookup.product.name }}</h2>
+                @if (lookup.product.brand) { <p class="muted">{{ lookup.product.brand }}</p> }
+                <app-status-pill [status]="lookup.evaluation.status" [hits]="lookup.evaluation.hits" />
+              </div>
+            </div>
+
+            @for (hit of lookup.evaluation.hits; track hit.allergen) {
+              <p [class]="'hit ' + hit.level">
+                <strong>{{ hit.level === 'contains' ? 'Contains' : 'May contain' }} {{ hit.allergen }}</strong>
+                <span> · {{ hit.terms.join(', ') }}</span>
+              </p>
+            }
+            @for (caution of lookup.evaluation.cautions; track caution.allergen) {
+              <p class="hit caution">
+                <strong>Heads up:</strong> {{ caution.terms.join(', ') }}. Highly refined oils are usually tolerated, but check with your allergist.
+              </p>
+            }
+            @if (lookup.product.item.ingredients) {
+              <h3>Ingredients</h3>
+              <app-ingredient-text [segments]="lookup.evaluation.ingredientSegments" />
+            } @else {
+              <p class="muted">No ingredient list on file, so we can only go by the product's allergen labels. Check the package.</p>
+            }
+            <p class="source muted">
+              Data from <a [href]="lookup.product.url" target="_blank" rel="noopener">Open Food Facts</a> (ODbL). Labels can change, so always read the package.
+            </p>
+            <button mat-button (click)="reset()"><mat-icon>restart_alt</mat-icon> Scan another</button>
+          </article>
+        }
+      }
+    }
+  }
+</div>

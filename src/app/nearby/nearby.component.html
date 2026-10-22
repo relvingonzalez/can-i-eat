@@ -1,0 +1,82 @@
+<div class="page">
+  <h1 class="page-title">Near me</h1>
+  <p class="page-subtitle">Restaurants around you, with menus we can check highlighted. Places come from OpenStreetMap.</p>
+
+  <div class="controls">
+    <button mat-flat-button color="primary" (click)="search()" [disabled]="state === 'locating' || state === 'loading'">
+      <mat-icon>my_location</mat-icon> Use my location
+    </button>
+    <form class="address" (ngSubmit)="searchAddress()">
+      <input [(ngModel)]="address" name="address" placeholder="…or a city, address or ZIP" aria-label="City, address or ZIP" />
+      <button mat-icon-button type="submit" aria-label="Search this place" [disabled]="!address.trim()"><mat-icon>search</mat-icon></button>
+    </form>
+    <mat-button-toggle-group [value]="radius" (change)="setRadius($event.value)" aria-label="Search radius" hideSingleSelectionIndicator>
+      @for (r of radii; track r) {
+        <mat-button-toggle [value]="r">{{ r / 1000 }} km</mat-button-toggle>
+      }
+    </mat-button-toggle-group>
+  </div>
+
+  @if (state === 'error') {
+    <p class="error card"><mat-icon>error</mat-icon> {{ error }}</p>
+  }
+
+  <div class="map card" #map [class.hidden]="state === 'idle' || state === 'error'"></div>
+
+  @if (state === 'idle') {
+    <div class="empty-state card">
+      <mat-icon>travel_explore</mat-icon>
+      <p>Use your location, or type a city, address or ZIP to look anywhere, handy for planning a trip. Locations are only used to search OpenStreetMap.</p>
+    </div>
+  }
+  @if (state === 'locating' || state === 'loading') {
+    <mat-spinner class="spinner-center" diameter="40" />
+    <p class="muted center">
+      {{ state === 'locating' ? 'Finding the spot…' : 'Looking for restaurants…' }}
+      @if (state === 'loading') { <br />OpenStreetMap's free servers can take up to 30 seconds when they're busy. }
+    </p>
+  }
+
+  @if (state === 'done') {
+    @if (searchedLabel) {
+      <p class="muted">Showing places around {{ searchedLabel }}</p>
+    }
+    <h2 class="section-title">With menus we can check <span class="count">{{ matches.length }}</span></h2>
+    @if (matches.length) {
+      <ul class="list">
+        @for (m of matches; track m.place.id) {
+          <li>
+            <a class="row card" [routerLink]="['/restaurant/detail', m.restaurant.id]">
+              <app-restaurant-avatar [name]="m.restaurant.name" [logo]="m.restaurant.logo" [size]="44" />
+              <span class="text">
+                <strong>{{ m.place.name }}</strong>
+                <span class="muted">{{ m.place.distanceKm | number: '1.1-1' }} km{{ m.place.address ? ' · ' + m.place.address : '' }}</span>
+              </span>
+              <span class="score" [class.good]="(m.restaurant.safetyRating || 0) >= 60">{{ m.restaurant.safetyRating }}% safe</span>
+            </a>
+          </li>
+        }
+      </ul>
+    } @else {
+      <p class="muted">None of the restaurants nearby have menus in Can I Eat? yet. Help add one below.</p>
+    }
+
+    <h2 class="section-title">Other places nearby <span class="count">{{ others.length }}</span></h2>
+    <ul class="list">
+      @for (place of others.slice(0, 60); track place.id) {
+        <li class="row card other">
+          <span class="text">
+            <strong>{{ place.name }}</strong>
+            <span class="muted">{{ place.distanceKm | number: '1.1-1' }} km{{ place.cuisine ? ' · ' + place.cuisine : '' }}</span>
+            @if (place.diets.length) {
+              <span class="diets">
+                @for (diet of place.diets; track diet) { <span class="diet">{{ diet }}</span> }
+              </span>
+            }
+          </span>
+          <a mat-stroked-button routerLink="/submit" [queryParams]="submitQueryParams(place)">Add menu</a>
+        </li>
+      }
+    </ul>
+  }
+</div>

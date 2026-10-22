@@ -1,205 +1,173 @@
+import { Injectable, PLATFORM_ID, inject } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
+import { BehaviorSubject, NEVER, Observable, combineLatest, of } from 'rxjs';
+import { catchError, map, shareReplay, startWith } from 'rxjs/operators';
+import { JSONSchema, StorageMap } from '@ngx-pwa/local-storage';
 
-import { Injectable } from '@angular/core';
-import { Observable, of, from, forkJoin } from 'rxjs';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { catchError, map, tap, mergeMap, filter, toArray } from 'rxjs/operators';
-import { FirebaseService } from './firebase.service';
-import { JSONSchema, StorageMap } from "@ngx-pwa/local-storage";
-
-import { Allergen } from '../shared/models/allergen.model';
-import { FavoriteRestaurant, Restaurant } from '../shared/models/restaurant.model';
 import { MenuItem } from '../shared/models/menu-item.model';
-import { Menu } from '../shared/models/menu.model';
-
-import { HelperFunctionsService } from './helper-functions.service';
+import { Restaurant } from '../shared/models/restaurant.model';
 import { AllergenService } from './allergen.service';
+import { evaluateRestaurant } from './allergen-matcher';
+import { FirebaseService } from './firebase.service';
+import { HelperFunctionsService } from './helper-functions.service';
 
-const httpOptions = {
-  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-};
+type StaticRestaurant = Restaurant & { replaces?: string[] };
 
-const schema = {
+interface RestaurantFile {
+  restaurants: StaticRestaurant[];
+}
+
+export interface DishResult {
+  restaurant: Restaurant;
+  item: MenuItem;
+}
+
+const favoriteIdsSchema = { type: 'array', items: { type: 'string' } } satisfies JSONSchema;
+// Favorites used to be stored as whole restaurant objects.
+const legacyFavoritesSchema = {
   type: 'array',
-  items: {
-    type: 'object',
-    properties: {
-      id: { type: 'string' },
-      name: { type: 'string' },
-      logo: { type: 'string' },
-      safetyRating: { type: 'number' },
-      keywords:{
-        type: 'array',
-        items: {
-          type: 'string'
-        }
-      },
-      menu: {
-        type: 'array',
-        items: {
-          type: 'string'
-        }
-      }
-    },
-    required: ['name']
-  }
+  items: { type: 'object', properties: { id: { type: 'string' } }, required: ['id'] },
 } satisfies JSONSchema;
+
+export function normalizeName(name: string): string {
+  return name
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/&/g, 'and')
+    .replace(/[^a-z0-9]/g, '')
+    .replace(/(restaurants?|burgers?)$/, '');
+}
 
 @Injectable({
   providedIn: 'root'
 })
 export class RestaurantService {
+  private favoriteIds = new BehaviorSubject<string[]>([]);
+
+  /**
+   * Restaurant data ships as static files in src/assets/data (see scripts/). Chains scraped from
+   * official sources override hand-entered restaurants they replace. Loaded in the browser only,
+   * so prerendered pages show a spinner instead of an empty list.
+   */
+  private staticRestaurants$: Observable<StaticRestaurant[]> = !isPlatformBrowser(inject(PLATFORM_ID)) ? NEVER : combineLatest([
+    this.http.get<RestaurantFile>('assets/data/chains.json'),
+    this.http.get<RestaurantFile>('assets/data/restaurants.json'),
+  ]).pipe(
+    map(([chains, curated]) => {
+      const replaced = new Set(chains.restaurants.flatMap(r => r.replaces || []));
+      return [...chains.restaurants, ...curated.restaurants.filter(r => !replaced.has(r.id))];
+    }),
+    catchError(this.helperFunctionsService.handleError('loadRestaurants', [] as StaticRestaurant[])),
+    shareReplay(1)
+  );
+
+  private allRestaurants$: Observable<StaticRestaurant[]> = combineLatest([
+    this.staticRestaurants$,
+    this.firebaseService.approvedRestaurants().pipe(
+      startWith([] as Restaurant[]),
+      catchError(this.helperFunctionsService.handleError('approvedRestaurants', [] as Restaurant[]))
+    ),
+  ]).pipe(
+    map(([known, community]) => [...known, ...community]),
+    shareReplay(1)
+  );
+
+  /** Every restaurant, rated against the active profile, safest first. */
+  readonly restaurants$: Observable<Restaurant[]> = combineLatest([
+    this.allRestaurants$,
+    this.allergenService.allergens$,
+    this.favoriteIds,
+  ]).pipe(
+    map(([restaurants, allergens, favorites]) => restaurants
+      .map(r => ({
+        ...evaluateRestaurant(r, allergens),
+        favorite: favorites.some(id => id === r.id || (r.replaces || []).includes(id)),
+      }))
+      .sort((a, b) => (b.safetyRating! - a.safetyRating!) || a.name.localeCompare(b.name))
+    ),
+    shareReplay({ bufferSize: 1, refCount: true })
+  );
 
   constructor(
     private http: HttpClient,
-    private firebaseService: FirebaseService,
     protected localStorage: StorageMap,
+    private firebaseService: FirebaseService,
     private helperFunctionsService: HelperFunctionsService,
     private allergenService: AllergenService) {
+    this.loadFavorites();
   }
 
-  private restaurantsUrl = 'api/restaurants';  // URL to web api
-
-  toggleFavoriteRestaurant(restaurant: Restaurant): Observable<FavoriteRestaurant> {
-    return this.localStorage.get<FavoriteRestaurant[]>('favorites', schema)
-      .pipe(
-        map((favoriteRestaurants) => favoriteRestaurants || []),
-        mergeMap((favoriteRestaurants) => {
-          const restaurantIndex = favoriteRestaurants.findIndex(r => r.id === restaurant.id);
-          restaurantIndex === -1 ? favoriteRestaurants.push(restaurant) : favoriteRestaurants.splice(restaurantIndex, 1);
-
-          return this.localStorage.set('favorites', favoriteRestaurants)
-            .pipe(map(() => restaurant));
-        })
-      );
-  }
-
-  findInFavorites(restaurant: Restaurant): Observable<FavoriteRestaurant | undefined> {
-    return this.getFavoriteRestaurants()
-      .pipe(
-        map((favoriteRestaurants) => favoriteRestaurants.find(r => r.id === restaurant.id))
-      );
-  }
-
-  getFavoriteRestaurants(): Observable<FavoriteRestaurant[]> {
-    return this.localStorage.get<FavoriteRestaurant[]>('favorites', schema).pipe(
-      map(favoriteRestaurants => favoriteRestaurants || [])
-    )
-  }
-
-  getProblemIngredients(menu: MenuItem[], allergens: Allergen[]) : MenuItem[] {
-    for(let menuItem of menu) {
-      let ingredients = menuItem.ingredients.toLowerCase();
-      menuItem.problemIngredients = this.allergenService.getProblemIngredients(allergens, ingredients);
-    }
-
-    return menu || [];
-  }
-  getSafetyRating(menu: MenuItem[]): number {
-    const safeMenuItems = menu.filter(menuItem => !menuItem.problemIngredients);
-    const safetyRating: number = Math.ceil((safeMenuItems.length/menu.length) * 100) || 0;
-    return safetyRating;
-  }
-
-  processRestaurants(restaurants: Restaurant[], allergens: Allergen[] = []): Restaurant[] {
-    let processedRestaurants = restaurants.map((restaurant) => {
-        restaurant.menu = this.getProblemIngredients(restaurant.menu, allergens);
-        restaurant.safetyRating = this.getSafetyRating(restaurant.menu);
-        return restaurant;
+  private loadFavorites(): void {
+    this.localStorage.get<string[]>('favoriteIds', favoriteIdsSchema).subscribe(ids => {
+      if (ids) {
+        this.favoriteIds.next(ids);
+        return;
+      }
+      this.localStorage.get<{ id: string }[]>('favorites', legacyFavoritesSchema)
+        .pipe(catchError(() => of(undefined)))
+        .subscribe(legacy => this.saveFavorites((legacy || []).map(r => r.id)));
     });
-
-    return processedRestaurants.sort((a, b) => b.safetyRating - a.safetyRating);
   }
 
-  getRestaurants(allergens: Allergen[]): Observable<Restaurant[]> {
-    return this.firebaseService.GetRestaurantsList()
-      .pipe(
-        map((restaurants) =>  {
-          return this.processRestaurants(restaurants, allergens);
-        }),
-        tap(() => this.helperFunctionsService.log('fetched restaurants')),
-        catchError(this.helperFunctionsService.handleError('getRestaurant', []))
-      );
+  private saveFavorites(ids: string[]): void {
+    this.favoriteIds.next(ids);
+    this.localStorage.set('favoriteIds', ids, favoriteIdsSchema).subscribe();
   }
 
-  getRestaurant(id: string, allergens: Allergen[] = []): Observable<Restaurant | undefined> {
-    return this.firebaseService.GetRestaurant(id)
-      .pipe(
-        mergeMap((restaurant) => {
-          return this.findInFavorites(restaurant)
-            .pipe(
-              map((favorite)=> {
-                if (favorite) {
-                  restaurant.favorite = true;
-                }
-
-                restaurant.menu = this.getProblemIngredients(restaurant.menu, allergens);
-                restaurant.safetyRating = this.getSafetyRating(restaurant.menu);
-
-                return restaurant;
-              })
-            )
-        }),
-        tap(() => this.helperFunctionsService.log('fetched restaurant')),
-        catchError(this.helperFunctionsService.handleError('getRestaurant', undefined))
-      );
+  getRestaurant(id: string): Observable<Restaurant | undefined> {
+    return this.restaurants$.pipe(
+      map(restaurants => restaurants.find(r => r.id === id || ((r as StaticRestaurant).replaces || []).includes(id)))
+    );
   }
 
-  menuByCategory(menu: MenuItem[] = []): Menu {
+  toggleFavorite(restaurant: Restaurant): void {
+    const ids = this.favoriteIds.value;
+    const aliases = [restaurant.id, ...((restaurant as StaticRestaurant).replaces || [])];
+    this.saveFavorites(ids.some(id => aliases.includes(id))
+      ? ids.filter(id => !aliases.includes(id))
+      : [...ids, restaurant.id]);
+  }
+
+  /** Finds a known restaurant by name, e.g. to match places from a map search. */
+  findByName(restaurants: Restaurant[], ...names: (string | undefined)[]): Restaurant | undefined {
+    const wanted = names.filter((n): n is string => !!n).map(normalizeName).filter(n => n.length > 2);
+    return restaurants.find(r => wanted.includes(normalizeName(r.name)));
+  }
+
+  menuByCategory(menu: MenuItem[] = []): Record<string, MenuItem[]> {
     return this.helperFunctionsService.groupBy(menu, m => m.category);
   }
+}
 
-  /** PUT: update the Restaurant on the server */
-  updateRestaurant (restaurant: Restaurant): Observable<any> {
-    return this.http.put(this.restaurantsUrl, restaurant, httpOptions).pipe(
-      tap(() => this.helperFunctionsService.log(`updated restaurant id=${restaurant.id}`)),
-      catchError(this.helperFunctionsService.handleError<any>('updateRestaurant'))
-    );
+export function searchRestaurants(restaurants: Restaurant[], term: string): Restaurant[] {
+  const words = term.toLowerCase().split(/\s+/).filter(Boolean);
+  if (!words.length) {
+    return restaurants;
   }
+  return restaurants.filter(r => {
+    const haystack = [r.name, r.cuisine, r.city, ...(r.keywords || [])].join(' ').toLowerCase();
+    return words.every(word => haystack.includes(word));
+  });
+}
 
-  /** POST: add a new Restaurant to the server */
-  addRestaurant (restaurant: Restaurant): Observable<Restaurant> {
-    return this.http.post<Restaurant>(this.restaurantsUrl, restaurant, httpOptions).pipe(
-      tap((restaurant: Restaurant) => this.helperFunctionsService.log(`added Restaurant w/ id=${restaurant.id}`)),
-      catchError(this.helperFunctionsService.handleError<Restaurant>('addRestaurant'))
-    );
+export function searchDishes(restaurants: Restaurant[], term: string, safeOnly: boolean, limit = 200): DishResult[] {
+  const words = term.toLowerCase().split(/\s+/).filter(Boolean);
+  if (!words.length) {
+    return [];
   }
-
-  /** DELETE: delete the restaurant from the server */
-  deleteRestaurant (restaurant: Restaurant | number): Observable<Restaurant> {
-    const id = typeof restaurant === 'number' ? restaurant : restaurant.id;
-    const url = `${this.restaurantsUrl}/${id}`;
-
-    return this.http.delete<Restaurant>(url, httpOptions).pipe(
-      tap(() => this.helperFunctionsService.log(`deleted restaurant id=${id}`)),
-      catchError(this.helperFunctionsService.handleError<Restaurant>('deleteRestaurant'))
-    );
-  }
-
-  /* GET restaurants whose name contains search term */
-  searchRestaurants(term: string, allergens: Allergen[]): Observable<Restaurant[]> {
-    if (!term.trim()) {
-      // if not search term, return empty hero array.
-      return of([]);
+  const results: DishResult[] = [];
+  for (const restaurant of restaurants) {
+    for (const item of restaurant.menu) {
+      if (safeOnly && item.status !== 'safe') {
+        continue;
+      }
+      const haystack = `${item.name} ${item.category}`.toLowerCase();
+      if (words.every(word => haystack.includes(word))) {
+        results.push({ restaurant, item });
+      }
     }
-    return this.firebaseService.SearchRestaurants(term.trim()).pipe(
-      map((restaurants) => {
-        return this.processRestaurants(restaurants, allergens);
-      }),
-      tap(_ => this.helperFunctionsService.log(`found restaurants matching "${term}"`)),
-      catchError(this.helperFunctionsService.handleError<Restaurant[]>('searchRestaurants', []))
-    );
   }
-
-  /* GET restaurants whose name is in provided restaurants this si of type any because the list could come from google*/
-  matchAndReturnRestaurants(googleRestaurants: Restaurant[] | unknown[] = [], allergens: Allergen[] = []): Observable<Restaurant[]> {
-    if(!googleRestaurants || !googleRestaurants.length) {
-      return of([]);
-    }
-    return this.firebaseService.GetRestaurantsListByNames(googleRestaurants).pipe(
-      map(restaurants => restaurants.filter(restaurant => restaurant)),
-      map(restaurants => this.processRestaurants(restaurants, allergens)),
-      tap(_ => this.helperFunctionsService.log('unable to contact db')),
-      catchError(this.helperFunctionsService.handleError<Restaurant[]>('matchAndReturnRestaurants', []))
-    );
-  }
+  const rank = { 'safe': 0, 'may-contain': 1, 'unknown': 2, 'contains': 3 };
+  return results.sort((a, b) => rank[a.item.status || 'unknown'] - rank[b.item.status || 'unknown']).slice(0, limit);
 }

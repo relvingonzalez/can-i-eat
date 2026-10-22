@@ -1,8 +1,83 @@
-<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
-	<mat-tab label="Restaurants">
-		<app-restaurants></app-restaurants>
-	</mat-tab>
-	<mat-tab label="Allergens">
-		<app-allergens></app-allergens>
-	</mat-tab>
-</mat-tab-group>
+@if (vm$ | async; as vm) {
+  <section class="hero">
+    <div class="page hero-inner">
+      <h1>Eat out with confidence.</h1>
+      <p class="lead">
+        Pick your allergies and we'll check every menu item, from official allergen charts to full ingredient lists.
+      </p>
+
+      @if (!vm.profile.allergens.length || picking) {
+        <div class="onboarding card">
+          <h2><mat-icon>waving_hand</mat-icon> Start here: what are you avoiding?</h2>
+          <p class="muted">Tap all that apply. You can add anything else (like kiwi or garlic) under <a routerLink="/allergens">My allergies</a>.</p>
+          <app-allergen-picker [big9Only]="true" (changed)="picking = true" />
+          @if (vm.profile.allergens.length) {
+            <button mat-flat-button color="primary" class="done" (click)="picking = false">Done</button>
+          }
+        </div>
+      } @else {
+        <div class="checking">
+          <span class="muted">Checking for</span>
+          @for (allergen of vm.profile.allergens; track allergen.name) {
+            <span class="tag">{{ allergen.name }}</span>
+          }
+          <a mat-button routerLink="/allergens"><mat-icon>edit</mat-icon> Edit</a>
+        </div>
+        <p class="stats">
+          <strong>{{ vm.safeDishes }}</strong> of {{ vm.dishes }} menu items across {{ vm.total }} restaurants look safe for {{ vm.profile.name === 'Me' ? 'you' : vm.profile.name }}.
+        </p>
+      }
+    </div>
+  </section>
+
+  <div class="page">
+    @if (vm.favorites.length) {
+      <h2 class="section-title"><mat-icon>favorite</mat-icon> Favorites</h2>
+      <div class="grid">
+        @for (restaurant of vm.favorites; track restaurant.id) {
+          <app-restaurant [restaurant]="restaurant" [rated]="vm.profile.allergens.length > 0" />
+        }
+      </div>
+    }
+
+    <div class="toolbar">
+      <h2 class="section-title">All restaurants</h2>
+      <mat-form-field appearance="outline" subscriptSizing="dynamic" class="search">
+        <mat-icon matPrefix>search</mat-icon>
+        <mat-label>Search restaurants or cuisines</mat-label>
+        <input matInput [ngModel]="vm.term" (ngModelChange)="term$.next($event)" />
+      </mat-form-field>
+      <mat-button-toggle-group [value]="sort$.value" (change)="sort$.next($event.value)" aria-label="Sort restaurants" hideSingleSelectionIndicator>
+        <mat-button-toggle value="safest">Safest first</mat-button-toggle>
+        <mat-button-toggle value="name">A–Z</mat-button-toggle>
+      </mat-button-toggle-group>
+    </div>
+
+    @if (vm.results.length) {
+      <div class="grid">
+        @for (restaurant of vm.results; track restaurant.id) {
+          <app-restaurant [restaurant]="restaurant" [rated]="vm.profile.allergens.length > 0" />
+        }
+      </div>
+    } @else {
+      <div class="empty-state card">
+        <mat-icon>search_off</mat-icon>
+        <p>No restaurants match "{{ vm.term }}" yet.</p>
+        <a mat-flat-button color="primary" routerLink="/submit" [queryParams]="{ name: vm.term }">Know their menu? Add it</a>
+      </div>
+    }
+
+    <aside class="cta card">
+      <div>
+        <h3>Missing your favorite spot?</h3>
+        <p class="muted">Share its allergen menu and help everyone with allergies eat out more safely.</p>
+      </div>
+      <span class="cta-actions">
+        <a mat-stroked-button color="primary" routerLink="/submit"><mat-icon>add</mat-icon> Suggest a restaurant</a>
+        <a mat-button href="https://buymeacoffee.com/relvingonzalez" target="_blank" rel="noopener">☕ Buy me a coffee</a>
+      </span>
+    </aside>
+  </div>
+} @else {
+  <mat-spinner class="spinner-center" diameter="48" />
+}

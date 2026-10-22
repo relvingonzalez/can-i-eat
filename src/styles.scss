@@ -1,57 +1,129 @@
-/* You can add global styles to this file, and also import other style files */
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+/* Global styles. Component styles live next to each component. */
 @import 'variables';
 
-@media (min-width: 1025px) {
-	html, body {
-		padding: 20px;
-	}
+:root {
+  --brand: #00796b;
+  --brand-dark: #004d40;
+  --brand-soft: #e0f2f1;
+  --bg: #f5f7f6;
+  --surface: #ffffff;
+  --text: #1f2933;
+  --muted: #5f6b76;
+  --border: #dde3e1;
+  --radius: 14px;
+  --shadow: 0 1px 2px rgba(16, 24, 40, .06), 0 1px 3px rgba(16, 24, 40, .1);
+  --shadow-hover: 0 4px 8px rgba(16, 24, 40, .08), 0 12px 24px rgba(16, 24, 40, .12);
+
+  --safe: #1b7f3b;
+  --safe-bg: #e5f4ea;
+  --may: #9a5b00;
+  --may-bg: #fff3dc;
+  --contains: #c62828;
+  --contains-bg: #fdecea;
+  --unknown: #55606b;
+  --unknown-bg: #eceff1;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
 }
 
 body {
-	background-color: $white;
-	color: $blue-dark;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
 
-img, embed,
-object, video {
-	max-width: 100%;
+img, embed, object, video {
+  max-width: 100%;
 }
 
-/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version. */
-.mat-mdc-tab-body.mat-tab-body-active {
-	overflow: hidden !important;
+a {
+  color: var(--brand);
 }
 
-/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version. */
-.mat-tab-body-content {
-    height: 100%;
-    overflow: hidden !important;
+h1, h2, h3 {
+  color: var(--text);
+  letter-spacing: -0.01em;
 }
 
-// mat card global overwrites
-.mat-mdc-card {
-	background-color: $blue-light;
-	//header
-	/* TODO(mdc-migration): The following rule targets internal classes of card that may no longer apply for the MDC version. */
-	.mat-mdc-card-header .mat-card-header-text {
-	    margin: 0 16px 0 0;
-	}
-
-  .mat-badge-content.mat-badge-active {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-  }
-
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+  box-sizing: border-box;
 }
 
-.tab-body {
+.page-title {
+  font-size: 28px;
+  line-height: 1.2;
+  margin: 8px 0 4px;
+}
+
+.page-subtitle {
+  color: var(--muted);
+  margin: 0 0 20px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
   padding: 16px;
 }
 
-@media only screen and (min-width: 380px) {
-	.restaurant-component[_ngcontent-c8] .mat-mdc-card[_ngcontent-c8] .mat-mdc-card-header[_ngcontent-c8] .mat-mdc-card-title[_ngcontent-c8] {
-	    font-size: 20px;
-	}
+.muted {
+  color: var(--muted);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 16px;
+  color: var(--muted);
+
+  .mat-icon {
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+    color: var(--border);
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.full-width {
+  width: 100%;
+}
+
+.spinner-center {
+  margin: 48px auto;
+}
+
+// Highlighted words inside ingredient lists.
+mark.hl-contains {
+  background: var(--contains-bg);
+  color: var(--contains);
+  font-weight: $bold-font;
+  border-radius: 3px;
+  padding: 0 2px;
+}
+
+mark.hl-may-contain {
+  background: var(--may-bg);
+  color: var(--may);
+  font-weight: $bold-font;
+  border-radius: 3px;
+  padding: 0 2px;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
 }

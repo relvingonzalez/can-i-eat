@@ -23,7 +23,7 @@
       "ES2023",
       "dom"
     ],
-    "types": ["googlemaps", "jest"],
+    "types": [],
     "typeRoots": [
       "node_modules/@types",
     ],

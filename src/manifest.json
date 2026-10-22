@@ -1,14 +1,15 @@
 {
-	"name": "Can I eat",
-	"short_name": "CanIEat",
+	"name": "Can I Eat?",
+	"short_name": "Can I Eat?",
+	"description": "Find allergy-safe dishes at restaurants near you.",
 	"icons": [{
 		"src": "/assets/Icon-512.png",
 		"sizes": "512x512",
 		"type": "image/png"
 	}],
-	"start_url": "/index.html",
+	"start_url": "/dashboard",
 	"display": "standalone",
 	"orientation": "portrait",
-	"background_color": "white",
-	"theme_color": "#FF0000"
+	"background_color": "#f5f7f6",
+	"theme_color": "#00796b"
 }

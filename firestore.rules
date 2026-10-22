@@ -1,0 +1,37 @@
+rules_version = '2';
+
+// Restaurants ship with the app as static JSON; Firestore only holds community submissions.
+// Review submissions in the Firebase console and set status to "approved" to publish one.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Legacy collection, read by scripts/export-firestore.mjs. Edit it from the console only.
+    match /restaurants/{id} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    match /submissions/{id} {
+      allow read: if resource.data.status == 'approved';
+
+      allow create: if request.resource.data.status == 'pending'
+        && request.resource.data.submittedAt == request.time
+        && request.resource.data.restaurantName is string
+        && request.resource.data.restaurantName.size() > 0
+        && request.resource.data.restaurantName.size() <= 120
+        && request.resource.data.sourceNote is string
+        && request.resource.data.sourceNote.size() <= 500
+        && request.resource.data.covers is list
+        && request.resource.data.covers.size() <= 20
+        && request.resource.data.items is list
+        && request.resource.data.items.size() > 0
+        && request.resource.data.items.size() <= 150
+        && request.resource.data.keys().hasOnly([
+          'restaurantName', 'city', 'website', 'sourceNote', 'osmId', 'lat', 'lon',
+          'covers', 'items', 'status', 'submittedAt'
+        ]);
+
+      allow update, delete: if false;
+    }
+  }
+}
