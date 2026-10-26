@@ -28,17 +28,6 @@
       "menu": [
         {
           "category": "Breakfast",
-          "name": "Waffle",
-          "contains": [
-            "milk",
-            "egg",
-            "soy",
-            "wheat"
-          ],
-          "id": "breakfast-waffle"
-        },
-        {
-          "category": "Breakfast",
           "name": "4 ct Mini Yeast Rolls",
           "contains": [
             "milk",
@@ -2220,6 +2209,17 @@
         },
         {
           "category": "Buns",
+          "name": "Waffle",
+          "contains": [
+            "milk",
+            "egg",
+            "soy",
+            "wheat"
+          ],
+          "id": "buns-waffle"
+        },
+        {
+          "category": "Buns",
           "name": "White Bun (Unbuttered)",
           "contains": [
             "wheat",
@@ -3082,7 +3082,7 @@
         }
       ],
       "source": "official",
-      "lastVerified": "2026-10-22"
+      "lastVerified": "2026-10-26"
     },
     {
       "id": "chain-first-watch",
@@ -4555,7 +4555,7 @@
         }
       ],
       "source": "official",
-      "lastVerified": "2026-10-22"
+      "lastVerified": "2026-10-26"
     },
     {
       "id": "chain-freddys",
@@ -5763,7 +5763,7 @@
         }
       ],
       "source": "official",
-      "lastVerified": "2026-10-22"
+      "lastVerified": "2026-10-26"
     },
     {
       "id": "chain-in-n-out",
@@ -6047,7 +6047,7 @@
         }
       ],
       "source": "official",
-      "lastVerified": "2026-10-22"
+      "lastVerified": "2026-10-26"
     },
     {
       "id": "chain-papa-johns",
@@ -7555,7 +7555,7 @@
         }
       ],
       "source": "official",
-      "lastVerified": "2026-10-22"
+      "lastVerified": "2026-10-26"
     },
     {
       "id": "chain-pollo-tropical",
@@ -8798,7 +8798,7 @@
         }
       ],
       "source": "official",
-      "lastVerified": "2026-10-22"
+      "lastVerified": "2026-10-26"
     },
     {
       "id": "chain-sweetgreen",
@@ -9749,7 +9749,7 @@
         }
       ],
       "source": "official",
-      "lastVerified": "2026-10-22"
+      "lastVerified": "2026-10-26"
     }
   ]
 }
