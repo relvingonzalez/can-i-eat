@@ -1522,6 +1522,12 @@
         },
         {
           "category": "Drinks",
+          "name": "Bag of Ice",
+          "contains": [],
+          "id": "drinks-bag-of-ice"
+        },
+        {
+          "category": "Drinks",
           "name": "Gallon Pineapple Dragonfruit Unsweet Tea",
           "contains": [],
           "id": "drinks-gallon-pineapple-dragonfruit-unsweet-tea"
@@ -1567,12 +1573,6 @@
           "name": "Gallon Pineapple Dragonfruit Lemonade",
           "contains": [],
           "id": "drinks-gallon-pineapple-dragonfruit-lemonade"
-        },
-        {
-          "category": "Drinks",
-          "name": "Bag of Ice",
-          "contains": [],
-          "id": "drinks-bag-of-ice"
         },
         {
           "category": "Drinks",
@@ -3082,7 +3082,7 @@
         }
       ],
       "source": "official",
-      "lastVerified": "2026-10-26"
+      "lastVerified": "2026-11-02"
     },
     {
       "id": "chain-first-watch",
@@ -3120,18 +3120,20 @@
       "menu": [
         {
           "category": "Seasonal Items",
-          "name": "The Godfather Breakfast Bowl",
+          "name": "Truffle Bacon & Brie Hash",
           "contains": [
             "egg",
             "milk",
             "soy",
+            "wheat",
+            "gluten",
             "mustard"
           ],
-          "id": "seasonal-items-the-godfather-breakfast-bowl"
+          "id": "seasonal-items-truffle-bacon-brie-hash"
         },
         {
           "category": "Seasonal Items",
-          "name": "Maple Bacon Croissant Sandwich",
+          "name": "Double Crunch Breakfast Tacos",
           "contains": [
             "egg",
             "milk",
@@ -3139,11 +3141,11 @@
             "wheat",
             "gluten"
           ],
-          "id": "seasonal-items-maple-bacon-croissant-sandwich"
+          "id": "seasonal-items-double-crunch-breakfast-tacos"
         },
         {
           "category": "Seasonal Items",
-          "name": "Pumpkin Pancake Breakfast",
+          "name": "Cinnamon Chip Pancake Breakfast",
           "contains": [
             "egg",
             "milk",
@@ -3151,17 +3153,17 @@
             "wheat",
             "gluten"
           ],
-          "id": "seasonal-items-pumpkin-pancake-breakfast"
+          "id": "seasonal-items-cinnamon-chip-pancake-breakfast"
         },
         {
           "category": "Seasonal Items",
-          "name": "Blazing Dragon",
+          "name": "Prickly Paradise",
           "contains": [],
-          "id": "seasonal-items-blazing-dragon"
+          "id": "seasonal-items-prickly-paradise"
         },
         {
           "category": "Seasonal Items",
-          "name": "Pumpkin Spice Donuts",
+          "name": "Caramel Apple Cinnamon Roll",
           "contains": [
             "egg",
             "milk",
@@ -3169,7 +3171,7 @@
             "wheat",
             "gluten"
           ],
-          "id": "seasonal-items-pumpkin-spice-donuts"
+          "id": "seasonal-items-caramel-apple-cinnamon-roll"
         },
         {
           "category": "Seasonal Items",
@@ -4555,7 +4557,7 @@
         }
       ],
       "source": "official",
-      "lastVerified": "2026-10-26"
+      "lastVerified": "2026-11-02"
     },
     {
       "id": "chain-freddys",
@@ -5763,7 +5765,7 @@
         }
       ],
       "source": "official",
-      "lastVerified": "2026-10-26"
+      "lastVerified": "2026-11-02"
     },
     {
       "id": "chain-in-n-out",
@@ -5801,7 +5803,7 @@
         {
           "category": "Burgers",
           "name": "Double-Double®",
-          "ingredients": "Bun*: Enriched Wheat Flour (Wheat Flour, Malted Barley Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Sugar, Yeast, Soybean Oil. Contains 2% of less of: Wheat Gluten, Salt, Malt, Mold Inhibitor (Cultured Wheat Starch, Wheat Flour, Citric Acid, Tricalcium Phosphate, Sunflower Oil), Dough Conditioner (Calcium Sulfate, Enriched Wheat Flour [Wheat Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid], Ascorbic Acid, Enzymes, Sunflower Oil), Cultured Wheat Flour (Natural Preservative), Sodium Stearoyl Lactylate Allergen: Wheat (Gluten)\n100% Ground Beef + Seasoning (Salt, Black Pepper, Canola Oil)\nCheese: Milk, Cheese Culture, Salt, Cream, Milkfat, Water, Sodium Citrate, Sodium Hexametaphosphate or Tetrasodium Pyrophosphate, Sorbic Acid (Preservative), Enzymes, Citric Acid, Soy or Sunflower Lecithin, Color Added (Contains one or more natural colors: Apo Carotenal, Beta Carotene, Annatto Extract, Paprika Oleoresin) Allergens: Milk, Soy\nSpread: Soybean Oil and/or Canola Oil, Cucumbers, Tomatoes, Distilled White Vinegar, Whole Eggs, Vinegar, Water, Sugar, Mustard Seeds, Salt, Corn Syrup, Spices, Turmeric, Onion Powder, Garlic Powder, Xanthan Gum, Sodium Benzoate (preservative), Paprika, Calcium Chloride, Lemon Juice Concentrate, Calcium Disodium EDTA, Yellow Prussiate of Soda, Natural Flavors, Polysorbate 80 Allergen: Egg\nLettuce\nTomato\nOnion\n*Produced in a facility where milk, sesame, and soy are present, and possibly on the same line/equipment",
+          "ingredients": "Bun*: Enriched Wheat Flour (Wheat Flour, Malted Barley Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Sugar, Yeast, Soybean Oil. Contains 2% of less of: Wheat Gluten, Salt, Malt, Mold Inhibitor (Cultured Wheat Starch, Wheat Flour, Citric Acid, Tricalcium Phosphate, Sunflower Oil), Dough Conditioner (Calcium Sulfate, Enriched Wheat Flour [Wheat Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid], Ascorbic Acid, Enzymes, Sunflower Oil), Cultured Wheat Flour (Natural Preservative), Sodium Stearoyl Lactylate Allergen: Wheat (Gluten)\n100% Ground Beef + Seasoning (Salt, Black Pepper, and Oil [Avocado Oil or Canola Oil])\nCheese: Milk, Cheese Culture, Salt, Cream, Milkfat, Water, Sodium Citrate, Sodium Hexametaphosphate or Tetrasodium Pyrophosphate, Sorbic Acid (Preservative), Enzymes, Citric Acid, Soy or Sunflower Lecithin, Color Added (Contains one or more natural colors: Apo Carotenal, Beta Carotene, Annatto Extract, Paprika Oleoresin) Allergens: Milk, Soy\nSpread: Soybean Oil and/or Canola Oil, Cucumbers, Tomatoes, Distilled White Vinegar, Whole Eggs, Vinegar, Water, Sugar, Mustard Seeds, Salt, Corn Syrup, Spices, Turmeric, Onion Powder, Garlic Powder, Xanthan Gum, Sodium Benzoate (preservative), Paprika, Calcium Chloride, Lemon Juice Concentrate, Calcium Disodium EDTA, Yellow Prussiate of Soda, Natural Flavors, Polysorbate 80 Allergen: Egg\nLettuce\nTomato\nOnion\n*Produced in a facility where milk, sesame, and soy are present, and possibly on the same line/equipment",
           "contains": [
             "wheat",
             "gluten",
@@ -5814,7 +5816,7 @@
         {
           "category": "Burgers",
           "name": "Double-Double® — With mustard & ketchup instead of spread",
-          "ingredients": "Bun*: Enriched Wheat Flour (Wheat Flour, Malted Barley Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Sugar, Yeast, Soybean Oil. Contains 2% of less of: Wheat Gluten, Salt, Malt, Mold Inhibitor (Cultured Wheat Starch, Wheat Flour, Citric Acid, Tricalcium Phosphate, Sunflower Oil), Dough Conditioner (Calcium Sulfate, Enriched Wheat Flour [Wheat Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid], Ascorbic Acid, Enzymes, Sunflower Oil), Cultured Wheat Flour (Natural Preservative), Sodium Stearoyl Lactylate Allergen: Wheat (Gluten)\n100% Ground Beef + Seasoning (Salt, Black Pepper, Canola Oil)\nCheese: Milk, Cheese Culture, Salt, Cream, Milkfat, Water, Sodium Citrate, Sodium Hexametaphosphate or Tetrasodium Pyrophosphate, Sorbic Acid (Preservative), Enzymes, Citric Acid, Soy or Sunflower Lecithin, Color Added (Contains one or more natural colors: Apo Carotenal, Beta Carotene, Annatto Extract, Paprika Oleoresin) Allergens: Milk, Soy\nKetchup: Tomato Concentrate, Sugar, Distilled Vinegar, Salt, Spices, Onion Powder, Natural Flavors\nMustard: Distilled Vinegar, Water, Mustard Seed, Salt, Turmeric, Paprika, Spices, Natural flavors, Garlic Powder\nLettuce\nTomato\nOnion\n*Produced in a facility where milk, sesame, and soy are present, and possibly on the same line/equipment",
+          "ingredients": "Bun*: Enriched Wheat Flour (Wheat Flour, Malted Barley Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Sugar, Yeast, Soybean Oil. Contains 2% of less of: Wheat Gluten, Salt, Malt, Mold Inhibitor (Cultured Wheat Starch, Wheat Flour, Citric Acid, Tricalcium Phosphate, Sunflower Oil), Dough Conditioner (Calcium Sulfate, Enriched Wheat Flour [Wheat Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid], Ascorbic Acid, Enzymes, Sunflower Oil), Cultured Wheat Flour (Natural Preservative), Sodium Stearoyl Lactylate Allergen: Wheat (Gluten)\n100% Ground Beef + Seasoning (Salt, Black Pepper, and Oil [Avocado Oil or Canola Oil])\nCheese: Milk, Cheese Culture, Salt, Cream, Milkfat, Water, Sodium Citrate, Sodium Hexametaphosphate or Tetrasodium Pyrophosphate, Sorbic Acid (Preservative), Enzymes, Citric Acid, Soy or Sunflower Lecithin, Color Added (Contains one or more natural colors: Apo Carotenal, Beta Carotene, Annatto Extract, Paprika Oleoresin) Allergens: Milk, Soy\nKetchup: Tomato Concentrate, Sugar, Distilled Vinegar, Salt, Spices, Onion Powder, Natural Flavors\nMustard: Distilled Vinegar, Water, Mustard Seed, Salt, Turmeric, Paprika, Spices, Natural flavors, Garlic Powder\nLettuce\nTomato\nOnion\n*Produced in a facility where milk, sesame, and soy are present, and possibly on the same line/equipment",
           "contains": [
             "wheat",
             "gluten",
@@ -5826,7 +5828,7 @@
         {
           "category": "Burgers",
           "name": "Double-Double® — Protein Style® (bun replaced with lettuce)",
-          "ingredients": "100% Ground Beef + Seasoning (Salt, Black Pepper, Canola Oil)\nCheese: Milk, Cheese Culture, Salt, Cream, Milkfat, Water, Sodium Citrate, Sodium Hexametaphosphate or Tetrasodium Pyrophosphate, Sorbic Acid (Preservative), Enzymes, Citric Acid, Soy or Sunflower Lecithin, Color Added (Contains one or more natural colors: Apo Carotenal, Beta Carotene, Annatto Extract, Paprika Oleoresin) Allergens: Milk, Soy\nSpread: Soybean Oil and/or Canola Oil, Cucumbers, Tomatoes, Distilled White Vinegar, Whole Eggs, Vinegar, Water, Sugar, Mustard Seeds, Salt, Corn Syrup, Spices, Turmeric, Onion Powder, Garlic Powder, Xanthan Gum, Sodium Benzoate (preservative), Paprika, Calcium Chloride, Lemon Juice Concentrate, Calcium Disodium EDTA, Yellow Prussiate of Soda, Natural Flavors, Polysorbate 80. Allergen: Egg\nLettuce\nTomato\nOnion",
+          "ingredients": "100% Ground Beef + Seasoning (Salt, Black Pepper, and Oil [Avocado Oil or Canola Oil])\nCheese: Milk, Cheese Culture, Salt, Cream, Milkfat, Water, Sodium Citrate, Sodium Hexametaphosphate or Tetrasodium Pyrophosphate, Sorbic Acid (Preservative), Enzymes, Citric Acid, Soy or Sunflower Lecithin, Color Added (Contains one or more natural colors: Apo Carotenal, Beta Carotene, Annatto Extract, Paprika Oleoresin) Allergens: Milk, Soy\nSpread: Soybean Oil and/or Canola Oil, Cucumbers, Tomatoes, Distilled White Vinegar, Whole Eggs, Vinegar, Water, Sugar, Mustard Seeds, Salt, Corn Syrup, Spices, Turmeric, Onion Powder, Garlic Powder, Xanthan Gum, Sodium Benzoate (preservative), Paprika, Calcium Chloride, Lemon Juice Concentrate, Calcium Disodium EDTA, Yellow Prussiate of Soda, Natural Flavors, Polysorbate 80. Allergen: Egg\nLettuce\nTomato\nOnion",
           "contains": [
             "milk",
             "soy",
@@ -5837,7 +5839,7 @@
         {
           "category": "Burgers",
           "name": "Cheeseburger",
-          "ingredients": "Bun*: Enriched Wheat Flour (Wheat Flour, Malted Barley Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Sugar, Yeast, Soybean Oil. Contains 2% of less of: Wheat Gluten, Salt, Malt, Mold Inhibitor (Cultured Wheat Starch, Wheat Flour, Citric Acid, Tricalcium Phosphate, Sunflower Oil), Dough Conditioner (Calcium Sulfate, Enriched Wheat Flour [Wheat Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid], Ascorbic Acid, Enzymes, Sunflower Oil), Cultured Wheat Flour (Natural Preservative), Sodium Stearoyl Lactylate Allergen: Wheat (Gluten)\n100% Ground Beef + Seasoning (Salt, Black Pepper, Canola Oil)\nCheese: Milk, Cheese Culture, Salt, Cream, Milkfat, Water, Sodium Citrate, Sodium Hexametaphosphate or Tetrasodium Pyrophosphate, Sorbic Acid (Preservative), Enzymes, Citric Acid, Soy or Sunflower Lecithin, Color Added (Contains one or more natural colors: Apo Carotenal, Beta Carotene, Annatto Extract, Paprika Oleoresin) Allergens: Milk, Soy\nSpread: Soybean Oil and/or Canola Oil, Cucumbers, Tomatoes, Distilled White Vinegar, Whole Eggs, Vinegar, Water, Sugar, Mustard Seeds, Salt, Corn Syrup, Spices, Turmeric, Onion Powder, Garlic Powder, Xanthan Gum, Sodium Benzoate (preservative), Paprika, Calcium Chloride, Lemon Juice Concentrate, Calcium Disodium EDTA, Yellow Prussiate of Soda, Natural Flavors, Polysorbate 80 Allergen: Egg\nLettuce\nTomato\nOnion\n*Produced in a facility where milk, sesame, and soy are present, and possibly on the same line/equipment",
+          "ingredients": "Bun*: Enriched Wheat Flour (Wheat Flour, Malted Barley Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Sugar, Yeast, Soybean Oil. Contains 2% of less of: Wheat Gluten, Salt, Malt, Mold Inhibitor (Cultured Wheat Starch, Wheat Flour, Citric Acid, Tricalcium Phosphate, Sunflower Oil), Dough Conditioner (Calcium Sulfate, Enriched Wheat Flour [Wheat Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid], Ascorbic Acid, Enzymes, Sunflower Oil), Cultured Wheat Flour (Natural Preservative), Sodium Stearoyl Lactylate Allergen: Wheat (Gluten)\n100% Ground Beef + Seasoning (Salt, Black Pepper, and Oil [Avocado Oil or Canola Oil])\nCheese: Milk, Cheese Culture, Salt, Cream, Milkfat, Water, Sodium Citrate, Sodium Hexametaphosphate or Tetrasodium Pyrophosphate, Sorbic Acid (Preservative), Enzymes, Citric Acid, Soy or Sunflower Lecithin, Color Added (Contains one or more natural colors: Apo Carotenal, Beta Carotene, Annatto Extract, Paprika Oleoresin) Allergens: Milk, Soy\nSpread: Soybean Oil and/or Canola Oil, Cucumbers, Tomatoes, Distilled White Vinegar, Whole Eggs, Vinegar, Water, Sugar, Mustard Seeds, Salt, Corn Syrup, Spices, Turmeric, Onion Powder, Garlic Powder, Xanthan Gum, Sodium Benzoate (preservative), Paprika, Calcium Chloride, Lemon Juice Concentrate, Calcium Disodium EDTA, Yellow Prussiate of Soda, Natural Flavors, Polysorbate 80 Allergen: Egg\nLettuce\nTomato\nOnion\n*Produced in a facility where milk, sesame, and soy are present, and possibly on the same line/equipment",
           "contains": [
             "wheat",
             "gluten",
@@ -5850,7 +5852,7 @@
         {
           "category": "Burgers",
           "name": "Cheeseburger — With mustard & ketchup instead of spread",
-          "ingredients": "Bun*: Enriched Wheat Flour (Wheat Flour, Malted Barley Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Sugar, Yeast, Soybean Oil. Contains 2% of less of: Wheat Gluten, Salt, Malt, Mold Inhibitor (Cultured Wheat Starch, Wheat Flour, Citric Acid, Tricalcium Phosphate, Sunflower Oil), Dough Conditioner (Calcium Sulfate, Enriched Wheat Flour [Wheat Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid], Ascorbic Acid, Enzymes, Sunflower Oil), Cultured Wheat Flour (Natural Preservative), Sodium Stearoyl Lactylate Allergen: Wheat (Gluten)\n100% Ground Beef + Seasoning (Salt, Black Pepper, Canola Oil)\nCheese: Milk, Cheese Culture, Salt, Cream, Milkfat, Water, Sodium Citrate, Sodium Hexametaphosphate or Tetrasodium Pyrophosphate, Sorbic Acid (Preservative), Enzymes, Citric Acid, Soy or Sunflower Lecithin, Color Added (Contains one or more natural colors: Apo Carotenal, Beta Carotene, Annatto Extract, Paprika Oleoresin) Allergens: Milk, Soy\nKetchup: Tomato Concentrate, Sugar, Distilled Vinegar, Salt, Spices, Onion Powder, Natural Flavors\nMustard: Distilled Vinegar, Water, Mustard Seed, Salt, Turmeric, Paprika, Spices, Natural flavors, Garlic Powder\nLettuce\nTomato\nOnion\n*Produced in a facility where milk, sesame, and soy are present, and possibly on the same line/equipment",
+          "ingredients": "Bun*: Enriched Wheat Flour (Wheat Flour, Malted Barley Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Sugar, Yeast, Soybean Oil. Contains 2% of less of: Wheat Gluten, Salt, Malt, Mold Inhibitor (Cultured Wheat Starch, Wheat Flour, Citric Acid, Tricalcium Phosphate, Sunflower Oil), Dough Conditioner (Calcium Sulfate, Enriched Wheat Flour [Wheat Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid], Ascorbic Acid, Enzymes, Sunflower Oil), Cultured Wheat Flour (Natural Preservative), Sodium Stearoyl Lactylate Allergen: Wheat (Gluten)\n100% Ground Beef + Seasoning (Salt, Black Pepper, and Oil [Avocado Oil or Canola Oil])\nCheese: Milk, Cheese Culture, Salt, Cream, Milkfat, Water, Sodium Citrate, Sodium Hexametaphosphate or Tetrasodium Pyrophosphate, Sorbic Acid (Preservative), Enzymes, Citric Acid, Soy or Sunflower Lecithin, Color Added (Contains one or more natural colors: Apo Carotenal, Beta Carotene, Annatto Extract, Paprika Oleoresin) Allergens: Milk, Soy\nKetchup: Tomato Concentrate, Sugar, Distilled Vinegar, Salt, Spices, Onion Powder, Natural Flavors\nMustard: Distilled Vinegar, Water, Mustard Seed, Salt, Turmeric, Paprika, Spices, Natural flavors, Garlic Powder\nLettuce\nTomato\nOnion\n*Produced in a facility where milk, sesame, and soy are present, and possibly on the same line/equipment",
           "contains": [
             "wheat",
             "gluten",
@@ -5862,7 +5864,7 @@
         {
           "category": "Burgers",
           "name": "Cheeseburger — Protein Style® (bun replaced with lettuce)",
-          "ingredients": "100% Ground Beef + Seasoning (Salt, Black Pepper, Canola Oil)\nCheese: Milk, Cheese Culture, Salt, Cream, Milkfat, Water, Sodium Citrate, Sodium Hexametaphosphate or Tetrasodium Pyrophosphate, Sorbic Acid (Preservative), Enzymes, Citric Acid, Soy or Sunflower Lecithin, Color Added (Contains one or more natural colors: Apo Carotenal, Beta Carotene, Annatto Extract, Paprika Oleoresin) Allergens: Milk, Soy\nSpread: Soybean Oil and/or Canola Oil, Cucumbers, Tomatoes, Distilled White Vinegar, Whole Eggs, Vinegar, Water, Sugar, Mustard Seeds, Salt, Corn Syrup, Spices, Turmeric, Onion Powder, Garlic Powder, Xanthan Gum, Sodium Benzoate (preservative), Paprika, Calcium Chloride, Lemon Juice Concentrate, Calcium Disodium EDTA, Yellow Prussiate of Soda, Natural Flavors, Polysorbate 80. Allergen: Egg\nLettuce\nTomato\nOnion",
+          "ingredients": "100% Ground Beef + Seasoning (Salt, Black Pepper, and Oil [Avocado Oil or Canola Oil])\nCheese: Milk, Cheese Culture, Salt, Cream, Milkfat, Water, Sodium Citrate, Sodium Hexametaphosphate or Tetrasodium Pyrophosphate, Sorbic Acid (Preservative), Enzymes, Citric Acid, Soy or Sunflower Lecithin, Color Added (Contains one or more natural colors: Apo Carotenal, Beta Carotene, Annatto Extract, Paprika Oleoresin) Allergens: Milk, Soy\nSpread: Soybean Oil and/or Canola Oil, Cucumbers, Tomatoes, Distilled White Vinegar, Whole Eggs, Vinegar, Water, Sugar, Mustard Seeds, Salt, Corn Syrup, Spices, Turmeric, Onion Powder, Garlic Powder, Xanthan Gum, Sodium Benzoate (preservative), Paprika, Calcium Chloride, Lemon Juice Concentrate, Calcium Disodium EDTA, Yellow Prussiate of Soda, Natural Flavors, Polysorbate 80. Allergen: Egg\nLettuce\nTomato\nOnion",
           "contains": [
             "milk",
             "soy",
@@ -5873,7 +5875,7 @@
         {
           "category": "Burgers",
           "name": "Hamburger",
-          "ingredients": "Bun*: Enriched Wheat Flour (Wheat Flour, Malted Barley Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Sugar, Yeast, Soybean Oil. Contains 2% of less of: Wheat Gluten, Salt, Malt, Mold Inhibitor (Cultured Wheat Starch, Wheat Flour, Citric Acid, Tricalcium Phosphate, Sunflower Oil), Dough Conditioner (Calcium Sulfate, Enriched Wheat Flour [Wheat Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid], Ascorbic Acid, Enzymes, Sunflower Oil), Cultured Wheat Flour (Natural Preservative), Sodium Stearoyl Lactylate Allergen: Wheat (Gluten)\n100% Ground Beef + Seasoning (Salt, Black Pepper, Canola Oil)\nSpread: Soybean Oil and/or Canola Oil, Cucumbers, Tomatoes, Distilled White Vinegar, Whole Eggs, Vinegar, Water, Sugar, Mustard Seeds, Salt, Corn Syrup, Spices, Turmeric, Onion Powder, Garlic Powder, Xanthan Gum, Sodium Benzoate (preservative), Paprika, Calcium Chloride, Lemon Juice Concentrate, Calcium Disodium EDTA, Yellow Prussiate of Soda, Natural Flavors, Polysorbate 80 Allergen: Egg\nTomato\nOnion\nLettuce\n*Produced in a facility where milk, sesame, and soy are present, and possibly on the same line/equipment",
+          "ingredients": "Bun*: Enriched Wheat Flour (Wheat Flour, Malted Barley Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Sugar, Yeast, Soybean Oil. Contains 2% of less of: Wheat Gluten, Salt, Malt, Mold Inhibitor (Cultured Wheat Starch, Wheat Flour, Citric Acid, Tricalcium Phosphate, Sunflower Oil), Dough Conditioner (Calcium Sulfate, Enriched Wheat Flour [Wheat Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid], Ascorbic Acid, Enzymes, Sunflower Oil), Cultured Wheat Flour (Natural Preservative), Sodium Stearoyl Lactylate Allergen: Wheat (Gluten)\n100% Ground Beef + Seasoning (Salt, Black Pepper, and Oil [Avocado Oil or Canola Oil])\nSpread: Soybean Oil and/or Canola Oil, Cucumbers, Tomatoes, Distilled White Vinegar, Whole Eggs, Vinegar, Water, Sugar, Mustard Seeds, Salt, Corn Syrup, Spices, Turmeric, Onion Powder, Garlic Powder, Xanthan Gum, Sodium Benzoate (preservative), Paprika, Calcium Chloride, Lemon Juice Concentrate, Calcium Disodium EDTA, Yellow Prussiate of Soda, Natural Flavors, Polysorbate 80 Allergen: Egg\nTomato\nOnion\nLettuce\n*Produced in a facility where milk, sesame, and soy are present, and possibly on the same line/equipment",
           "contains": [
             "wheat",
             "gluten",
@@ -5884,7 +5886,7 @@
         {
           "category": "Burgers",
           "name": "Hamburger — With mustard & ketchup instead of spread",
-          "ingredients": "Bun*: Enriched Wheat Flour (Wheat Flour, Malted Barley Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Sugar, Yeast, Soybean Oil. Contains 2% of less of: Wheat Gluten, Salt, Malt, Mold Inhibitor (Cultured Wheat Starch, Wheat Flour, Citric Acid, Tricalcium Phosphate, Sunflower Oil), Dough Conditioner (Calcium Sulfate, Enriched Wheat Flour [Wheat Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid], Ascorbic Acid, Enzymes, Sunflower Oil), Cultured Wheat Flour (Natural Preservative), Sodium Stearoyl Lactylate Allergen: Wheat (Gluten)\n100% Ground Beef + Seasoning (Salt, Black Pepper, Canola Oil)\nKetchup: Tomato Concentrate, Sugar, Distilled Vinegar, Salt, Spices, Onion Powder, Natural Flavors\nMustard: Distilled Vinegar, Water, Mustard Seed, Salt, Turmeric, Paprika, Spices, Natural flavors, Garlic Powder\nLettuce\nTomato\nOnion\n*Produced in a facility where milk, sesame, and soy are present, and possibly on the same line/equipment",
+          "ingredients": "Bun*: Enriched Wheat Flour (Wheat Flour, Malted Barley Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Sugar, Yeast, Soybean Oil. Contains 2% of less of: Wheat Gluten, Salt, Malt, Mold Inhibitor (Cultured Wheat Starch, Wheat Flour, Citric Acid, Tricalcium Phosphate, Sunflower Oil), Dough Conditioner (Calcium Sulfate, Enriched Wheat Flour [Wheat Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid], Ascorbic Acid, Enzymes, Sunflower Oil), Cultured Wheat Flour (Natural Preservative), Sodium Stearoyl Lactylate Allergen: Wheat (Gluten)\n100% Ground Beef + Seasoning (Salt, Black Pepper, and Oil [Avocado Oil or Canola Oil])\nKetchup: Tomato Concentrate, Sugar, Distilled Vinegar, Salt, Spices, Onion Powder, Natural Flavors\nMustard: Distilled Vinegar, Water, Mustard Seed, Salt, Turmeric, Paprika, Spices, Natural flavors, Garlic Powder\nLettuce\nTomato\nOnion\n*Produced in a facility where milk, sesame, and soy are present, and possibly on the same line/equipment",
           "contains": [
             "wheat",
             "gluten"
@@ -5894,7 +5896,7 @@
         {
           "category": "Burgers",
           "name": "Hamburger — Protein Style® (bun replaced with lettuce)",
-          "ingredients": "100% Ground Beef + Seasoning (Salt, Black Pepper, Canola Oil)\nSpread: Soybean Oil and/or Canola Oil, Cucumbers, Tomatoes, Distilled White Vinegar, Whole Eggs, Vinegar, Water, Sugar, Mustard Seeds, Salt, Corn Syrup, Spices, Turmeric, Onion Powder, Garlic Powder, Xanthan Gum, Sodium Benzoate (preservative), Paprika, Calcium Chloride, Lemon Juice Concentrate, Calcium Disodium EDTA, Yellow Prussiate of Soda, Natural Flavors, Polysorbate 80. Allergen: Egg\nLettuce\nTomato\nOnion",
+          "ingredients": "100% Ground Beef + Seasoning (Salt, Black Pepper, and Oil [Avocado Oil or Canola Oil])\nSpread: Soybean Oil and/or Canola Oil, Cucumbers, Tomatoes, Distilled White Vinegar, Whole Eggs, Vinegar, Water, Sugar, Mustard Seeds, Salt, Corn Syrup, Spices, Turmeric, Onion Powder, Garlic Powder, Xanthan Gum, Sodium Benzoate (preservative), Paprika, Calcium Chloride, Lemon Juice Concentrate, Calcium Disodium EDTA, Yellow Prussiate of Soda, Natural Flavors, Polysorbate 80. Allergen: Egg\nLettuce\nTomato\nOnion",
           "contains": [
             "egg"
           ],
@@ -5903,7 +5905,7 @@
         {
           "category": "Fries",
           "name": "French Fries",
-          "ingredients": "Potatoes, Sunflower Oil (Dimethylpolysiloxane [foaming reducer]), Seasoning (Salt, Black Pepper, Canola Oil)",
+          "ingredients": "Potatoes, Sunflower Oil (Dimethylpolysiloxane [foaming reducer]), Seasoning (Salt, Black Pepper, and Oil [Avocado Oil or Canola Oil])",
           "contains": [],
           "id": "fries-french-fries"
         },
@@ -5943,10 +5945,10 @@
         },
         {
           "category": "Drinks & extras",
-          "name": "Diet Coca-Cola",
+          "name": "Diet Coke",
           "ingredients": "Carbonated Water, Syrup (Water, Caramel Color, Phosphoric Acid, Sodium Saccharin, Natural Flavors, Citric Acid, Potassium Citrate, Potassium Benzoate [to protect taste], Caffeine, Aspartame, Dimethylpolysiloxane)",
           "contains": [],
-          "id": "drinks-extras-diet-coca-cola"
+          "id": "drinks-extras-diet-coke"
         },
         {
           "category": "Drinks & extras",
@@ -5965,7 +5967,7 @@
         {
           "category": "Drinks & extras",
           "name": "7-Up",
-          "ingredients": "Carbonated Water, Syrup (High Fructose Corn Syrup, Water, Citric Acid, Potassium Citrate, Natural Flavors, Sodium Benzoate [preservative], Calcium Disodium EDTA [to protect flavor])",
+          "ingredients": "Carbonated Water, Syrup (High Fructose Corn Syrup, Water, Citric Acid, Potassium Citrate, Potassium Benzoate [preservative], Natural Flavors, Calcium Disodium EDTA [to protect flavor])",
           "contains": [],
           "id": "drinks-extras-7-up"
         },
@@ -6047,7 +6049,7 @@
         }
       ],
       "source": "official",
-      "lastVerified": "2026-10-26"
+      "lastVerified": "2026-11-02"
     },
     {
       "id": "chain-papa-johns",
@@ -7555,7 +7557,7 @@
         }
       ],
       "source": "official",
-      "lastVerified": "2026-10-26"
+      "lastVerified": "2026-11-02"
     },
     {
       "id": "chain-pollo-tropical",
@@ -8798,7 +8800,7 @@
         }
       ],
       "source": "official",
-      "lastVerified": "2026-10-26"
+      "lastVerified": "2026-11-02"
     },
     {
       "id": "chain-sweetgreen",
@@ -9749,7 +9751,7 @@
         }
       ],
       "source": "official",
-      "lastVerified": "2026-10-26"
+      "lastVerified": "2026-11-02"
     }
   ]
 }
