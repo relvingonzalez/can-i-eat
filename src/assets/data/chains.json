@@ -318,17 +318,6 @@
         },
         {
           "category": "Breakfast",
-          "name": "Breakfast Waffle",
-          "contains": [
-            "milk",
-            "egg",
-            "soy",
-            "wheat"
-          ],
-          "id": "breakfast-breakfast-waffle"
-        },
-        {
-          "category": "Breakfast",
           "name": "Buttery Biscuit",
           "contains": [
             "milk",
@@ -392,28 +381,6 @@
             "treenuts"
           ],
           "id": "breakfast-berry-parfait-w-granola"
-        },
-        {
-          "category": "Breakfast",
-          "name": "Chicken & Waffles Breakfast Sandwich w/ Chick-fil-A® Filet",
-          "contains": [
-            "milk",
-            "egg",
-            "soy",
-            "wheat"
-          ],
-          "id": "breakfast-chicken-waffles-breakfast-sandwich-w-chick-fil-a-filet"
-        },
-        {
-          "category": "Breakfast",
-          "name": "Chicken & Waffles Breakfast Sandwich w/ Spicy Filet",
-          "contains": [
-            "milk",
-            "egg",
-            "soy",
-            "wheat"
-          ],
-          "id": "breakfast-chicken-waffles-breakfast-sandwich-w-spicy-filet"
         },
         {
           "category": "Breakfast",
@@ -513,17 +480,6 @@
             "wheat"
           ],
           "id": "breakfast-egg-white-grill"
-        },
-        {
-          "category": "Breakfast",
-          "name": "Chicken & Waffles Breakfast Sandwich w/ Grilled Filet",
-          "contains": [
-            "milk",
-            "egg",
-            "soy",
-            "wheat"
-          ],
-          "id": "breakfast-chicken-waffles-breakfast-sandwich-w-grilled-filet"
         },
         {
           "category": "Entrées",
@@ -786,45 +742,12 @@
         },
         {
           "category": "Entrées",
-          "name": "Chicken & Waffles Sandwich w/ Chick-fil-A® Filet",
-          "contains": [
-            "milk",
-            "egg",
-            "soy",
-            "wheat"
-          ],
-          "id": "entrees-chicken-waffles-sandwich-w-chick-fil-a-filet"
-        },
-        {
-          "category": "Entrées",
-          "name": "Chicken & Waffles Sandwich w/ Spicy Filet",
-          "contains": [
-            "milk",
-            "egg",
-            "soy",
-            "wheat"
-          ],
-          "id": "entrees-chicken-waffles-sandwich-w-spicy-filet"
-        },
-        {
-          "category": "Entrées",
           "name": "Grilled Chicken Sandwich",
           "contains": [
             "egg",
             "wheat"
           ],
           "id": "entrees-grilled-chicken-sandwich"
-        },
-        {
-          "category": "Entrées",
-          "name": "Chicken & Waffles Sandwich w/ Grilled Filet",
-          "contains": [
-            "milk",
-            "egg",
-            "soy",
-            "wheat"
-          ],
-          "id": "entrees-chicken-waffles-sandwich-w-grilled-filet"
         },
         {
           "category": "Salads",
@@ -1412,24 +1335,6 @@
         },
         {
           "category": "Treats",
-          "name": "S’mores Frosted Coffee",
-          "contains": [
-            "milk",
-            "soy",
-            "wheat"
-          ],
-          "id": "treats-smores-frosted-coffee"
-        },
-        {
-          "category": "Treats",
-          "name": "Toasted Marshmallow Whipped Topping",
-          "contains": [
-            "milk"
-          ],
-          "id": "treats-toasted-marshmallow-whipped-topping"
-        },
-        {
-          "category": "Treats",
           "name": "Dr Pepper® Float",
           "contains": [
             "milk"
@@ -1519,6 +1424,24 @@
             "wheat"
           ],
           "id": "treats-cookies-cream-milkshake"
+        },
+        {
+          "category": "Treats",
+          "name": "Peppermint Chip Milkshake",
+          "contains": [
+            "milk",
+            "soy"
+          ],
+          "id": "treats-peppermint-chip-milkshake"
+        },
+        {
+          "category": "Treats",
+          "name": "Peppermint Chip Frosted Coffee",
+          "contains": [
+            "milk",
+            "soy"
+          ],
+          "id": "treats-peppermint-chip-frosted-coffee"
         },
         {
           "category": "Drinks",
@@ -1828,12 +1751,6 @@
         },
         {
           "category": "Drinks",
-          "name": "Toasted Marshmallow Hot Coffee",
-          "contains": [],
-          "id": "drinks-toasted-marshmallow-hot-coffee"
-        },
-        {
-          "category": "Drinks",
           "name": "Iced Coffee",
           "contains": [],
           "id": "drinks-iced-coffee"
@@ -1876,22 +1793,6 @@
         },
         {
           "category": "Drinks",
-          "name": "Toasted Marshmallow Cream Cold Brew",
-          "contains": [
-            "milk"
-          ],
-          "id": "drinks-toasted-marshmallow-cream-cold-brew"
-        },
-        {
-          "category": "Drinks",
-          "name": "Toasted Marshmallow Iced Coffee",
-          "contains": [
-            "milk"
-          ],
-          "id": "drinks-toasted-marshmallow-iced-coffee"
-        },
-        {
-          "category": "Drinks",
           "name": "Simply Orange®",
           "contains": [],
           "id": "drinks-simply-orange"
@@ -1931,6 +1832,20 @@
           "id": "drinks-pineapple-dragonfruit-sprite"
         },
         {
+          "category": "Drinks",
+          "name": "Peppermint Hot Coffee",
+          "contains": [],
+          "id": "drinks-peppermint-hot-coffee"
+        },
+        {
+          "category": "Drinks",
+          "name": "Peppermint Iced Coffee",
+          "contains": [
+            "milk"
+          ],
+          "id": "drinks-peppermint-iced-coffee"
+        },
+        {
           "category": "Coffee",
           "name": "Caramel Cream Cold Brew",
           "contains": [
@@ -1953,14 +1868,6 @@
             "milk"
           ],
           "id": "coffee-vanilla-cream-cold-brew"
-        },
-        {
-          "category": "Coffee",
-          "name": "Toasted Marshmallow Cream Cold Brew",
-          "contains": [
-            "milk"
-          ],
-          "id": "coffee-toasted-marshmallow-cream-cold-brew"
         },
         {
           "category": "Coffee",
@@ -1993,14 +1900,6 @@
             "milk"
           ],
           "id": "coffee-vanilla-iced-coffee"
-        },
-        {
-          "category": "Coffee",
-          "name": "Toasted Marshmallow Iced Coffee",
-          "contains": [
-            "milk"
-          ],
-          "id": "coffee-toasted-marshmallow-iced-coffee"
         },
         {
           "category": "Coffee",
@@ -2049,20 +1948,13 @@
           "id": "coffee-frosted-coffee"
         },
         {
-          "category": "Coffee",
-          "name": "Toasted Marshmallow Hot Coffee",
-          "contains": [],
-          "id": "coffee-toasted-marshmallow-hot-coffee"
-        },
-        {
-          "category": "Coffee",
-          "name": "S’mores Frosted Coffee",
+          "category": "Dipping Sauces",
+          "name": "Spicy Chick-fil-A® Sauce",
           "contains": [
-            "milk",
-            "soy",
-            "wheat"
+            "egg",
+            "soy"
           ],
-          "id": "coffee-smores-frosted-coffee"
+          "id": "dipping-sauces-spicy-chick-fil-a-sauce"
         },
         {
           "category": "Dipping Sauces",
@@ -2180,17 +2072,6 @@
           "name": "Zesty Apple Cider Vinaigrette Dressing",
           "contains": [],
           "id": "dressings-zesty-apple-cider-vinaigrette-dressing"
-        },
-        {
-          "category": "Buns",
-          "name": "Waffle",
-          "contains": [
-            "milk",
-            "egg",
-            "soy",
-            "wheat"
-          ],
-          "id": "buns-waffle"
         },
         {
           "category": "Buns",
@@ -3082,7 +2963,7 @@
         }
       ],
       "source": "official",
-      "lastVerified": "2026-11-09"
+      "lastVerified": "2026-11-16"
     },
     {
       "id": "chain-first-watch",
@@ -4557,7 +4438,7 @@
         }
       ],
       "source": "official",
-      "lastVerified": "2026-11-09"
+      "lastVerified": "2026-11-16"
     },
     {
       "id": "chain-freddys",
@@ -5775,7 +5656,7 @@
         }
       ],
       "source": "official",
-      "lastVerified": "2026-11-09"
+      "lastVerified": "2026-11-16"
     },
     {
       "id": "chain-in-n-out",
@@ -7567,7 +7448,7 @@
         }
       ],
       "source": "official",
-      "lastVerified": "2026-11-09"
+      "lastVerified": "2026-11-16"
     },
     {
       "id": "chain-pollo-tropical",
@@ -8810,7 +8691,7 @@
         }
       ],
       "source": "official",
-      "lastVerified": "2026-11-09"
+      "lastVerified": "2026-11-16"
     },
     {
       "id": "chain-sweetgreen",
